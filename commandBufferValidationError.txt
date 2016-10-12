@@ -1,0 +1,5266 @@
+t{0} vkCreateInstance(pCreateInfo = 0x75420ff220, pAllocator = 0x0, *pInstance = 0x177f9fd3a60) = VK_SUCCESS
+   pCreateInfo:
+    sType = VK_STRUCTURE_TYPE_INSTANCE_CREATE_INFO
+    pNext = 0x75420ff1f8
+    flags = 0x0
+    pApplicationInfo = 0x75420ff3c8
+    enabledLayerCount = 0x8
+    ppEnabledLayerNames = 0x177f9fd2e10
+    enabledExtensionCount = 0x3
+    ppEnabledExtensionNames = 0x177f9fadae0
+     pApplicationInfo:
+      sType = VK_STRUCTURE_TYPE_APPLICATION_INFO
+      pNext = 0x0
+      pApplicationName = GraphicsPlayground
+      applicationVersion = 0
+      pEngineName = GraphicsPlayground
+      engineVersion = 0
+      apiVersion = 4194304
+     pNext:
+
+t{0} vkCreateWin32SurfaceKHR(instance = 0x177f9fd3a60, pCreateInfo = 0x75420ff5e8, pAllocator = 0x0, *pSurface = 0x177fc062010) = VK_SUCCESS
+   pCreateInfo:
+    sType = VK_STRUCTURE_TYPE_WIN32_SURFACE_CREATE_INFO_KHR
+    pNext = 0x0
+    flags = 0x0
+    hinstance = 0x7ff796960000
+    hwnd = 0x2719d2
+
+t{0} vkEnumeratePhysicalDevices(instance = 0x177f9fd3a60, *pPhysicalDeviceCount = 0x1, pPhysicalDevices = 0x0) = VK_SUCCESS
+t{0} vkEnumeratePhysicalDevices(instance = 0x177f9fd3a60, *pPhysicalDeviceCount = 0x1, *pPhysicalDevices = 0x177fc0620d0) = VK_SUCCESS
+   pPhysicalDevices[0] = 0x177fc0620d0
+t{0} vkGetPhysicalDeviceFeatures(physicalDevice = 0x177fc0620d0, pFeatures = 0x177fc4acbc0)
+   pFeatures:
+    robustBufferAccess = TRUE
+    fullDrawIndexUint32 = TRUE
+    imageCubeArray = TRUE
+    independentBlend = TRUE
+    geometryShader = TRUE
+    tessellationShader = TRUE
+    sampleRateShading = TRUE
+    dualSrcBlend = TRUE
+    logicOp = TRUE
+    multiDrawIndirect = TRUE
+    drawIndirectFirstInstance = TRUE
+    depthClamp = TRUE
+    depthBiasClamp = TRUE
+    fillModeNonSolid = TRUE
+    depthBounds = TRUE
+    wideLines = TRUE
+    largePoints = TRUE
+    alphaToOne = TRUE
+    multiViewport = TRUE
+    samplerAnisotropy = TRUE
+    textureCompressionETC2 = FALSE
+    textureCompressionASTC_LDR = FALSE
+    textureCompressionBC = TRUE
+    occlusionQueryPrecise = TRUE
+    pipelineStatisticsQuery = TRUE
+    vertexPipelineStoresAndAtomics = TRUE
+    fragmentStoresAndAtomics = TRUE
+    shaderTessellationAndGeometryPointSize = TRUE
+    shaderImageGatherExtended = TRUE
+    shaderStorageImageExtendedFormats = TRUE
+    shaderStorageImageMultisample = TRUE
+    shaderStorageImageReadWithoutFormat = TRUE
+    shaderStorageImageWriteWithoutFormat = TRUE
+    shaderUniformBufferArrayDynamicIndexing = TRUE
+    shaderSampledImageArrayDynamicIndexing = TRUE
+    shaderStorageBufferArrayDynamicIndexing = TRUE
+    shaderStorageImageArrayDynamicIndexing = TRUE
+    shaderClipDistance = TRUE
+    shaderCullDistance = TRUE
+    shaderFloat64 = TRUE
+    shaderInt64 = TRUE
+    shaderInt16 = FALSE
+    shaderResourceResidency = TRUE
+    shaderResourceMinLod = TRUE
+    sparseBinding = TRUE
+    sparseResidencyBuffer = TRUE
+    sparseResidencyImage2D = TRUE
+    sparseResidencyImage3D = TRUE
+    sparseResidency2Samples = TRUE
+    sparseResidency4Samples = TRUE
+    sparseResidency8Samples = TRUE
+    sparseResidency16Samples = TRUE
+    sparseResidencyAliased = TRUE
+    variableMultisampleRate = TRUE
+    inheritedQueries = TRUE
+
+t{0} vkGetPhysicalDeviceFeatures(physicalDevice = 0x177fc0620d0, pFeatures = 0x177fc4af6a8)
+   pFeatures:
+    robustBufferAccess = TRUE
+    fullDrawIndexUint32 = TRUE
+    imageCubeArray = TRUE
+    independentBlend = TRUE
+    geometryShader = TRUE
+    tessellationShader = TRUE
+    sampleRateShading = TRUE
+    dualSrcBlend = TRUE
+    logicOp = TRUE
+    multiDrawIndirect = TRUE
+    drawIndirectFirstInstance = TRUE
+    depthClamp = TRUE
+    depthBiasClamp = TRUE
+    fillModeNonSolid = TRUE
+    depthBounds = TRUE
+    wideLines = TRUE
+    largePoints = TRUE
+    alphaToOne = TRUE
+    multiViewport = TRUE
+    samplerAnisotropy = TRUE
+    textureCompressionETC2 = FALSE
+    textureCompressionASTC_LDR = FALSE
+    textureCompressionBC = TRUE
+    occlusionQueryPrecise = TRUE
+    pipelineStatisticsQuery = TRUE
+    vertexPipelineStoresAndAtomics = TRUE
+    fragmentStoresAndAtomics = TRUE
+    shaderTessellationAndGeometryPointSize = TRUE
+    shaderImageGatherExtended = TRUE
+    shaderStorageImageExtendedFormats = TRUE
+    shaderStorageImageMultisample = TRUE
+    shaderStorageImageReadWithoutFormat = TRUE
+    shaderStorageImageWriteWithoutFormat = TRUE
+    shaderUniformBufferArrayDynamicIndexing = TRUE
+    shaderSampledImageArrayDynamicIndexing = TRUE
+    shaderStorageBufferArrayDynamicIndexing = TRUE
+    shaderStorageImageArrayDynamicIndexing = TRUE
+    shaderClipDistance = TRUE
+    shaderCullDistance = TRUE
+    shaderFloat64 = TRUE
+    shaderInt64 = TRUE
+    shaderInt16 = FALSE
+    shaderResourceResidency = TRUE
+    shaderResourceMinLod = TRUE
+    sparseBinding = TRUE
+    sparseResidencyBuffer = TRUE
+    sparseResidencyImage2D = TRUE
+    sparseResidencyImage3D = TRUE
+    sparseResidency2Samples = TRUE
+    sparseResidency4Samples = TRUE
+    sparseResidency8Samples = TRUE
+    sparseResidency16Samples = TRUE
+    sparseResidencyAliased = TRUE
+    variableMultisampleRate = TRUE
+    inheritedQueries = TRUE
+
+t{0} vkEnumeratePhysicalDevices(instance = 0x177f9fd3a60, *pPhysicalDeviceCount = 0x1, pPhysicalDevices = 0x0) = VK_SUCCESS
+t{0} vkEnumeratePhysicalDevices(instance = 0x177f9fd3a60, *pPhysicalDeviceCount = 0x1, *pPhysicalDevices = 0x177fc062350) = VK_SUCCESS
+   pPhysicalDevices[0] = 0x177fc062350
+t{0} vkGetPhysicalDeviceFeatures(physicalDevice = 0x177fc062350, pFeatures = 0x177fc4acbc0)
+   pFeatures:
+    robustBufferAccess = TRUE
+    fullDrawIndexUint32 = TRUE
+    imageCubeArray = TRUE
+    independentBlend = TRUE
+    geometryShader = TRUE
+    tessellationShader = TRUE
+    sampleRateShading = TRUE
+    dualSrcBlend = TRUE
+    logicOp = TRUE
+    multiDrawIndirect = TRUE
+    drawIndirectFirstInstance = TRUE
+    depthClamp = TRUE
+    depthBiasClamp = TRUE
+    fillModeNonSolid = TRUE
+    depthBounds = TRUE
+    wideLines = TRUE
+    largePoints = TRUE
+    alphaToOne = TRUE
+    multiViewport = TRUE
+    samplerAnisotropy = TRUE
+    textureCompressionETC2 = FALSE
+    textureCompressionASTC_LDR = FALSE
+    textureCompressionBC = TRUE
+    occlusionQueryPrecise = TRUE
+    pipelineStatisticsQuery = TRUE
+    vertexPipelineStoresAndAtomics = TRUE
+    fragmentStoresAndAtomics = TRUE
+    shaderTessellationAndGeometryPointSize = TRUE
+    shaderImageGatherExtended = TRUE
+    shaderStorageImageExtendedFormats = TRUE
+    shaderStorageImageMultisample = TRUE
+    shaderStorageImageReadWithoutFormat = TRUE
+    shaderStorageImageWriteWithoutFormat = TRUE
+    shaderUniformBufferArrayDynamicIndexing = TRUE
+    shaderSampledImageArrayDynamicIndexing = TRUE
+    shaderStorageBufferArrayDynamicIndexing = TRUE
+    shaderStorageImageArrayDynamicIndexing = TRUE
+    shaderClipDistance = TRUE
+    shaderCullDistance = TRUE
+    shaderFloat64 = TRUE
+    shaderInt64 = TRUE
+    shaderInt16 = FALSE
+    shaderResourceResidency = TRUE
+    shaderResourceMinLod = TRUE
+    sparseBinding = TRUE
+    sparseResidencyBuffer = TRUE
+    sparseResidencyImage2D = TRUE
+    sparseResidencyImage3D = TRUE
+    sparseResidency2Samples = TRUE
+    sparseResidency4Samples = TRUE
+    sparseResidency8Samples = TRUE
+    sparseResidency16Samples = TRUE
+    sparseResidencyAliased = TRUE
+    variableMultisampleRate = TRUE
+    inheritedQueries = TRUE
+
+t{0} vkGetPhysicalDeviceFeatures(physicalDevice = 0x177fc062350, pFeatures = 0x177fc4af6a8)
+   pFeatures:
+    robustBufferAccess = TRUE
+    fullDrawIndexUint32 = TRUE
+    imageCubeArray = TRUE
+    independentBlend = TRUE
+    geometryShader = TRUE
+    tessellationShader = TRUE
+    sampleRateShading = TRUE
+    dualSrcBlend = TRUE
+    logicOp = TRUE
+    multiDrawIndirect = TRUE
+    drawIndirectFirstInstance = TRUE
+    depthClamp = TRUE
+    depthBiasClamp = TRUE
+    fillModeNonSolid = TRUE
+    depthBounds = TRUE
+    wideLines = TRUE
+    largePoints = TRUE
+    alphaToOne = TRUE
+    multiViewport = TRUE
+    samplerAnisotropy = TRUE
+    textureCompressionETC2 = FALSE
+    textureCompressionASTC_LDR = FALSE
+    textureCompressionBC = TRUE
+    occlusionQueryPrecise = TRUE
+    pipelineStatisticsQuery = TRUE
+    vertexPipelineStoresAndAtomics = TRUE
+    fragmentStoresAndAtomics = TRUE
+    shaderTessellationAndGeometryPointSize = TRUE
+    shaderImageGatherExtended = TRUE
+    shaderStorageImageExtendedFormats = TRUE
+    shaderStorageImageMultisample = TRUE
+    shaderStorageImageReadWithoutFormat = TRUE
+    shaderStorageImageWriteWithoutFormat = TRUE
+    shaderUniformBufferArrayDynamicIndexing = TRUE
+    shaderSampledImageArrayDynamicIndexing = TRUE
+    shaderStorageBufferArrayDynamicIndexing = TRUE
+    shaderStorageImageArrayDynamicIndexing = TRUE
+    shaderClipDistance = TRUE
+    shaderCullDistance = TRUE
+    shaderFloat64 = TRUE
+    shaderInt64 = TRUE
+    shaderInt16 = FALSE
+    shaderResourceResidency = TRUE
+    shaderResourceMinLod = TRUE
+    sparseBinding = TRUE
+    sparseResidencyBuffer = TRUE
+    sparseResidencyImage2D = TRUE
+    sparseResidencyImage3D = TRUE
+    sparseResidency2Samples = TRUE
+    sparseResidency4Samples = TRUE
+    sparseResidency8Samples = TRUE
+    sparseResidency16Samples = TRUE
+    sparseResidencyAliased = TRUE
+    variableMultisampleRate = TRUE
+    inheritedQueries = TRUE
+
+t{0} vkGetPhysicalDeviceProperties(physicalDevice = 0x177fc062350, pProperties = 0x75420fe770)
+   pProperties:
+    apiVersion = 4194317
+    driverVersion = 1561165824
+    vendorID = 4318
+    deviceID = 5121
+    deviceType = VK_PHYSICAL_DEVICE_TYPE_DISCRETE_GPU
+    deviceName = GTX 960
+    pipelineCacheUUID = 0x75420fe884
+    limits = 0x75420fe898
+    sparseProperties = 0x75420fea90
+     sparseProperties:
+      residencyStandard2DBlockShape = TRUE
+      residencyStandard2DMultisampleBlockShape = TRUE
+      residencyStandard3DBlockShape = TRUE
+      residencyAlignedMipSize = FALSE
+      residencyNonResidentStrict = TRUE
+     limits:
+      maxImageDimension1D = 16384
+      maxImageDimension2D = 16384
+      maxImageDimension3D = 2048
+      maxImageDimensionCube = 16384
+      maxImageArrayLayers = 2048
+      maxTexelBufferElements = 0x8000000
+      maxUniformBufferRange = 0x10000
+      maxStorageBufferRange = 0x7fffffff
+      maxPushConstantsSize = 0x100
+      maxMemoryAllocationCount = 0x1000
+      maxSamplerAllocationCount = 0xfa0
+      bufferImageGranularity = 0x400
+      sparseAddressSpaceSize = 0xffffffffffffffff
+      maxBoundDescriptorSets = 8
+      maxPerStageDescriptorSamplers = 4000
+      maxPerStageDescriptorUniformBuffers = 0xc
+      maxPerStageDescriptorStorageBuffers = 0x10
+      maxPerStageDescriptorSampledImages = 8192
+      maxPerStageDescriptorStorageImages = 8192
+      maxPerStageDescriptorInputAttachments = 8
+      maxPerStageResources = 24612
+      maxDescriptorSetSamplers = 4000
+      maxDescriptorSetUniformBuffers = 0x48
+      maxDescriptorSetUniformBuffersDynamic = 0x48
+      maxDescriptorSetStorageBuffers = 0x60
+      maxDescriptorSetStorageBuffersDynamic = 0x60
+      maxDescriptorSetSampledImages = 49152
+      maxDescriptorSetStorageImages = 49152
+      maxDescriptorSetInputAttachments = 8
+      maxVertexInputAttributes = 32
+      maxVertexInputBindings = 32
+      maxVertexInputAttributeOffset = 0x7ff
+      maxVertexInputBindingStride = 2048
+      maxVertexOutputComponents = 128
+      maxTessellationGenerationLevel = 64
+      maxTessellationPatchSize = 0x20
+      maxTessellationControlPerVertexInputComponents = 128
+      maxTessellationControlPerVertexOutputComponents = 128
+      maxTessellationControlPerPatchOutputComponents = 120
+      maxTessellationControlTotalOutputComponents = 4216
+      maxTessellationEvaluationInputComponents = 128
+      maxTessellationEvaluationOutputComponents = 128
+      maxGeometryShaderInvocations = 32
+      maxGeometryInputComponents = 128
+      maxGeometryOutputComponents = 128
+      maxGeometryOutputVertices = 1024
+      maxGeometryTotalOutputComponents = 1024
+      maxFragmentInputComponents = 128
+      maxFragmentOutputAttachments = 8
+      maxFragmentDualSrcAttachments = 1
+      maxFragmentCombinedOutputResources = 16
+      maxComputeSharedMemorySize = 0xc000
+      maxComputeWorkGroupCount = 0x75420fe974
+      maxComputeWorkGroupInvocations = 1536
+      maxComputeWorkGroupSize = 0x75420fe984
+      subPixelPrecisionBits = 0x8
+      subTexelPrecisionBits = 0x8
+      mipmapPrecisionBits = 0x8
+      maxDrawIndexedIndexValue = 0xffffffff
+      maxDrawIndirectCount = 0xffffffff
+      maxSamplerLodBias = 15
+      maxSamplerAnisotropy = 16
+      maxViewports = 16
+      maxViewportDimensions = 0x75420fe9b0
+      viewportBoundsRange = 0x75420fe9b8
+      viewportSubPixelBits = 0x8
+      minMemoryMapAlignment = 0x40
+      minTexelBufferOffsetAlignment = 0x10
+      minUniformBufferOffsetAlignment = 0x100
+      minStorageBufferOffsetAlignment = 0x20
+      minTexelOffset = 0xfffffff8
+      maxTexelOffset = 0x7
+      minTexelGatherOffset = 0xffffffe0
+      maxTexelGatherOffset = 0x1f
+      minInterpolationOffset = -0.5
+      maxInterpolationOffset = 0.4375
+      subPixelInterpolationOffsetBits = 0x4
+      maxFramebufferWidth = 0x4000
+      maxFramebufferHeight = 0x4000
+      maxFramebufferLayers = 0x800
+      framebufferColorSampleCounts = 0xf
+      framebufferDepthSampleCounts = 0xf
+      framebufferStencilSampleCounts = 0x1f
+      framebufferNoAttachmentsSampleCounts = 0xf
+      maxColorAttachments = 8
+      sampledImageColorSampleCounts = 0xf
+      sampledImageIntegerSampleCounts = 0xf
+      sampledImageDepthSampleCounts = 0xf
+      sampledImageStencilSampleCounts = 0x1f
+      storageImageSampleCounts = 0xf
+      maxSampleMaskWords = 0x1
+      timestampComputeAndGraphics = TRUE
+      timestampPeriod = 1
+      maxClipDistances = 8
+      maxCullDistances = 8
+      maxCombinedClipAndCullDistances = 8
+      discreteQueuePriorities = 2
+      pointSizeRange = 0x75420fea54
+      lineWidthRange = 0x75420fea5c
+      pointSizeGranularity = 0.125
+      lineWidthGranularity = 0.125
+      strictLines = TRUE
+      standardSampleLocations = TRUE
+      optimalBufferCopyOffsetAlignment = 0x1
+      optimalBufferCopyRowPitchAlignment = 0x1
+      nonCoherentAtomSize = 0x40
+       lineWidthRange[0] = 0.5
+       lineWidthRange[1] = 10
+       pointSizeRange[0] = 1
+       pointSizeRange[1] = 189.875
+       viewportBoundsRange[0] = -32768
+       viewportBoundsRange[1] = 32768
+       maxViewportDimensions[0] = 16384
+       maxViewportDimensions[1] = 16384
+       maxComputeWorkGroupSize[0] = 1536
+       maxComputeWorkGroupSize[1] = 1024
+       maxComputeWorkGroupSize[2] = 64
+       maxComputeWorkGroupCount[0] = 2147483647
+       maxComputeWorkGroupCount[1] = 65535
+       maxComputeWorkGroupCount[2] = 65535
+     pipelineCacheUUID[0] = 0x9f
+     pipelineCacheUUID[1] = 0x81
+     pipelineCacheUUID[2] = 0x2d
+     pipelineCacheUUID[3] = 0xad
+     pipelineCacheUUID[4] = 0xa
+     pipelineCacheUUID[5] = 0x64
+     pipelineCacheUUID[6] = 0xfe
+     pipelineCacheUUID[7] = 0x21
+     pipelineCacheUUID[8] = 0x71
+     pipelineCacheUUID[9] = 0x5
+     pipelineCacheUUID[10] = 0xa8
+     pipelineCacheUUID[11] = 0xd4
+     pipelineCacheUUID[12] = 0x35
+     pipelineCacheUUID[13] = 0x21
+     pipelineCacheUUID[14] = 0x81
+     pipelineCacheUUID[15] = 0xb8
+
+t{0} vkGetPhysicalDeviceQueueFamilyProperties(physicalDevice = 0x177fc062350, *pQueueFamilyPropertyCount = 0x2, pQueueFamilyProperties = 0x0)
+t{0} vkGetPhysicalDeviceQueueFamilyProperties(physicalDevice = 0x177fc062350, *pQueueFamilyPropertyCount = 0x2, pQueueFamilyProperties = 0x177fbe8b6e0)
+   pQueueFamilyProperties:
+    queueFlags = 0xf
+    queueCount = 0x10
+    timestampValidBits = 0x40
+    minImageTransferGranularity = 0x177fbe8b6ec
+     minImageTransferGranularity:
+      width = 1
+      height = 1
+      depth = 1
+
+t{0} vkGetPhysicalDeviceSurfaceSupportKHR(physicalDevice = 0x177fc062350, queueFamilyIndex = 0x0, surface = 0x177fc062010, pSupported = 00000075420FE944) = VK_SUCCESS
+t{0} vkGetPhysicalDeviceSurfaceCapabilitiesKHR(physicalDevice = 0x177fc062350, surface = 0x177fc062010, pSurfaceCapabilities = 0x75420fe968) = VK_SUCCESS
+   pSurfaceCapabilities:
+    minImageCount = 0x2
+    maxImageCount = 0x8
+    currentExtent = 0x75420fe970
+    minImageExtent = 0x75420fe978
+    maxImageExtent = 0x75420fe980
+    maxImageArrayLayers = 2048
+    supportedTransforms = 0x1
+    currentTransform = VK_SURFACE_TRANSFORM_IDENTITY_BIT_KHR
+    supportedCompositeAlpha = 0x1
+    supportedUsageFlags = 0x9f
+     maxImageExtent:
+      width = 16384
+      height = 16384
+     minImageExtent:
+      width = 1
+      height = 1
+     currentExtent:
+      width = 720
+      height = 1028
+
+t{0} vkGetPhysicalDeviceSurfaceFormatsKHR(physicalDevice = 0x177fc062350, surface = 0x177fc062010, *pSurfaceFormatCount = 0x2, pSurfaceFormats = 0x0) = VK_SUCCESS
+t{0} vkGetPhysicalDeviceSurfaceFormatsKHR(physicalDevice = 0x177fc062350, surface = 0x177fc062010, *pSurfaceFormatCount = 0x2, pSurfaceFormats = 0x177fc4b0f40) = VK_SUCCESS
+   pSurfaceFormats[0]:
+    format = VK_FORMAT_B8G8R8A8_UNORM
+    colorSpace = VK_COLOR_SPACE_SRGB_NONLINEAR_KHR
+
+   pSurfaceFormats[1]:
+    format = VK_FORMAT_B8G8R8A8_SRGB
+    colorSpace = VK_COLOR_SPACE_SRGB_NONLINEAR_KHR
+
+t{0} vkGetPhysicalDeviceSurfacePresentModesKHR(physicalDevice = 0x177fc062350, surface = 0x177fc062010, *pPresentModeCount = 0x3, pPresentModes = 0x0) = VK_SUCCESS
+t{0} vkGetPhysicalDeviceSurfacePresentModesKHR(physicalDevice = 0x177fc062350, surface = 0x177fc062010, *pPresentModeCount = 0x3, pPresentModes = 0x177fc4d9a70) = VK_SUCCESS
+   pPresentModes[0]:
+    2
+   pPresentModes[1]:
+    3
+   pPresentModes[2]:
+    1
+t{0} vkGetPhysicalDeviceProperties(physicalDevice = 0x177fc062350, pProperties = 0x75420fe9c0)
+   pProperties:
+    apiVersion = 4194317
+    driverVersion = 1561165824
+    vendorID = 4318
+    deviceID = 5121
+    deviceType = VK_PHYSICAL_DEVICE_TYPE_DISCRETE_GPU
+    deviceName = GTX 960
+    pipelineCacheUUID = 0x75420fead4
+    limits = 0x75420feae8
+    sparseProperties = 0x75420fece0
+     sparseProperties:
+      residencyStandard2DBlockShape = TRUE
+      residencyStandard2DMultisampleBlockShape = TRUE
+      residencyStandard3DBlockShape = TRUE
+      residencyAlignedMipSize = FALSE
+      residencyNonResidentStrict = TRUE
+     limits:
+      maxImageDimension1D = 16384
+      maxImageDimension2D = 16384
+      maxImageDimension3D = 2048
+      maxImageDimensionCube = 16384
+      maxImageArrayLayers = 2048
+      maxTexelBufferElements = 0x8000000
+      maxUniformBufferRange = 0x10000
+      maxStorageBufferRange = 0x7fffffff
+      maxPushConstantsSize = 0x100
+      maxMemoryAllocationCount = 0x1000
+      maxSamplerAllocationCount = 0xfa0
+      bufferImageGranularity = 0x400
+      sparseAddressSpaceSize = 0xffffffffffffffff
+      maxBoundDescriptorSets = 8
+      maxPerStageDescriptorSamplers = 4000
+      maxPerStageDescriptorUniformBuffers = 0xc
+      maxPerStageDescriptorStorageBuffers = 0x10
+      maxPerStageDescriptorSampledImages = 8192
+      maxPerStageDescriptorStorageImages = 8192
+      maxPerStageDescriptorInputAttachments = 8
+      maxPerStageResources = 24612
+      maxDescriptorSetSamplers = 4000
+      maxDescriptorSetUniformBuffers = 0x48
+      maxDescriptorSetUniformBuffersDynamic = 0x48
+      maxDescriptorSetStorageBuffers = 0x60
+      maxDescriptorSetStorageBuffersDynamic = 0x60
+      maxDescriptorSetSampledImages = 49152
+      maxDescriptorSetStorageImages = 49152
+      maxDescriptorSetInputAttachments = 8
+      maxVertexInputAttributes = 32
+      maxVertexInputBindings = 32
+      maxVertexInputAttributeOffset = 0x7ff
+      maxVertexInputBindingStride = 2048
+      maxVertexOutputComponents = 128
+      maxTessellationGenerationLevel = 64
+      maxTessellationPatchSize = 0x20
+      maxTessellationControlPerVertexInputComponents = 128
+      maxTessellationControlPerVertexOutputComponents = 128
+      maxTessellationControlPerPatchOutputComponents = 120
+      maxTessellationControlTotalOutputComponents = 4216
+      maxTessellationEvaluationInputComponents = 128
+      maxTessellationEvaluationOutputComponents = 128
+      maxGeometryShaderInvocations = 32
+      maxGeometryInputComponents = 128
+      maxGeometryOutputComponents = 128
+      maxGeometryOutputVertices = 1024
+      maxGeometryTotalOutputComponents = 1024
+      maxFragmentInputComponents = 128
+      maxFragmentOutputAttachments = 8
+      maxFragmentDualSrcAttachments = 1
+      maxFragmentCombinedOutputResources = 16
+      maxComputeSharedMemorySize = 0xc000
+      maxComputeWorkGroupCount = 0x75420febc4
+      maxComputeWorkGroupInvocations = 1536
+      maxComputeWorkGroupSize = 0x75420febd4
+      subPixelPrecisionBits = 0x8
+      subTexelPrecisionBits = 0x8
+      mipmapPrecisionBits = 0x8
+      maxDrawIndexedIndexValue = 0xffffffff
+      maxDrawIndirectCount = 0xffffffff
+      maxSamplerLodBias = 15
+      maxSamplerAnisotropy = 16
+      maxViewports = 16
+      maxViewportDimensions = 0x75420fec00
+      viewportBoundsRange = 0x75420fec08
+      viewportSubPixelBits = 0x8
+      minMemoryMapAlignment = 0x40
+      minTexelBufferOffsetAlignment = 0x10
+      minUniformBufferOffsetAlignment = 0x100
+      minStorageBufferOffsetAlignment = 0x20
+      minTexelOffset = 0xfffffff8
+      maxTexelOffset = 0x7
+      minTexelGatherOffset = 0xffffffe0
+      maxTexelGatherOffset = 0x1f
+      minInterpolationOffset = -0.5
+      maxInterpolationOffset = 0.4375
+      subPixelInterpolationOffsetBits = 0x4
+      maxFramebufferWidth = 0x4000
+      maxFramebufferHeight = 0x4000
+      maxFramebufferLayers = 0x800
+      framebufferColorSampleCounts = 0xf
+      framebufferDepthSampleCounts = 0xf
+      framebufferStencilSampleCounts = 0x1f
+      framebufferNoAttachmentsSampleCounts = 0xf
+      maxColorAttachments = 8
+      sampledImageColorSampleCounts = 0xf
+      sampledImageIntegerSampleCounts = 0xf
+      sampledImageDepthSampleCounts = 0xf
+      sampledImageStencilSampleCounts = 0x1f
+      storageImageSampleCounts = 0xf
+      maxSampleMaskWords = 0x1
+      timestampComputeAndGraphics = TRUE
+      timestampPeriod = 1
+      maxClipDistances = 8
+      maxCullDistances = 8
+      maxCombinedClipAndCullDistances = 8
+      discreteQueuePriorities = 2
+      pointSizeRange = 0x75420feca4
+      lineWidthRange = 0x75420fecac
+      pointSizeGranularity = 0.125
+      lineWidthGranularity = 0.125
+      strictLines = TRUE
+      standardSampleLocations = TRUE
+      optimalBufferCopyOffsetAlignment = 0x1
+      optimalBufferCopyRowPitchAlignment = 0x1
+      nonCoherentAtomSize = 0x40
+       lineWidthRange[0] = 0.5
+       lineWidthRange[1] = 10
+       pointSizeRange[0] = 1
+       pointSizeRange[1] = 189.875
+       viewportBoundsRange[0] = -32768
+       viewportBoundsRange[1] = 32768
+       maxViewportDimensions[0] = 16384
+       maxViewportDimensions[1] = 16384
+       maxComputeWorkGroupSize[0] = 1536
+       maxComputeWorkGroupSize[1] = 1024
+       maxComputeWorkGroupSize[2] = 64
+       maxComputeWorkGroupCount[0] = 2147483647
+       maxComputeWorkGroupCount[1] = 65535
+       maxComputeWorkGroupCount[2] = 65535
+     pipelineCacheUUID[0] = 0x9f
+     pipelineCacheUUID[1] = 0x81
+     pipelineCacheUUID[2] = 0x2d
+     pipelineCacheUUID[3] = 0xad
+     pipelineCacheUUID[4] = 0xa
+     pipelineCacheUUID[5] = 0x64
+     pipelineCacheUUID[6] = 0xfe
+     pipelineCacheUUID[7] = 0x21
+     pipelineCacheUUID[8] = 0x71
+     pipelineCacheUUID[9] = 0x5
+     pipelineCacheUUID[10] = 0xa8
+     pipelineCacheUUID[11] = 0xd4
+     pipelineCacheUUID[12] = 0x35
+     pipelineCacheUUID[13] = 0x21
+     pipelineCacheUUID[14] = 0x81
+     pipelineCacheUUID[15] = 0xb8
+
+t{0} vkGetPhysicalDeviceFeatures(physicalDevice = 0x177fc062350, pFeatures = 0x75420fec20)
+   pFeatures:
+    robustBufferAccess = TRUE
+    fullDrawIndexUint32 = TRUE
+    imageCubeArray = TRUE
+    independentBlend = TRUE
+    geometryShader = TRUE
+    tessellationShader = TRUE
+    sampleRateShading = TRUE
+    dualSrcBlend = TRUE
+    logicOp = TRUE
+    multiDrawIndirect = TRUE
+    drawIndirectFirstInstance = TRUE
+    depthClamp = TRUE
+    depthBiasClamp = TRUE
+    fillModeNonSolid = TRUE
+    depthBounds = TRUE
+    wideLines = TRUE
+    largePoints = TRUE
+    alphaToOne = TRUE
+    multiViewport = TRUE
+    samplerAnisotropy = TRUE
+    textureCompressionETC2 = FALSE
+    textureCompressionASTC_LDR = FALSE
+    textureCompressionBC = TRUE
+    occlusionQueryPrecise = TRUE
+    pipelineStatisticsQuery = TRUE
+    vertexPipelineStoresAndAtomics = TRUE
+    fragmentStoresAndAtomics = TRUE
+    shaderTessellationAndGeometryPointSize = TRUE
+    shaderImageGatherExtended = TRUE
+    shaderStorageImageExtendedFormats = TRUE
+    shaderStorageImageMultisample = TRUE
+    shaderStorageImageReadWithoutFormat = TRUE
+    shaderStorageImageWriteWithoutFormat = TRUE
+    shaderUniformBufferArrayDynamicIndexing = TRUE
+    shaderSampledImageArrayDynamicIndexing = TRUE
+    shaderStorageBufferArrayDynamicIndexing = TRUE
+    shaderStorageImageArrayDynamicIndexing = TRUE
+    shaderClipDistance = TRUE
+    shaderCullDistance = TRUE
+    shaderFloat64 = TRUE
+    shaderInt64 = TRUE
+    shaderInt16 = FALSE
+    shaderResourceResidency = TRUE
+    shaderResourceMinLod = TRUE
+    sparseBinding = TRUE
+    sparseResidencyBuffer = TRUE
+    sparseResidencyImage2D = TRUE
+    sparseResidencyImage3D = TRUE
+    sparseResidency2Samples = TRUE
+    sparseResidency4Samples = TRUE
+    sparseResidency8Samples = TRUE
+    sparseResidency16Samples = TRUE
+    sparseResidencyAliased = TRUE
+    variableMultisampleRate = TRUE
+    inheritedQueries = TRUE
+
+t{0} vkGetPhysicalDeviceMemoryProperties(physicalDevice = 0x177fc062350, pMemoryProperties = 0x75420feaf0)
+   pMemoryProperties:
+    memoryTypeCount = 0xb
+    memoryTypes = 0x75420feaf4
+    memoryHeapCount = 0x2
+    memoryHeaps = 0x75420febf8
+     memoryHeaps[0]:
+      size = 0x100000000
+      flags = 0x1
+     memoryHeaps[1]:
+      size = 0x3fb900000
+      flags = 0x0
+     memoryHeaps[2]:
+      size = 0xcccccccccccccccc
+      flags = 0x0
+     memoryHeaps[3]:
+      size = 0xcccccccccccccccc
+      flags = 0x0
+     memoryHeaps[4]:
+      size = 0xcccccccccccccccc
+      flags = 0x0
+     memoryHeaps[5]:
+      size = 0xcccccccccccccccc
+      flags = 0x0
+     memoryHeaps[6]:
+      size = 0xcccccccccccccccc
+      flags = 0x0
+     memoryHeaps[7]:
+      size = 0xcccccccccccccccc
+      flags = 0x0
+     memoryHeaps[8]:
+      size = 0xcccccccccccccccc
+      flags = 0x0
+     memoryHeaps[9]:
+      size = 0xcccccccccccccccc
+      flags = 0x0
+     memoryHeaps[10]:
+      size = 0xcccccccccccccccc
+      flags = 0x0
+     memoryHeaps[11]:
+      size = 0xcccccccccccccccc
+      flags = 0x0
+     memoryHeaps[12]:
+      size = 0xcccccccccccccccc
+      flags = 0x0
+     memoryHeaps[13]:
+      size = 0xcccccccccccccccc
+      flags = 0x0
+     memoryHeaps[14]:
+      size = 0xcccccccccccccccc
+      flags = 0x0
+     memoryHeaps[15]:
+      size = 0xcccccccccccccccc
+      flags = 0x0
+     memoryTypes[0]:
+      propertyFlags = 0x0
+      heapIndex = 0x1
+     memoryTypes[1]:
+      propertyFlags = 0x0
+      heapIndex = 0x1
+     memoryTypes[2]:
+      propertyFlags = 0x0
+      heapIndex = 0x1
+     memoryTypes[3]:
+      propertyFlags = 0x0
+      heapIndex = 0x1
+     memoryTypes[4]:
+      propertyFlags = 0x0
+      heapIndex = 0x1
+     memoryTypes[5]:
+      propertyFlags = 0x0
+      heapIndex = 0x1
+     memoryTypes[6]:
+      propertyFlags = 0x0
+      heapIndex = 0x1
+     memoryTypes[7]:
+      propertyFlags = 0x1
+      heapIndex = 0x0
+     memoryTypes[8]:
+      propertyFlags = 0x1
+      heapIndex = 0x0
+     memoryTypes[9]:
+      propertyFlags = 0x6
+      heapIndex = 0x1
+     memoryTypes[10]:
+      propertyFlags = 0xe
+      heapIndex = 0x1
+     memoryTypes[11]:
+      propertyFlags = 0x0
+      heapIndex = 0xcccccccc
+     memoryTypes[12]:
+      propertyFlags = 0x0
+      heapIndex = 0xcccccccc
+     memoryTypes[13]:
+      propertyFlags = 0x0
+      heapIndex = 0xcccccccc
+     memoryTypes[14]:
+      propertyFlags = 0x0
+      heapIndex = 0xcccccccc
+     memoryTypes[15]:
+      propertyFlags = 0x0
+      heapIndex = 0xcccccccc
+     memoryTypes[16]:
+      propertyFlags = 0x0
+      heapIndex = 0xcccccccc
+     memoryTypes[17]:
+      propertyFlags = 0x0
+      heapIndex = 0xcccccccc
+     memoryTypes[18]:
+      propertyFlags = 0x0
+      heapIndex = 0xcccccccc
+     memoryTypes[19]:
+      propertyFlags = 0x0
+      heapIndex = 0xcccccccc
+     memoryTypes[20]:
+      propertyFlags = 0x0
+      heapIndex = 0xcccccccc
+     memoryTypes[21]:
+      propertyFlags = 0x0
+      heapIndex = 0xcccccccc
+     memoryTypes[22]:
+      propertyFlags = 0x0
+      heapIndex = 0xcccccccc
+     memoryTypes[23]:
+      propertyFlags = 0x0
+      heapIndex = 0xcccccccc
+     memoryTypes[24]:
+      propertyFlags = 0x0
+      heapIndex = 0xcccccccc
+     memoryTypes[25]:
+      propertyFlags = 0x0
+      heapIndex = 0xcccccccc
+     memoryTypes[26]:
+      propertyFlags = 0x0
+      heapIndex = 0xcccccccc
+     memoryTypes[27]:
+      propertyFlags = 0x0
+      heapIndex = 0xcccccccc
+     memoryTypes[28]:
+      propertyFlags = 0x0
+      heapIndex = 0xcccccccc
+     memoryTypes[29]:
+      propertyFlags = 0x0
+      heapIndex = 0xcccccccc
+     memoryTypes[30]:
+      propertyFlags = 0x0
+      heapIndex = 0xcccccccc
+     memoryTypes[31]:
+      propertyFlags = 0x0
+      heapIndex = 0xcccccccc
+
+t{0} vkCreateDevice(physicalDevice = 0x177fc062350, pCreateInfo = 0x75420febf0, pAllocator = 0x0, *pDevice = 0x177fc51f990) = VK_SUCCESS
+   pCreateInfo:
+    sType = VK_STRUCTURE_TYPE_DEVICE_CREATE_INFO
+    pNext = 0x75420febc8
+    flags = 0x0
+    queueCreateInfoCount = 0x1
+    pQueueCreateInfos = 0x75420ff2f8
+    enabledLayerCount = 0x2
+    ppEnabledLayerNames = 0x7ff796d73020
+    enabledExtensionCount = 0x1
+    ppEnabledExtensionNames = 0x177fc4b11c0
+    pEnabledFeatures = 0x177f9fb13d0
+     pEnabledFeatures:
+      robustBufferAccess = TRUE
+      fullDrawIndexUint32 = TRUE
+      imageCubeArray = TRUE
+      independentBlend = TRUE
+      geometryShader = TRUE
+      tessellationShader = TRUE
+      sampleRateShading = TRUE
+      dualSrcBlend = TRUE
+      logicOp = TRUE
+      multiDrawIndirect = TRUE
+      drawIndirectFirstInstance = TRUE
+      depthClamp = TRUE
+      depthBiasClamp = TRUE
+      fillModeNonSolid = TRUE
+      depthBounds = TRUE
+      wideLines = TRUE
+      largePoints = TRUE
+      alphaToOne = TRUE
+      multiViewport = TRUE
+      samplerAnisotropy = TRUE
+      textureCompressionETC2 = FALSE
+      textureCompressionASTC_LDR = FALSE
+      textureCompressionBC = TRUE
+      occlusionQueryPrecise = TRUE
+      pipelineStatisticsQuery = TRUE
+      vertexPipelineStoresAndAtomics = TRUE
+      fragmentStoresAndAtomics = TRUE
+      shaderTessellationAndGeometryPointSize = TRUE
+      shaderImageGatherExtended = TRUE
+      shaderStorageImageExtendedFormats = TRUE
+      shaderStorageImageMultisample = TRUE
+      shaderStorageImageReadWithoutFormat = TRUE
+      shaderStorageImageWriteWithoutFormat = TRUE
+      shaderUniformBufferArrayDynamicIndexing = TRUE
+      shaderSampledImageArrayDynamicIndexing = TRUE
+      shaderStorageBufferArrayDynamicIndexing = TRUE
+      shaderStorageImageArrayDynamicIndexing = TRUE
+      shaderClipDistance = TRUE
+      shaderCullDistance = TRUE
+      shaderFloat64 = TRUE
+      shaderInt64 = TRUE
+      shaderInt16 = FALSE
+      shaderResourceResidency = TRUE
+      shaderResourceMinLod = TRUE
+      sparseBinding = TRUE
+      sparseResidencyBuffer = TRUE
+      sparseResidencyImage2D = TRUE
+      sparseResidencyImage3D = TRUE
+      sparseResidency2Samples = TRUE
+      sparseResidency4Samples = TRUE
+      sparseResidency8Samples = TRUE
+      sparseResidency16Samples = TRUE
+      sparseResidencyAliased = TRUE
+      variableMultisampleRate = TRUE
+      inheritedQueries = TRUE
+     pQueueCreateInfos[0]:
+      sType = VK_STRUCTURE_TYPE_DEVICE_QUEUE_CREATE_INFO
+      pNext = 0x0
+      flags = 0x0
+      queueFamilyIndex = 0x0
+      queueCount = 0x1
+      pQueuePriorities = 0x75420ff2d4
+       pQueuePriorities[0] = 0x0
+     pNext:
+
+t{0} vkGetPhysicalDeviceProperties(physicalDevice = 0x177fc062350, pProperties = 0x177fc51f078)
+   pProperties:
+    apiVersion = 4194317
+    driverVersion = 1561165824
+    vendorID = 4318
+    deviceID = 5121
+    deviceType = VK_PHYSICAL_DEVICE_TYPE_DISCRETE_GPU
+    deviceName = GTX 960
+    pipelineCacheUUID = 0x177fc51f18c
+    limits = 0x177fc51f1a0
+    sparseProperties = 0x177fc51f398
+     sparseProperties:
+      residencyStandard2DBlockShape = TRUE
+      residencyStandard2DMultisampleBlockShape = TRUE
+      residencyStandard3DBlockShape = TRUE
+      residencyAlignedMipSize = FALSE
+      residencyNonResidentStrict = TRUE
+     limits:
+      maxImageDimension1D = 16384
+      maxImageDimension2D = 16384
+      maxImageDimension3D = 2048
+      maxImageDimensionCube = 16384
+      maxImageArrayLayers = 2048
+      maxTexelBufferElements = 0x8000000
+      maxUniformBufferRange = 0x10000
+      maxStorageBufferRange = 0x7fffffff
+      maxPushConstantsSize = 0x100
+      maxMemoryAllocationCount = 0x1000
+      maxSamplerAllocationCount = 0xfa0
+      bufferImageGranularity = 0x400
+      sparseAddressSpaceSize = 0xffffffffffffffff
+      maxBoundDescriptorSets = 8
+      maxPerStageDescriptorSamplers = 4000
+      maxPerStageDescriptorUniformBuffers = 0xc
+      maxPerStageDescriptorStorageBuffers = 0x10
+      maxPerStageDescriptorSampledImages = 8192
+      maxPerStageDescriptorStorageImages = 8192
+      maxPerStageDescriptorInputAttachments = 8
+      maxPerStageResources = 24612
+      maxDescriptorSetSamplers = 4000
+      maxDescriptorSetUniformBuffers = 0x48
+      maxDescriptorSetUniformBuffersDynamic = 0x48
+      maxDescriptorSetStorageBuffers = 0x60
+      maxDescriptorSetStorageBuffersDynamic = 0x60
+      maxDescriptorSetSampledImages = 49152
+      maxDescriptorSetStorageImages = 49152
+      maxDescriptorSetInputAttachments = 8
+      maxVertexInputAttributes = 32
+      maxVertexInputBindings = 32
+      maxVertexInputAttributeOffset = 0x7ff
+      maxVertexInputBindingStride = 2048
+      maxVertexOutputComponents = 128
+      maxTessellationGenerationLevel = 64
+      maxTessellationPatchSize = 0x20
+      maxTessellationControlPerVertexInputComponents = 128
+      maxTessellationControlPerVertexOutputComponents = 128
+      maxTessellationControlPerPatchOutputComponents = 120
+      maxTessellationControlTotalOutputComponents = 4216
+      maxTessellationEvaluationInputComponents = 128
+      maxTessellationEvaluationOutputComponents = 128
+      maxGeometryShaderInvocations = 32
+      maxGeometryInputComponents = 128
+      maxGeometryOutputComponents = 128
+      maxGeometryOutputVertices = 1024
+      maxGeometryTotalOutputComponents = 1024
+      maxFragmentInputComponents = 128
+      maxFragmentOutputAttachments = 8
+      maxFragmentDualSrcAttachments = 1
+      maxFragmentCombinedOutputResources = 16
+      maxComputeSharedMemorySize = 0xc000
+      maxComputeWorkGroupCount = 0x177fc51f27c
+      maxComputeWorkGroupInvocations = 1536
+      maxComputeWorkGroupSize = 0x177fc51f28c
+      subPixelPrecisionBits = 0x8
+      subTexelPrecisionBits = 0x8
+      mipmapPrecisionBits = 0x8
+      maxDrawIndexedIndexValue = 0xffffffff
+      maxDrawIndirectCount = 0xffffffff
+      maxSamplerLodBias = 15
+      maxSamplerAnisotropy = 16
+      maxViewports = 16
+      maxViewportDimensions = 0x177fc51f2b8
+      viewportBoundsRange = 0x177fc51f2c0
+      viewportSubPixelBits = 0x8
+      minMemoryMapAlignment = 0x40
+      minTexelBufferOffsetAlignment = 0x10
+      minUniformBufferOffsetAlignment = 0x100
+      minStorageBufferOffsetAlignment = 0x20
+      minTexelOffset = 0xfffffff8
+      maxTexelOffset = 0x7
+      minTexelGatherOffset = 0xffffffe0
+      maxTexelGatherOffset = 0x1f
+      minInterpolationOffset = -0.5
+      maxInterpolationOffset = 0.4375
+      subPixelInterpolationOffsetBits = 0x4
+      maxFramebufferWidth = 0x4000
+      maxFramebufferHeight = 0x4000
+      maxFramebufferLayers = 0x800
+      framebufferColorSampleCounts = 0xf
+      framebufferDepthSampleCounts = 0xf
+      framebufferStencilSampleCounts = 0x1f
+      framebufferNoAttachmentsSampleCounts = 0xf
+      maxColorAttachments = 8
+      sampledImageColorSampleCounts = 0xf
+      sampledImageIntegerSampleCounts = 0xf
+      sampledImageDepthSampleCounts = 0xf
+      sampledImageStencilSampleCounts = 0x1f
+      storageImageSampleCounts = 0xf
+      maxSampleMaskWords = 0x1
+      timestampComputeAndGraphics = TRUE
+      timestampPeriod = 1
+      maxClipDistances = 8
+      maxCullDistances = 8
+      maxCombinedClipAndCullDistances = 8
+      discreteQueuePriorities = 2
+      pointSizeRange = 0x177fc51f35c
+      lineWidthRange = 0x177fc51f364
+      pointSizeGranularity = 0.125
+      lineWidthGranularity = 0.125
+      strictLines = TRUE
+      standardSampleLocations = TRUE
+      optimalBufferCopyOffsetAlignment = 0x1
+      optimalBufferCopyRowPitchAlignment = 0x1
+      nonCoherentAtomSize = 0x40
+       lineWidthRange[0] = 0.5
+       lineWidthRange[1] = 10
+       pointSizeRange[0] = 1
+       pointSizeRange[1] = 189.875
+       viewportBoundsRange[0] = -32768
+       viewportBoundsRange[1] = 32768
+       maxViewportDimensions[0] = 16384
+       maxViewportDimensions[1] = 16384
+       maxComputeWorkGroupSize[0] = 1536
+       maxComputeWorkGroupSize[1] = 1024
+       maxComputeWorkGroupSize[2] = 64
+       maxComputeWorkGroupCount[0] = 2147483647
+       maxComputeWorkGroupCount[1] = 65535
+       maxComputeWorkGroupCount[2] = 65535
+     pipelineCacheUUID[0] = 0x9f
+     pipelineCacheUUID[1] = 0x81
+     pipelineCacheUUID[2] = 0x2d
+     pipelineCacheUUID[3] = 0xad
+     pipelineCacheUUID[4] = 0xa
+     pipelineCacheUUID[5] = 0x64
+     pipelineCacheUUID[6] = 0xfe
+     pipelineCacheUUID[7] = 0x21
+     pipelineCacheUUID[8] = 0x71
+     pipelineCacheUUID[9] = 0x5
+     pipelineCacheUUID[10] = 0xa8
+     pipelineCacheUUID[11] = 0xd4
+     pipelineCacheUUID[12] = 0x35
+     pipelineCacheUUID[13] = 0x21
+     pipelineCacheUUID[14] = 0x81
+     pipelineCacheUUID[15] = 0xb8
+
+t{0} vkGetPhysicalDeviceQueueFamilyProperties(physicalDevice = 0x177fc062350, *pQueueFamilyPropertyCount = 0x2, pQueueFamilyProperties = 0x0)
+t{0} vkGetPhysicalDeviceQueueFamilyProperties(physicalDevice = 0x177fc062350, *pQueueFamilyPropertyCount = 0x2, pQueueFamilyProperties = 0x177fc797490)
+   pQueueFamilyProperties:
+    queueFlags = 0xf
+    queueCount = 0x10
+    timestampValidBits = 0x40
+    minImageTransferGranularity = 0x177fc79749c
+     minImageTransferGranularity:
+      width = 1
+      height = 1
+      depth = 1
+
+t{0} vkGetPhysicalDeviceMemoryProperties(physicalDevice = 0x177fc062350, pMemoryProperties = 0x177fc51f4a8)
+   pMemoryProperties:
+    memoryTypeCount = 0xb
+    memoryTypes = 0x177fc51f4ac
+    memoryHeapCount = 0x2
+    memoryHeaps = 0x177fc51f5b0
+     memoryHeaps[0]:
+      size = 0x100000000
+      flags = 0x1
+     memoryHeaps[1]:
+      size = 0x3fb900000
+      flags = 0x0
+     memoryHeaps[2]:
+      size = 0x0
+      flags = 0x0
+     memoryHeaps[3]:
+      size = 0x0
+      flags = 0x0
+     memoryHeaps[4]:
+      size = 0x0
+      flags = 0x0
+     memoryHeaps[5]:
+      size = 0x0
+      flags = 0x0
+     memoryHeaps[6]:
+      size = 0x0
+      flags = 0x0
+     memoryHeaps[7]:
+      size = 0x0
+      flags = 0x0
+     memoryHeaps[8]:
+      size = 0x0
+      flags = 0x0
+     memoryHeaps[9]:
+      size = 0x0
+      flags = 0x0
+     memoryHeaps[10]:
+      size = 0x0
+      flags = 0x0
+     memoryHeaps[11]:
+      size = 0x0
+      flags = 0x0
+     memoryHeaps[12]:
+      size = 0x0
+      flags = 0x0
+     memoryHeaps[13]:
+      size = 0x0
+      flags = 0x0
+     memoryHeaps[14]:
+      size = 0x0
+      flags = 0x0
+     memoryHeaps[15]:
+      size = 0x0
+      flags = 0x0
+     memoryTypes[0]:
+      propertyFlags = 0x0
+      heapIndex = 0x1
+     memoryTypes[1]:
+      propertyFlags = 0x0
+      heapIndex = 0x1
+     memoryTypes[2]:
+      propertyFlags = 0x0
+      heapIndex = 0x1
+     memoryTypes[3]:
+      propertyFlags = 0x0
+      heapIndex = 0x1
+     memoryTypes[4]:
+      propertyFlags = 0x0
+      heapIndex = 0x1
+     memoryTypes[5]:
+      propertyFlags = 0x0
+      heapIndex = 0x1
+     memoryTypes[6]:
+      propertyFlags = 0x0
+      heapIndex = 0x1
+     memoryTypes[7]:
+      propertyFlags = 0x1
+      heapIndex = 0x0
+     memoryTypes[8]:
+      propertyFlags = 0x1
+      heapIndex = 0x0
+     memoryTypes[9]:
+      propertyFlags = 0x6
+      heapIndex = 0x1
+     memoryTypes[10]:
+      propertyFlags = 0xe
+      heapIndex = 0x1
+     memoryTypes[11]:
+      propertyFlags = 0x0
+      heapIndex = 0x0
+     memoryTypes[12]:
+      propertyFlags = 0x0
+      heapIndex = 0x0
+     memoryTypes[13]:
+      propertyFlags = 0x0
+      heapIndex = 0x0
+     memoryTypes[14]:
+      propertyFlags = 0x0
+      heapIndex = 0x0
+     memoryTypes[15]:
+      propertyFlags = 0x0
+      heapIndex = 0x0
+     memoryTypes[16]:
+      propertyFlags = 0x0
+      heapIndex = 0x0
+     memoryTypes[17]:
+      propertyFlags = 0x0
+      heapIndex = 0x0
+     memoryTypes[18]:
+      propertyFlags = 0x0
+      heapIndex = 0x0
+     memoryTypes[19]:
+      propertyFlags = 0x0
+      heapIndex = 0x0
+     memoryTypes[20]:
+      propertyFlags = 0x0
+      heapIndex = 0x0
+     memoryTypes[21]:
+      propertyFlags = 0x0
+      heapIndex = 0x0
+     memoryTypes[22]:
+      propertyFlags = 0x0
+      heapIndex = 0x0
+     memoryTypes[23]:
+      propertyFlags = 0x0
+      heapIndex = 0x0
+     memoryTypes[24]:
+      propertyFlags = 0x0
+      heapIndex = 0x0
+     memoryTypes[25]:
+      propertyFlags = 0x0
+      heapIndex = 0x0
+     memoryTypes[26]:
+      propertyFlags = 0x0
+      heapIndex = 0x0
+     memoryTypes[27]:
+      propertyFlags = 0x0
+      heapIndex = 0x0
+     memoryTypes[28]:
+      propertyFlags = 0x0
+      heapIndex = 0x0
+     memoryTypes[29]:
+      propertyFlags = 0x0
+      heapIndex = 0x0
+     memoryTypes[30]:
+      propertyFlags = 0x0
+      heapIndex = 0x0
+     memoryTypes[31]:
+      propertyFlags = 0x0
+      heapIndex = 0x0
+
+t{0} vkGetPhysicalDeviceProperties(physicalDevice = 0x177fc062350, pProperties = 0x177fc51dd40)
+   pProperties:
+    apiVersion = 4194317
+    driverVersion = 1561165824
+    vendorID = 4318
+    deviceID = 5121
+    deviceType = VK_PHYSICAL_DEVICE_TYPE_DISCRETE_GPU
+    deviceName = GTX 960
+    pipelineCacheUUID = 0x177fc51de54
+    limits = 0x177fc51de68
+    sparseProperties = 0x177fc51e060
+     sparseProperties:
+      residencyStandard2DBlockShape = TRUE
+      residencyStandard2DMultisampleBlockShape = TRUE
+      residencyStandard3DBlockShape = TRUE
+      residencyAlignedMipSize = FALSE
+      residencyNonResidentStrict = TRUE
+     limits:
+      maxImageDimension1D = 16384
+      maxImageDimension2D = 16384
+      maxImageDimension3D = 2048
+      maxImageDimensionCube = 16384
+      maxImageArrayLayers = 2048
+      maxTexelBufferElements = 0x8000000
+      maxUniformBufferRange = 0x10000
+      maxStorageBufferRange = 0x7fffffff
+      maxPushConstantsSize = 0x100
+      maxMemoryAllocationCount = 0x1000
+      maxSamplerAllocationCount = 0xfa0
+      bufferImageGranularity = 0x400
+      sparseAddressSpaceSize = 0xffffffffffffffff
+      maxBoundDescriptorSets = 8
+      maxPerStageDescriptorSamplers = 4000
+      maxPerStageDescriptorUniformBuffers = 0xc
+      maxPerStageDescriptorStorageBuffers = 0x10
+      maxPerStageDescriptorSampledImages = 8192
+      maxPerStageDescriptorStorageImages = 8192
+      maxPerStageDescriptorInputAttachments = 8
+      maxPerStageResources = 24612
+      maxDescriptorSetSamplers = 4000
+      maxDescriptorSetUniformBuffers = 0x48
+      maxDescriptorSetUniformBuffersDynamic = 0x48
+      maxDescriptorSetStorageBuffers = 0x60
+      maxDescriptorSetStorageBuffersDynamic = 0x60
+      maxDescriptorSetSampledImages = 49152
+      maxDescriptorSetStorageImages = 49152
+      maxDescriptorSetInputAttachments = 8
+      maxVertexInputAttributes = 32
+      maxVertexInputBindings = 32
+      maxVertexInputAttributeOffset = 0x7ff
+      maxVertexInputBindingStride = 2048
+      maxVertexOutputComponents = 128
+      maxTessellationGenerationLevel = 64
+      maxTessellationPatchSize = 0x20
+      maxTessellationControlPerVertexInputComponents = 128
+      maxTessellationControlPerVertexOutputComponents = 128
+      maxTessellationControlPerPatchOutputComponents = 120
+      maxTessellationControlTotalOutputComponents = 4216
+      maxTessellationEvaluationInputComponents = 128
+      maxTessellationEvaluationOutputComponents = 128
+      maxGeometryShaderInvocations = 32
+      maxGeometryInputComponents = 128
+      maxGeometryOutputComponents = 128
+      maxGeometryOutputVertices = 1024
+      maxGeometryTotalOutputComponents = 1024
+      maxFragmentInputComponents = 128
+      maxFragmentOutputAttachments = 8
+      maxFragmentDualSrcAttachments = 1
+      maxFragmentCombinedOutputResources = 16
+      maxComputeSharedMemorySize = 0xc000
+      maxComputeWorkGroupCount = 0x177fc51df44
+      maxComputeWorkGroupInvocations = 1536
+      maxComputeWorkGroupSize = 0x177fc51df54
+      subPixelPrecisionBits = 0x8
+      subTexelPrecisionBits = 0x8
+      mipmapPrecisionBits = 0x8
+      maxDrawIndexedIndexValue = 0xffffffff
+      maxDrawIndirectCount = 0xffffffff
+      maxSamplerLodBias = 15
+      maxSamplerAnisotropy = 16
+      maxViewports = 16
+      maxViewportDimensions = 0x177fc51df80
+      viewportBoundsRange = 0x177fc51df88
+      viewportSubPixelBits = 0x8
+      minMemoryMapAlignment = 0x40
+      minTexelBufferOffsetAlignment = 0x10
+      minUniformBufferOffsetAlignment = 0x100
+      minStorageBufferOffsetAlignment = 0x20
+      minTexelOffset = 0xfffffff8
+      maxTexelOffset = 0x7
+      minTexelGatherOffset = 0xffffffe0
+      maxTexelGatherOffset = 0x1f
+      minInterpolationOffset = -0.5
+      maxInterpolationOffset = 0.4375
+      subPixelInterpolationOffsetBits = 0x4
+      maxFramebufferWidth = 0x4000
+      maxFramebufferHeight = 0x4000
+      maxFramebufferLayers = 0x800
+      framebufferColorSampleCounts = 0xf
+      framebufferDepthSampleCounts = 0xf
+      framebufferStencilSampleCounts = 0x1f
+      framebufferNoAttachmentsSampleCounts = 0xf
+      maxColorAttachments = 8
+      sampledImageColorSampleCounts = 0xf
+      sampledImageIntegerSampleCounts = 0xf
+      sampledImageDepthSampleCounts = 0xf
+      sampledImageStencilSampleCounts = 0x1f
+      storageImageSampleCounts = 0xf
+      maxSampleMaskWords = 0x1
+      timestampComputeAndGraphics = TRUE
+      timestampPeriod = 1
+      maxClipDistances = 8
+      maxCullDistances = 8
+      maxCombinedClipAndCullDistances = 8
+      discreteQueuePriorities = 2
+      pointSizeRange = 0x177fc51e024
+      lineWidthRange = 0x177fc51e02c
+      pointSizeGranularity = 0.125
+      lineWidthGranularity = 0.125
+      strictLines = TRUE
+      standardSampleLocations = TRUE
+      optimalBufferCopyOffsetAlignment = 0x1
+      optimalBufferCopyRowPitchAlignment = 0x1
+      nonCoherentAtomSize = 0x40
+       lineWidthRange[0] = 0.5
+       lineWidthRange[1] = 10
+       pointSizeRange[0] = 1
+       pointSizeRange[1] = 189.875
+       viewportBoundsRange[0] = -32768
+       viewportBoundsRange[1] = 32768
+       maxViewportDimensions[0] = 16384
+       maxViewportDimensions[1] = 16384
+       maxComputeWorkGroupSize[0] = 1536
+       maxComputeWorkGroupSize[1] = 1024
+       maxComputeWorkGroupSize[2] = 64
+       maxComputeWorkGroupCount[0] = 2147483647
+       maxComputeWorkGroupCount[1] = 65535
+       maxComputeWorkGroupCount[2] = 65535
+     pipelineCacheUUID[0] = 0x9f
+     pipelineCacheUUID[1] = 0x81
+     pipelineCacheUUID[2] = 0x2d
+     pipelineCacheUUID[3] = 0xad
+     pipelineCacheUUID[4] = 0xa
+     pipelineCacheUUID[5] = 0x64
+     pipelineCacheUUID[6] = 0xfe
+     pipelineCacheUUID[7] = 0x21
+     pipelineCacheUUID[8] = 0x71
+     pipelineCacheUUID[9] = 0x5
+     pipelineCacheUUID[10] = 0xa8
+     pipelineCacheUUID[11] = 0xd4
+     pipelineCacheUUID[12] = 0x35
+     pipelineCacheUUID[13] = 0x21
+     pipelineCacheUUID[14] = 0x81
+     pipelineCacheUUID[15] = 0xb8
+
+t{0} vkGetPhysicalDeviceQueueFamilyProperties(physicalDevice = 0x177fc062350, *pQueueFamilyPropertyCount = 0x2, pQueueFamilyProperties = 0x0)
+t{0} vkGetPhysicalDeviceQueueFamilyProperties(physicalDevice = 0x177fc062350, *pQueueFamilyPropertyCount = 0x2, pQueueFamilyProperties = 0x177fc797950)
+   pQueueFamilyProperties:
+    queueFlags = 0xf
+    queueCount = 0x10
+    timestampValidBits = 0x40
+    minImageTransferGranularity = 0x177fc79795c
+     minImageTransferGranularity:
+      width = 1
+      height = 1
+      depth = 1
+
+t{0} vkGetPhysicalDeviceProperties(physicalDevice = 0x177fc062350, pProperties = 0x75420fe640)
+   pProperties:
+    apiVersion = 4194317
+    driverVersion = 1561165824
+    vendorID = 4318
+    deviceID = 5121
+    deviceType = VK_PHYSICAL_DEVICE_TYPE_DISCRETE_GPU
+    deviceName = GTX 960
+    pipelineCacheUUID = 0x75420fe754
+    limits = 0x75420fe768
+    sparseProperties = 0x75420fe960
+     sparseProperties:
+      residencyStandard2DBlockShape = TRUE
+      residencyStandard2DMultisampleBlockShape = TRUE
+      residencyStandard3DBlockShape = TRUE
+      residencyAlignedMipSize = FALSE
+      residencyNonResidentStrict = TRUE
+     limits:
+      maxImageDimension1D = 16384
+      maxImageDimension2D = 16384
+      maxImageDimension3D = 2048
+      maxImageDimensionCube = 16384
+      maxImageArrayLayers = 2048
+      maxTexelBufferElements = 0x8000000
+      maxUniformBufferRange = 0x10000
+      maxStorageBufferRange = 0x7fffffff
+      maxPushConstantsSize = 0x100
+      maxMemoryAllocationCount = 0x1000
+      maxSamplerAllocationCount = 0xfa0
+      bufferImageGranularity = 0x400
+      sparseAddressSpaceSize = 0xffffffffffffffff
+      maxBoundDescriptorSets = 8
+      maxPerStageDescriptorSamplers = 4000
+      maxPerStageDescriptorUniformBuffers = 0xc
+      maxPerStageDescriptorStorageBuffers = 0x10
+      maxPerStageDescriptorSampledImages = 8192
+      maxPerStageDescriptorStorageImages = 8192
+      maxPerStageDescriptorInputAttachments = 8
+      maxPerStageResources = 24612
+      maxDescriptorSetSamplers = 4000
+      maxDescriptorSetUniformBuffers = 0x48
+      maxDescriptorSetUniformBuffersDynamic = 0x48
+      maxDescriptorSetStorageBuffers = 0x60
+      maxDescriptorSetStorageBuffersDynamic = 0x60
+      maxDescriptorSetSampledImages = 49152
+      maxDescriptorSetStorageImages = 49152
+      maxDescriptorSetInputAttachments = 8
+      maxVertexInputAttributes = 32
+      maxVertexInputBindings = 32
+      maxVertexInputAttributeOffset = 0x7ff
+      maxVertexInputBindingStride = 2048
+      maxVertexOutputComponents = 128
+      maxTessellationGenerationLevel = 64
+      maxTessellationPatchSize = 0x20
+      maxTessellationControlPerVertexInputComponents = 128
+      maxTessellationControlPerVertexOutputComponents = 128
+      maxTessellationControlPerPatchOutputComponents = 120
+      maxTessellationControlTotalOutputComponents = 4216
+      maxTessellationEvaluationInputComponents = 128
+      maxTessellationEvaluationOutputComponents = 128
+      maxGeometryShaderInvocations = 32
+      maxGeometryInputComponents = 128
+      maxGeometryOutputComponents = 128
+      maxGeometryOutputVertices = 1024
+      maxGeometryTotalOutputComponents = 1024
+      maxFragmentInputComponents = 128
+      maxFragmentOutputAttachments = 8
+      maxFragmentDualSrcAttachments = 1
+      maxFragmentCombinedOutputResources = 16
+      maxComputeSharedMemorySize = 0xc000
+      maxComputeWorkGroupCount = 0x75420fe844
+      maxComputeWorkGroupInvocations = 1536
+      maxComputeWorkGroupSize = 0x75420fe854
+      subPixelPrecisionBits = 0x8
+      subTexelPrecisionBits = 0x8
+      mipmapPrecisionBits = 0x8
+      maxDrawIndexedIndexValue = 0xffffffff
+      maxDrawIndirectCount = 0xffffffff
+      maxSamplerLodBias = 15
+      maxSamplerAnisotropy = 16
+      maxViewports = 16
+      maxViewportDimensions = 0x75420fe880
+      viewportBoundsRange = 0x75420fe888
+      viewportSubPixelBits = 0x8
+      minMemoryMapAlignment = 0x40
+      minTexelBufferOffsetAlignment = 0x10
+      minUniformBufferOffsetAlignment = 0x100
+      minStorageBufferOffsetAlignment = 0x20
+      minTexelOffset = 0xfffffff8
+      maxTexelOffset = 0x7
+      minTexelGatherOffset = 0xffffffe0
+      maxTexelGatherOffset = 0x1f
+      minInterpolationOffset = -0.5
+      maxInterpolationOffset = 0.4375
+      subPixelInterpolationOffsetBits = 0x4
+      maxFramebufferWidth = 0x4000
+      maxFramebufferHeight = 0x4000
+      maxFramebufferLayers = 0x800
+      framebufferColorSampleCounts = 0xf
+      framebufferDepthSampleCounts = 0xf
+      framebufferStencilSampleCounts = 0x1f
+      framebufferNoAttachmentsSampleCounts = 0xf
+      maxColorAttachments = 8
+      sampledImageColorSampleCounts = 0xf
+      sampledImageIntegerSampleCounts = 0xf
+      sampledImageDepthSampleCounts = 0xf
+      sampledImageStencilSampleCounts = 0x1f
+      storageImageSampleCounts = 0xf
+      maxSampleMaskWords = 0x1
+      timestampComputeAndGraphics = TRUE
+      timestampPeriod = 1
+      maxClipDistances = 8
+      maxCullDistances = 8
+      maxCombinedClipAndCullDistances = 8
+      discreteQueuePriorities = 2
+      pointSizeRange = 0x75420fe924
+      lineWidthRange = 0x75420fe92c
+      pointSizeGranularity = 0.125
+      lineWidthGranularity = 0.125
+      strictLines = TRUE
+      standardSampleLocations = TRUE
+      optimalBufferCopyOffsetAlignment = 0x1
+      optimalBufferCopyRowPitchAlignment = 0x1
+      nonCoherentAtomSize = 0x40
+       lineWidthRange[0] = 0.5
+       lineWidthRange[1] = 10
+       pointSizeRange[0] = 1
+       pointSizeRange[1] = 189.875
+       viewportBoundsRange[0] = -32768
+       viewportBoundsRange[1] = 32768
+       maxViewportDimensions[0] = 16384
+       maxViewportDimensions[1] = 16384
+       maxComputeWorkGroupSize[0] = 1536
+       maxComputeWorkGroupSize[1] = 1024
+       maxComputeWorkGroupSize[2] = 64
+       maxComputeWorkGroupCount[0] = 2147483647
+       maxComputeWorkGroupCount[1] = 65535
+       maxComputeWorkGroupCount[2] = 65535
+     pipelineCacheUUID[0] = 0x9f
+     pipelineCacheUUID[1] = 0x81
+     pipelineCacheUUID[2] = 0x2d
+     pipelineCacheUUID[3] = 0xad
+     pipelineCacheUUID[4] = 0xa
+     pipelineCacheUUID[5] = 0x64
+     pipelineCacheUUID[6] = 0xfe
+     pipelineCacheUUID[7] = 0x21
+     pipelineCacheUUID[8] = 0x71
+     pipelineCacheUUID[9] = 0x5
+     pipelineCacheUUID[10] = 0xa8
+     pipelineCacheUUID[11] = 0xd4
+     pipelineCacheUUID[12] = 0x35
+     pipelineCacheUUID[13] = 0x21
+     pipelineCacheUUID[14] = 0x81
+     pipelineCacheUUID[15] = 0xb8
+
+t{0} vkGetPhysicalDeviceFormatProperties(physicalDevice = 0x177fc062350, format = VK_FORMAT_D32_SFLOAT_S8_UINT, pFormatProperties = 0x75420feb48)
+   pFormatProperties:
+    linearTilingFeatures = 0x1401
+    optimalTilingFeatures = 0x1601
+    bufferFeatures = 0x0
+
+t{0} vkGetDeviceQueue(device = 0x177fc51f990, queueFamilyIndex = 0x0, queueIndex = 0x0, *pQueue = 0x177fc769650)
+t{0} vkCreateCommandPool(device = 0x177fc51f990, pCreateInfo = 0x75420fecd8, pAllocator = 0x0, *pCommandPool = 0x177fc767d60) = VK_SUCCESS
+   pCreateInfo:
+    sType = VK_STRUCTURE_TYPE_COMMAND_POOL_CREATE_INFO
+    pNext = 0x0
+    flags = 0x2
+    queueFamilyIndex = 0x0
+
+t{0} vkCreateDescriptorPool(device = 0x177fc51f990, pCreateInfo = 0x75420fec98, pAllocator = 0x0, *pDescriptorPool = 0x177fc769d30) = VK_SUCCESS
+   pCreateInfo:
+    sType = VK_STRUCTURE_TYPE_DESCRIPTOR_POOL_CREATE_INFO
+    pNext = 0x0
+    flags = 0x0
+    maxSets = 1024
+    poolSizeCount = 0x2
+    pPoolSizes = 0x177fc4b11c0
+     pPoolSizes[0]:
+      type = VK_DESCRIPTOR_TYPE_UNIFORM_BUFFER
+      descriptorCount = 0x400
+     pPoolSizes[1]:
+      type = VK_DESCRIPTOR_TYPE_SAMPLER
+      descriptorCount = 0x400
+
+t{0} vkCreateShaderModule(device = 0x177fc51f990, pCreateInfo = 0x75420ff368, pAllocator = 0x0, *pShaderModule = 0x177fbe8b720) = VK_SUCCESS
+   pCreateInfo:
+    sType = VK_STRUCTURE_TYPE_SHADER_MODULE_CREATE_INFO
+    pNext = 0x0
+    flags = 0x0
+    codeSize = 0x474
+    pCode = 0x7ff796d73720
+
+t{0} vkCreateShaderModule(device = 0x177fc51f990, pCreateInfo = 0x75420ff368, pAllocator = 0x0, *pShaderModule = 0x177fbe8baa0) = VK_SUCCESS
+   pCreateInfo:
+    sType = VK_STRUCTURE_TYPE_SHADER_MODULE_CREATE_INFO
+    pNext = 0x0
+    flags = 0x0
+    codeSize = 0x184
+    pCode = 0x7ff796d73ba0
+
+t{0} vkCreateShaderModule(device = 0x177fc51f990, pCreateInfo = 0x75420ff368, pAllocator = 0x0, *pShaderModule = 0x177fbe8b410) = VK_SUCCESS
+   pCreateInfo:
+    sType = VK_STRUCTURE_TYPE_SHADER_MODULE_CREATE_INFO
+    pNext = 0x0
+    flags = 0x0
+    codeSize = 0x34c
+    pCode = 0x7ff796d73d30
+
+t{0} vkCreateShaderModule(device = 0x177fc51f990, pCreateInfo = 0x75420ff368, pAllocator = 0x0, *pShaderModule = 0x177fbe8b4f0) = VK_SUCCESS
+   pCreateInfo:
+    sType = VK_STRUCTURE_TYPE_SHADER_MODULE_CREATE_INFO
+    pNext = 0x0
+    flags = 0x0
+    codeSize = 0x1c4
+    pCode = 0x7ff796d74080
+
+t{0} vkCreateShaderModule(device = 0x177fc51f990, pCreateInfo = 0x75420ff368, pAllocator = 0x0, *pShaderModule = 0x177fbe8b790) = VK_SUCCESS
+   pCreateInfo:
+    sType = VK_STRUCTURE_TYPE_SHADER_MODULE_CREATE_INFO
+    pNext = 0x0
+    flags = 0x0
+    codeSize = 0x498
+    pCode = 0x7ff796d74250
+
+t{0} vkCreateShaderModule(device = 0x177fc51f990, pCreateInfo = 0x75420ff368, pAllocator = 0x0, *pShaderModule = 0x177fbe88de0) = VK_SUCCESS
+   pCreateInfo:
+    sType = VK_STRUCTURE_TYPE_SHADER_MODULE_CREATE_INFO
+    pNext = 0x0
+    flags = 0x0
+    codeSize = 0x23c
+    pCode = 0x7ff796d746f0
+
+t{0} vkCreateShaderModule(device = 0x177fc51f990, pCreateInfo = 0x75420ff368, pAllocator = 0x0, *pShaderModule = 0x177fbe8ad80) = VK_SUCCESS
+   pCreateInfo:
+    sType = VK_STRUCTURE_TYPE_SHADER_MODULE_CREATE_INFO
+    pNext = 0x0
+    flags = 0x0
+    codeSize = 0x604
+    pCode = 0x7ff796d74930
+
+t{0} vkCreateShaderModule(device = 0x177fc51f990, pCreateInfo = 0x75420ff368, pAllocator = 0x0, *pShaderModule = 0x177fec67380) = VK_SUCCESS
+   pCreateInfo:
+    sType = VK_STRUCTURE_TYPE_SHADER_MODULE_CREATE_INFO
+    pNext = 0x0
+    flags = 0x0
+    codeSize = 0x19c
+    pCode = 0x7ff796d74f40
+
+t{0} vkCreateShaderModule(device = 0x177fc51f990, pCreateInfo = 0x75420ff368, pAllocator = 0x0, *pShaderModule = 0x177fec67930) = VK_SUCCESS
+   pCreateInfo:
+    sType = VK_STRUCTURE_TYPE_SHADER_MODULE_CREATE_INFO
+    pNext = 0x0
+    flags = 0x0
+    codeSize = 0x538
+    pCode = 0x7ff796d73040
+
+t{0} vkCreateShaderModule(device = 0x177fc51f990, pCreateInfo = 0x75420ff368, pAllocator = 0x0, *pShaderModule = 0x177fec66f90) = VK_SUCCESS
+   pCreateInfo:
+    sType = VK_STRUCTURE_TYPE_SHADER_MODULE_CREATE_INFO
+    pNext = 0x0
+    flags = 0x0
+    codeSize = 0x19c
+    pCode = 0x7ff796d73580
+
+t{0} vkGetPhysicalDeviceSurfaceCapabilitiesKHR(physicalDevice = 0x177fc062350, surface = 0x177fc062010, pSurfaceCapabilities = 0x75420ff038) = VK_SUCCESS
+   pSurfaceCapabilities:
+    minImageCount = 0x2
+    maxImageCount = 0x8
+    currentExtent = 0x75420ff040
+    minImageExtent = 0x75420ff048
+    maxImageExtent = 0x75420ff050
+    maxImageArrayLayers = 2048
+    supportedTransforms = 0x1
+    currentTransform = VK_SURFACE_TRANSFORM_IDENTITY_BIT_KHR
+    supportedCompositeAlpha = 0x1
+    supportedUsageFlags = 0x9f
+     maxImageExtent:
+      width = 16384
+      height = 16384
+     minImageExtent:
+      width = 1
+      height = 1
+     currentExtent:
+      width = 720
+      height = 1028
+
+t{0} vkCreateSwapchainKHR(device = 0x177fc51f990, pCreateInfo = 0x177fec67460, pAllocator = 0x0, pSwapchain = 0x75420ff0d8) = VK_SUCCESS
+   pCreateInfo:
+    sType = VK_STRUCTURE_TYPE_SWAPCHAIN_CREATE_INFO_KHR
+    pNext = 0x0
+    flags = 0x0
+    surface = 0x177fc062010
+    minImageCount = 0x3
+    imageFormat = VK_FORMAT_B8G8R8A8_UNORM
+    imageColorSpace = VK_COLOR_SPACE_SRGB_NONLINEAR_KHR
+    imageExtent = 0x177fec6748c
+    imageArrayLayers = 1
+    imageUsage = 0x10
+    imageSharingMode = VK_SHARING_MODE_EXCLUSIVE
+    queueFamilyIndexCount = 0x0
+    pQueueFamilyIndices = 0x0
+    preTransform = VK_SURFACE_TRANSFORM_IDENTITY_BIT_KHR
+    compositeAlpha = VK_COMPOSITE_ALPHA_OPAQUE_BIT_KHR
+    presentMode = VK_PRESENT_MODE_MAILBOX_KHR
+    clipped = TRUE
+    oldSwapchain = 0x0
+     imageExtent:
+      width = 720
+      height = 1028
+
+t{0} vkGetSwapchainImagesKHR(device = 0x177fc51f990, swapchain = 0x177fec7bca0, *pSwapchainImageCount = 0x3, pSwapchainImages = 0x0) = VK_SUCCESS
+t{0} vkGetSwapchainImagesKHR(device = 0x177fc51f990, swapchain = 0x177fec7bca0, *pSwapchainImageCount = 0x3, pSwapchainImages = 0x177fec68170) = VK_SUCCESS
+   pSwapchainImages[0] = 0x177fc784150
+   pSwapchainImages[1] = 0x177fc783f70
+   pSwapchainImages[2] = 0x177fc783ca0
+t{0} vkCreateImageView(device = 0x177fc51f990, pCreateInfo = 0x177fec67de0, pAllocator = 0x0, *pView = 0x177fc769e70) = VK_SUCCESS
+   pCreateInfo:
+    sType = VK_STRUCTURE_TYPE_IMAGE_VIEW_CREATE_INFO
+    pNext = 0x0
+    flags = 0x0
+    image = 0x177fc784150
+    viewType = VK_IMAGE_VIEW_TYPE_2D
+    format = VK_FORMAT_B8G8R8A8_UNORM
+    components = 0x177fec67e08
+    subresourceRange = 0x177fec67e18
+     subresourceRange:
+      aspectMask = 0x1
+      baseMipLevel = 0
+      levelCount = 0x1
+      baseArrayLayer = 0
+      layerCount = 0x1
+     components:
+      r = VK_COMPONENT_SWIZZLE_IDENTITY
+      g = VK_COMPONENT_SWIZZLE_IDENTITY
+      b = VK_COMPONENT_SWIZZLE_IDENTITY
+      a = VK_COMPONENT_SWIZZLE_IDENTITY
+
+t{0} vkCreateImageView(device = 0x177fc51f990, pCreateInfo = 0x177fec68800, pAllocator = 0x0, *pView = 0x177fc769b50) = VK_SUCCESS
+   pCreateInfo:
+    sType = VK_STRUCTURE_TYPE_IMAGE_VIEW_CREATE_INFO
+    pNext = 0x0
+    flags = 0x0
+    image = 0x177fc783f70
+    viewType = VK_IMAGE_VIEW_TYPE_2D
+    format = VK_FORMAT_B8G8R8A8_UNORM
+    components = 0x177fec68828
+    subresourceRange = 0x177fec68838
+     subresourceRange:
+      aspectMask = 0x1
+      baseMipLevel = 0
+      levelCount = 0x1
+      baseArrayLayer = 0
+      layerCount = 0x1
+     components:
+      r = VK_COMPONENT_SWIZZLE_IDENTITY
+      g = VK_COMPONENT_SWIZZLE_IDENTITY
+      b = VK_COMPONENT_SWIZZLE_IDENTITY
+      a = VK_COMPONENT_SWIZZLE_IDENTITY
+
+t{0} vkCreateImageView(device = 0x177fc51f990, pCreateInfo = 0x177fec68020, pAllocator = 0x0, *pView = 0x177fc7691f0) = VK_SUCCESS
+   pCreateInfo:
+    sType = VK_STRUCTURE_TYPE_IMAGE_VIEW_CREATE_INFO
+    pNext = 0x0
+    flags = 0x0
+    image = 0x177fc783ca0
+    viewType = VK_IMAGE_VIEW_TYPE_2D
+    format = VK_FORMAT_B8G8R8A8_UNORM
+    components = 0x177fec68048
+    subresourceRange = 0x177fec68058
+     subresourceRange:
+      aspectMask = 0x1
+      baseMipLevel = 0
+      levelCount = 0x1
+      baseArrayLayer = 0
+      layerCount = 0x1
+     components:
+      r = VK_COMPONENT_SWIZZLE_IDENTITY
+      g = VK_COMPONENT_SWIZZLE_IDENTITY
+      b = VK_COMPONENT_SWIZZLE_IDENTITY
+      a = VK_COMPONENT_SWIZZLE_IDENTITY
+
+swapchain has 3 buffer
+t{0} vkCreateSemaphore(device = 0x177fc51f990, pCreateInfo = 0x75420ff348, pAllocator = 0x0, *pSemaphore = 0x177fec67ea0) = VK_SUCCESS
+   pCreateInfo:
+    sType = VK_STRUCTURE_TYPE_SEMAPHORE_CREATE_INFO
+    pNext = 0x0
+    flags = 0x0
+
+t{0} vkCreateSemaphore(device = 0x177fc51f990, pCreateInfo = 0x75420ff348, pAllocator = 0x0, *pSemaphore = 0x177fec68b60) = VK_SUCCESS
+   pCreateInfo:
+    sType = VK_STRUCTURE_TYPE_SEMAPHORE_CREATE_INFO
+    pNext = 0x0
+    flags = 0x0
+
+t{0} vkAllocateCommandBuffers(device = 0x177fc51f990, pAllocateInfo = 0x177fec649a0, *pCommandBuffers = 0x177feca46a0) = VK_SUCCESS
+   pAllocateInfo:
+    sType = VK_STRUCTURE_TYPE_COMMAND_BUFFER_ALLOCATE_INFO
+    pNext = 0x0
+    commandPool = 0x177fc767d60
+    level = VK_COMMAND_BUFFER_LEVEL_PRIMARY
+    commandBufferCount = 0x1
+
+t{0} vkAllocateCommandBuffers(device = 0x177fc51f990, pAllocateInfo = 0x177fec64550, *pCommandBuffers = 0x177feca5c20) = VK_SUCCESS
+   pAllocateInfo:
+    sType = VK_STRUCTURE_TYPE_COMMAND_BUFFER_ALLOCATE_INFO
+    pNext = 0x0
+    commandPool = 0x177fc767d60
+    level = VK_COMMAND_BUFFER_LEVEL_PRIMARY
+    commandBufferCount = 0x1
+
+t{0} vkAllocateCommandBuffers(device = 0x177fc51f990, pAllocateInfo = 0x177fec64010, *pCommandBuffers = 0x177feca91b0) = VK_SUCCESS
+   pAllocateInfo:
+    sType = VK_STRUCTURE_TYPE_COMMAND_BUFFER_ALLOCATE_INFO
+    pNext = 0x0
+    commandPool = 0x177fc767d60
+    level = VK_COMMAND_BUFFER_LEVEL_PRIMARY
+    commandBufferCount = 0x1
+
+t{0} vkAllocateCommandBuffers(device = 0x177fc51f990, pAllocateInfo = 0x177fec64190, *pCommandBuffers = 0x177fecaa730) = VK_SUCCESS
+   pAllocateInfo:
+    sType = VK_STRUCTURE_TYPE_COMMAND_BUFFER_ALLOCATE_INFO
+    pNext = 0x0
+    commandPool = 0x177fc767d60
+    level = VK_COMMAND_BUFFER_LEVEL_PRIMARY
+    commandBufferCount = 0x1
+
+t{0} vkAllocateCommandBuffers(device = 0x177fc51f990, pAllocateInfo = 0x177fec647f0, *pCommandBuffers = 0x177fecabcb0) = VK_SUCCESS
+   pAllocateInfo:
+    sType = VK_STRUCTURE_TYPE_COMMAND_BUFFER_ALLOCATE_INFO
+    pNext = 0x0
+    commandPool = 0x177fc767d60
+    level = VK_COMMAND_BUFFER_LEVEL_PRIMARY
+    commandBufferCount = 0x1
+
+t{0} vkAllocateCommandBuffers(device = 0x177fc51f990, pAllocateInfo = 0x177fec64c40, *pCommandBuffers = 0x177fecaf240) = VK_SUCCESS
+   pAllocateInfo:
+    sType = VK_STRUCTURE_TYPE_COMMAND_BUFFER_ALLOCATE_INFO
+    pNext = 0x0
+    commandPool = 0x177fc767d60
+    level = VK_COMMAND_BUFFER_LEVEL_PRIMARY
+    commandBufferCount = 0x1
+
+t{0} vkAllocateCommandBuffers(device = 0x177fc51f990, pAllocateInfo = 0x177fec64a00, *pCommandBuffers = 0x177fecb07c0) = VK_SUCCESS
+   pAllocateInfo:
+    sType = VK_STRUCTURE_TYPE_COMMAND_BUFFER_ALLOCATE_INFO
+    pNext = 0x0
+    commandPool = 0x177fc767d60
+    level = VK_COMMAND_BUFFER_LEVEL_PRIMARY
+    commandBufferCount = 0x1
+
+t{0} vkAllocateCommandBuffers(device = 0x177fc51f990, pAllocateInfo = 0x177fec64e20, *pCommandBuffers = 0x177fecb1d40) = VK_SUCCESS
+   pAllocateInfo:
+    sType = VK_STRUCTURE_TYPE_COMMAND_BUFFER_ALLOCATE_INFO
+    pNext = 0x0
+    commandPool = 0x177fc767d60
+    level = VK_COMMAND_BUFFER_LEVEL_PRIMARY
+    commandBufferCount = 0x1
+
+t{0} vkAllocateCommandBuffers(device = 0x177fc51f990, pAllocateInfo = 0x177fec64e20, *pCommandBuffers = 0x177fecb32c0) = VK_SUCCESS
+   pAllocateInfo:
+    sType = VK_STRUCTURE_TYPE_COMMAND_BUFFER_ALLOCATE_INFO
+    pNext = 0x0
+    commandPool = 0x177fc767d60
+    level = VK_COMMAND_BUFFER_LEVEL_PRIMARY
+    commandBufferCount = 0x1
+
+t{0} vkGetPhysicalDeviceMemoryProperties(physicalDevice = 0x177fc062350, pMemoryProperties = 0x177f9fafff8)
+   pMemoryProperties:
+    memoryTypeCount = 0xb
+    memoryTypes = 0x177f9fafffc
+    memoryHeapCount = 0x2
+    memoryHeaps = 0x177f9fb0100
+     memoryHeaps[0]:
+      size = 0x100000000
+      flags = 0x1
+     memoryHeaps[1]:
+      size = 0x3fb900000
+      flags = 0x0
+     memoryHeaps[2]:
+      size = 0xcdcdcdcdcdcdcdcd
+      flags = 0x0
+     memoryHeaps[3]:
+      size = 0xcdcdcdcdcdcdcdcd
+      flags = 0x0
+     memoryHeaps[4]:
+      size = 0xcdcdcdcdcdcdcdcd
+      flags = 0x0
+     memoryHeaps[5]:
+      size = 0xcdcdcdcdcdcdcdcd
+      flags = 0x0
+     memoryHeaps[6]:
+      size = 0xcdcdcdcdcdcdcdcd
+      flags = 0x0
+     memoryHeaps[7]:
+      size = 0xcdcdcdcdcdcdcdcd
+      flags = 0x0
+     memoryHeaps[8]:
+      size = 0xcdcdcdcdcdcdcdcd
+      flags = 0x0
+     memoryHeaps[9]:
+      size = 0xcdcdcdcdcdcdcdcd
+      flags = 0x0
+     memoryHeaps[10]:
+      size = 0xcdcdcdcdcdcdcdcd
+      flags = 0x0
+     memoryHeaps[11]:
+      size = 0xcdcdcdcdcdcdcdcd
+      flags = 0x0
+     memoryHeaps[12]:
+      size = 0xcdcdcdcdcdcdcdcd
+      flags = 0x0
+     memoryHeaps[13]:
+      size = 0xcdcdcdcdcdcdcdcd
+      flags = 0x0
+     memoryHeaps[14]:
+      size = 0xcdcdcdcdcdcdcdcd
+      flags = 0x0
+     memoryHeaps[15]:
+      size = 0xcdcdcdcdcdcdcdcd
+      flags = 0x0
+     memoryTypes[0]:
+      propertyFlags = 0x0
+      heapIndex = 0x1
+     memoryTypes[1]:
+      propertyFlags = 0x0
+      heapIndex = 0x1
+     memoryTypes[2]:
+      propertyFlags = 0x0
+      heapIndex = 0x1
+     memoryTypes[3]:
+      propertyFlags = 0x0
+      heapIndex = 0x1
+     memoryTypes[4]:
+      propertyFlags = 0x0
+      heapIndex = 0x1
+     memoryTypes[5]:
+      propertyFlags = 0x0
+      heapIndex = 0x1
+     memoryTypes[6]:
+      propertyFlags = 0x0
+      heapIndex = 0x1
+     memoryTypes[7]:
+      propertyFlags = 0x1
+      heapIndex = 0x0
+     memoryTypes[8]:
+      propertyFlags = 0x1
+      heapIndex = 0x0
+     memoryTypes[9]:
+      propertyFlags = 0x6
+      heapIndex = 0x1
+     memoryTypes[10]:
+      propertyFlags = 0xe
+      heapIndex = 0x1
+     memoryTypes[11]:
+      propertyFlags = 0x0
+      heapIndex = 0xcdcdcdcd
+     memoryTypes[12]:
+      propertyFlags = 0x0
+      heapIndex = 0xcdcdcdcd
+     memoryTypes[13]:
+      propertyFlags = 0x0
+      heapIndex = 0xcdcdcdcd
+     memoryTypes[14]:
+      propertyFlags = 0x0
+      heapIndex = 0xcdcdcdcd
+     memoryTypes[15]:
+      propertyFlags = 0x0
+      heapIndex = 0xcdcdcdcd
+     memoryTypes[16]:
+      propertyFlags = 0x0
+      heapIndex = 0xcdcdcdcd
+     memoryTypes[17]:
+      propertyFlags = 0x0
+      heapIndex = 0xcdcdcdcd
+     memoryTypes[18]:
+      propertyFlags = 0x0
+      heapIndex = 0xcdcdcdcd
+     memoryTypes[19]:
+      propertyFlags = 0x0
+      heapIndex = 0xcdcdcdcd
+     memoryTypes[20]:
+      propertyFlags = 0x0
+      heapIndex = 0xcdcdcdcd
+     memoryTypes[21]:
+      propertyFlags = 0x0
+      heapIndex = 0xcdcdcdcd
+     memoryTypes[22]:
+      propertyFlags = 0x0
+      heapIndex = 0xcdcdcdcd
+     memoryTypes[23]:
+      propertyFlags = 0x0
+      heapIndex = 0xcdcdcdcd
+     memoryTypes[24]:
+      propertyFlags = 0x0
+      heapIndex = 0xcdcdcdcd
+     memoryTypes[25]:
+      propertyFlags = 0x0
+      heapIndex = 0xcdcdcdcd
+     memoryTypes[26]:
+      propertyFlags = 0x0
+      heapIndex = 0xcdcdcdcd
+     memoryTypes[27]:
+      propertyFlags = 0x0
+      heapIndex = 0xcdcdcdcd
+     memoryTypes[28]:
+      propertyFlags = 0x0
+      heapIndex = 0xcdcdcdcd
+     memoryTypes[29]:
+      propertyFlags = 0x0
+      heapIndex = 0xcdcdcdcd
+     memoryTypes[30]:
+      propertyFlags = 0x0
+      heapIndex = 0xcdcdcdcd
+     memoryTypes[31]:
+      propertyFlags = 0x0
+      heapIndex = 0xcdcdcdcd
+
+t{0} vkCreateBuffer(device = 0x177fc51f990, pCreateInfo = 0x75420ff378, pAllocator = 0x0, *pBuffer = 0x177fea5f0b0) = VK_SUCCESS
+   pCreateInfo:
+    sType = VK_STRUCTURE_TYPE_BUFFER_CREATE_INFO
+    pNext = 0x0
+    flags = 0x0
+    size = 0xa00000
+    usage = 0xd0
+    sharingMode = VK_SHARING_MODE_EXCLUSIVE
+    queueFamilyIndexCount = 0x0
+    pQueueFamilyIndices = 0x0
+
+t{0} vkGetBufferMemoryRequirements(device = 0x177fc51f990, buffer = 0x177fea5f0b0, pMemoryRequirements = 0x75420ff3c8)
+   pMemoryRequirements:
+    size = 0xa00000
+    alignment = 0x100
+    memoryTypeBits = 0x681
+
+t{0} vkAllocateMemory(device = 0x177fc51f990, pAllocateInfo = 0x75420ff458, pAllocator = 0x0, *pMemory = 0x177fec6ab80) = VK_SUCCESS
+   pAllocateInfo:
+    sType = VK_STRUCTURE_TYPE_MEMORY_ALLOCATE_INFO
+    pNext = 0x0
+    allocationSize = 0xa00000
+    memoryTypeIndex = 0x9
+
+t{0} vkCreateBuffer(device = 0x177fc51f990, pCreateInfo = 0x75420ff378, pAllocator = 0x0, *pBuffer = 0x177fea5fc10) = VK_SUCCESS
+   pCreateInfo:
+    sType = VK_STRUCTURE_TYPE_BUFFER_CREATE_INFO
+    pNext = 0x0
+    flags = 0x0
+    size = 0xa00000
+    usage = 0xd0
+    sharingMode = VK_SHARING_MODE_EXCLUSIVE
+    queueFamilyIndexCount = 0x0
+    pQueueFamilyIndices = 0x0
+
+t{0} vkGetBufferMemoryRequirements(device = 0x177fc51f990, buffer = 0x177fea5fc10, pMemoryRequirements = 0x75420ff178)
+   pMemoryRequirements:
+    size = 0xa00000
+    alignment = 0x100
+    memoryTypeBits = 0x681
+
+t{0} vkBindBufferMemory(device = 0x177fc51f990, buffer = 0x177fea5fc10, memory = 0x177fec6ab80, memoryOffset = 0x0) = VK_SUCCESS
+t{0} vkMapMemory(device = 0x177fc51f990, memory = 0x177fec6ab80, offset = 0x0, size = 0xa00000, flags = 0x0, *ppData = 0x177fda60000) = VK_SUCCESS
+t{0} vkAllocateMemory(device = 0x177fc51f990, pAllocateInfo = 0x75420ff458, pAllocator = 0x0, *pMemory = 0x177fec6b180) = VK_SUCCESS
+   pAllocateInfo:
+    sType = VK_STRUCTURE_TYPE_MEMORY_ALLOCATE_INFO
+    pNext = 0x0
+    allocationSize = 0xa00000
+    memoryTypeIndex = 0x9
+
+t{0} vkCreateBuffer(device = 0x177fc51f990, pCreateInfo = 0x75420ff378, pAllocator = 0x0, *pBuffer = 0x177fea5f180) = VK_SUCCESS
+   pCreateInfo:
+    sType = VK_STRUCTURE_TYPE_BUFFER_CREATE_INFO
+    pNext = 0x0
+    flags = 0x0
+    size = 0xa00000
+    usage = 0xd0
+    sharingMode = VK_SHARING_MODE_EXCLUSIVE
+    queueFamilyIndexCount = 0x0
+    pQueueFamilyIndices = 0x0
+
+t{0} vkGetBufferMemoryRequirements(device = 0x177fc51f990, buffer = 0x177fea5f180, pMemoryRequirements = 0x75420ff178)
+   pMemoryRequirements:
+    size = 0xa00000
+    alignment = 0x100
+    memoryTypeBits = 0x681
+
+t{0} vkBindBufferMemory(device = 0x177fc51f990, buffer = 0x177fea5f180, memory = 0x177fec6b180, memoryOffset = 0x0) = VK_SUCCESS
+t{0} vkMapMemory(device = 0x177fc51f990, memory = 0x177fec6b180, offset = 0x0, size = 0xa00000, flags = 0x0, *ppData = 0x177ff050000) = VK_SUCCESS
+t{0} vkAllocateMemory(device = 0x177fc51f990, pAllocateInfo = 0x75420ff458, pAllocator = 0x0, *pMemory = 0x177fec69f00) = VK_SUCCESS
+   pAllocateInfo:
+    sType = VK_STRUCTURE_TYPE_MEMORY_ALLOCATE_INFO
+    pNext = 0x0
+    allocationSize = 0xa00000
+    memoryTypeIndex = 0x9
+
+t{0} vkCreateBuffer(device = 0x177fc51f990, pCreateInfo = 0x75420ff378, pAllocator = 0x0, *pBuffer = 0x177fea5ee40) = VK_SUCCESS
+   pCreateInfo:
+    sType = VK_STRUCTURE_TYPE_BUFFER_CREATE_INFO
+    pNext = 0x0
+    flags = 0x0
+    size = 0xa00000
+    usage = 0xd0
+    sharingMode = VK_SHARING_MODE_EXCLUSIVE
+    queueFamilyIndexCount = 0x0
+    pQueueFamilyIndices = 0x0
+
+t{0} vkGetBufferMemoryRequirements(device = 0x177fc51f990, buffer = 0x177fea5ee40, pMemoryRequirements = 0x75420ff178)
+   pMemoryRequirements:
+    size = 0xa00000
+    alignment = 0x100
+    memoryTypeBits = 0x681
+
+t{0} vkBindBufferMemory(device = 0x177fc51f990, buffer = 0x177fea5ee40, memory = 0x177fec69f00, memoryOffset = 0x0) = VK_SUCCESS
+t{0} vkMapMemory(device = 0x177fc51f990, memory = 0x177fec69f00, offset = 0x0, size = 0xa00000, flags = 0x0, *ppData = 0x17782000000) = VK_SUCCESS
+t{0} vkCreateBuffer(device = 0x177fc51f990, pCreateInfo = 0x75420ff198, pAllocator = 0x0, *pBuffer = 0x177fea5f250) = VK_SUCCESS
+   pCreateInfo:
+    sType = VK_STRUCTURE_TYPE_BUFFER_CREATE_INFO
+    pNext = 0x0
+    flags = 0x0
+    size = 0xa00000
+    usage = 0xd0
+    sharingMode = VK_SHARING_MODE_EXCLUSIVE
+    queueFamilyIndexCount = 0x0
+    pQueueFamilyIndices = 0x0
+
+t{0} vkGetBufferMemoryRequirements(device = 0x177fc51f990, buffer = 0x177fea5f250, pMemoryRequirements = 0x75420ff1e8)
+   pMemoryRequirements:
+    size = 0xa00000
+    alignment = 0x100
+    memoryTypeBits = 0x681
+
+t{0} vkAllocateMemory(device = 0x177fc51f990, pAllocateInfo = 0x75420ff258, pAllocator = 0x0, *pMemory = 0x177fec69a80) = VK_SUCCESS
+   pAllocateInfo:
+    sType = VK_STRUCTURE_TYPE_MEMORY_ALLOCATE_INFO
+    pNext = 0x0
+    allocationSize = 0xa00000
+    memoryTypeIndex = 0x9
+
+t{0} vkCreateBuffer(device = 0x177fc51f990, pCreateInfo = 0x75420ff198, pAllocator = 0x0, *pBuffer = 0x177fea5f8d0) = VK_SUCCESS
+   pCreateInfo:
+    sType = VK_STRUCTURE_TYPE_BUFFER_CREATE_INFO
+    pNext = 0x0
+    flags = 0x0
+    size = 0xa00000
+    usage = 0xd0
+    sharingMode = VK_SHARING_MODE_EXCLUSIVE
+    queueFamilyIndexCount = 0x0
+    pQueueFamilyIndices = 0x0
+
+t{0} vkGetBufferMemoryRequirements(device = 0x177fc51f990, buffer = 0x177fea5f8d0, pMemoryRequirements = 0x75420fef98)
+   pMemoryRequirements:
+    size = 0xa00000
+    alignment = 0x100
+    memoryTypeBits = 0x681
+
+t{0} vkBindBufferMemory(device = 0x177fc51f990, buffer = 0x177fea5f8d0, memory = 0x177fec69a80, memoryOffset = 0x0) = VK_SUCCESS
+t{0} vkMapMemory(device = 0x177fc51f990, memory = 0x177fec69a80, offset = 0x0, size = 0xa00000, flags = 0x0, *ppData = 0x17782a00000) = VK_SUCCESS
+t{0} vkGetPhysicalDeviceFormatProperties(physicalDevice = 0x177fc062350, format = VK_FORMAT_D32_SFLOAT, pFormatProperties = 0x75420fefe8)
+   pFormatProperties:
+    linearTilingFeatures = 0x1401
+    optimalTilingFeatures = 0x1601
+    bufferFeatures = 0x0
+
+t{0} vkGetPhysicalDeviceImageFormatProperties(physicalDevice = 0x177fc062350, format = VK_FORMAT_D32_SFLOAT, type = VK_IMAGE_TYPE_2D, tiling = VK_IMAGE_TILING_OPTIMAL, usage = 0x20, flags = 0x0, pImageFormatProperties = 0x75420feff8) = VK_SUCCESS
+   pImageFormatProperties:
+    maxExtent = 0x75420feff8
+    maxMipLevels = 15
+    maxArrayLayers = 2048
+    sampleCounts = 0xf
+    maxResourceSize = 0xffffffffffffffff
+     maxExtent:
+      width = 16384
+      height = 16384
+      depth = 1
+
+t{0} vkCreateImage(device = 0x177fc51f990, pCreateInfo = 0x75420ff260, pAllocator = 0x0, *pImage = 0x177fc782bc0) = VK_SUCCESS
+   pCreateInfo:
+    sType = VK_STRUCTURE_TYPE_IMAGE_CREATE_INFO
+    pNext = 0x0
+    flags = 0x0
+    imageType = VK_IMAGE_TYPE_2D
+    format = VK_FORMAT_D32_SFLOAT
+    extent = 0x75420ff27c
+    mipLevels = 1
+    arrayLayers = 1
+    samples = VK_SAMPLE_COUNT_1_BIT
+    tiling = VK_IMAGE_TILING_OPTIMAL
+    usage = 0x20
+    sharingMode = VK_SHARING_MODE_EXCLUSIVE
+    queueFamilyIndexCount = 0x0
+    pQueueFamilyIndices = 0x0
+    initialLayout = VK_IMAGE_LAYOUT_UNDEFINED
+     extent:
+      width = 720
+      height = 1028
+      depth = 1
+
+t{0} vkGetImageMemoryRequirements(device = 0x177fc51f990, image = 0x177fc782bc0, pMemoryRequirements = 0x75420ff2d8)
+   pMemoryRequirements:
+    size = 0x32a000
+    alignment = 0x400
+    memoryTypeBits = 0x90
+
+t{0} vkAllocateMemory(device = 0x177fc51f990, pAllocateInfo = 0x75420ff328, pAllocator = 0x0, *pMemory = 0x177fec6ac00) = VK_SUCCESS
+   pAllocateInfo:
+    sType = VK_STRUCTURE_TYPE_MEMORY_ALLOCATE_INFO
+    pNext = 0x0
+    allocationSize = 0x32a000
+    memoryTypeIndex = 0x7
+
+t{0} vkGetImageMemoryRequirements(device = 0x177fc51f990, image = 0x177fc782bc0, pMemoryRequirements = 0x75420ff068)
+   pMemoryRequirements:
+    size = 0x32a000
+    alignment = 0x400
+    memoryTypeBits = 0x90
+
+t{0} vkBindImageMemory(device = 0x177fc51f990, image = 0x177fc782bc0, memory = 0x177fec6ac00, memoryOffset = 0x0) = VK_SUCCESS
+t{0} vkCreateImageView(device = 0x177fc51f990, pCreateInfo = 0x177fecbfa10, pAllocator = 0x0, *pView = 0x177fc769fb0) = VK_SUCCESS
+   pCreateInfo:
+    sType = VK_STRUCTURE_TYPE_IMAGE_VIEW_CREATE_INFO
+    pNext = 0x0
+    flags = 0x0
+    image = 0x177fc782bc0
+    viewType = VK_IMAGE_VIEW_TYPE_2D
+    format = VK_FORMAT_D32_SFLOAT
+    components = 0x177fecbfa38
+    subresourceRange = 0x177fecbfa48
+     subresourceRange:
+      aspectMask = 0x2
+      baseMipLevel = 0
+      levelCount = 0x1
+      baseArrayLayer = 0
+      layerCount = 0x1
+     components:
+      r = VK_COMPONENT_SWIZZLE_IDENTITY
+      g = VK_COMPONENT_SWIZZLE_IDENTITY
+      b = VK_COMPONENT_SWIZZLE_IDENTITY
+      a = VK_COMPONENT_SWIZZLE_IDENTITY
+
+t{0} vkCreateDescriptorSetLayout(device = 0x177fc51f990, pCreateInfo = 0x177fecba490, pAllocator = 0x0, *pSetLayout = 0x177fec6b000) = VK_SUCCESS
+   pCreateInfo:
+    sType = VK_STRUCTURE_TYPE_DESCRIPTOR_SET_LAYOUT_CREATE_INFO
+    pNext = 0x0
+    flags = 0x0
+    bindingCount = 0x0
+    pBindings = 0x0
+
+t{0} vkCreateDescriptorSetLayout(device = 0x177fc51f990, pCreateInfo = 0x177fecba1c0, pAllocator = 0x0, *pSetLayout = 0x177fec6b100) = VK_SUCCESS
+   pCreateInfo:
+    sType = VK_STRUCTURE_TYPE_DESCRIPTOR_SET_LAYOUT_CREATE_INFO
+    pNext = 0x0
+    flags = 0x0
+    bindingCount = 0x1
+    pBindings = 0x177fecba0a8
+     pBindings[0]:
+      binding = 0
+      descriptorType = VK_DESCRIPTOR_TYPE_UNIFORM_BUFFER
+      descriptorCount = 0x1
+      stageFlags = 0x1
+      pImmutableSamplers = 0x0
+
+t{0} vkCreateDescriptorSetLayout(device = 0x177fc51f990, pCreateInfo = 0x177fecb9f80, pAllocator = 0x0, *pSetLayout = 0x177fec6ae80) = VK_SUCCESS
+   pCreateInfo:
+    sType = VK_STRUCTURE_TYPE_DESCRIPTOR_SET_LAYOUT_CREATE_INFO
+    pNext = 0x0
+    flags = 0x0
+    bindingCount = 0x2
+    pBindings = 0x177fc798818
+     pBindings[0]:
+      binding = 0
+      descriptorType = VK_DESCRIPTOR_TYPE_UNIFORM_BUFFER
+      descriptorCount = 0x1
+      stageFlags = 0x1
+      pImmutableSamplers = 0x0
+     pBindings[1]:
+      binding = 1
+      descriptorType = VK_DESCRIPTOR_TYPE_UNIFORM_BUFFER
+      descriptorCount = 0x1
+      stageFlags = 0x10
+      pImmutableSamplers = 0x0
+
+t{0} vkAllocateDescriptorSets(device = 0x177fc51f990, pAllocateInfo = 0x177fecb9e30, *pDescriptorSets = 0x177fec12180) = VK_SUCCESS
+   pAllocateInfo:
+    sType = VK_STRUCTURE_TYPE_DESCRIPTOR_SET_ALLOCATE_INFO
+    pNext = 0x0
+    descriptorPool = 0x177fc769d30
+    descriptorSetCount = 0x1
+    pSetLayouts = 0x177fc75a770
+     pSetLayouts[0] = 0x177fec6b000
+
+t{0} vkAllocateDescriptorSets(device = 0x177fc51f990, pAllocateInfo = 0x177fecb9c20, *pDescriptorSets = 0x177fec122c0) = VK_SUCCESS
+   pAllocateInfo:
+    sType = VK_STRUCTURE_TYPE_DESCRIPTOR_SET_ALLOCATE_INFO
+    pNext = 0x0
+    descriptorPool = 0x177fc769d30
+    descriptorSetCount = 0x1
+    pSetLayouts = 0x177fc75a770
+     pSetLayouts[0] = 0x177fec6b000
+
+t{0} vkAllocateDescriptorSets(device = 0x177fc51f990, pAllocateInfo = 0x177fecba280, *pDescriptorSets = 0x177fec12400) = VK_SUCCESS
+   pAllocateInfo:
+    sType = VK_STRUCTURE_TYPE_DESCRIPTOR_SET_ALLOCATE_INFO
+    pNext = 0x0
+    descriptorPool = 0x177fc769d30
+    descriptorSetCount = 0x1
+    pSetLayouts = 0x177fc75a880
+     pSetLayouts[0] = 0x177fec6b000
+
+t{0} vkAllocateDescriptorSets(device = 0x177fc51f990, pAllocateInfo = 0x177fecb9fb0, *pDescriptorSets = 0x177fec12540) = VK_SUCCESS
+   pAllocateInfo:
+    sType = VK_STRUCTURE_TYPE_DESCRIPTOR_SET_ALLOCATE_INFO
+    pNext = 0x0
+    descriptorPool = 0x177fc769d30
+    descriptorSetCount = 0x1
+    pSetLayouts = 0x177fc75a990
+     pSetLayouts[0] = 0x177fec6b000
+
+t{0} vkAllocateDescriptorSets(device = 0x177fc51f990, pAllocateInfo = 0x177fecb9dd0, *pDescriptorSets = 0x177fec12680) = VK_SUCCESS
+   pAllocateInfo:
+    sType = VK_STRUCTURE_TYPE_DESCRIPTOR_SET_ALLOCATE_INFO
+    pNext = 0x0
+    descriptorPool = 0x177fc769d30
+    descriptorSetCount = 0x1
+    pSetLayouts = 0x177fc75a990
+     pSetLayouts[0] = 0x177fec6b000
+
+t{0} vkAllocateDescriptorSets(device = 0x177fc51f990, pAllocateInfo = 0x177fecb9a10, *pDescriptorSets = 0x177fec127c0) = VK_SUCCESS
+   pAllocateInfo:
+    sType = VK_STRUCTURE_TYPE_DESCRIPTOR_SET_ALLOCATE_INFO
+    pNext = 0x0
+    descriptorPool = 0x177fc769d30
+    descriptorSetCount = 0x1
+    pSetLayouts = 0x177fc75a970
+     pSetLayouts[0] = 0x177fec6b000
+
+t{0} vkAllocateDescriptorSets(device = 0x177fc51f990, pAllocateInfo = 0x177fecb9bf0, *pDescriptorSets = 0x177fec12900) = VK_SUCCESS
+   pAllocateInfo:
+    sType = VK_STRUCTURE_TYPE_DESCRIPTOR_SET_ALLOCATE_INFO
+    pNext = 0x0
+    descriptorPool = 0x177fc769d30
+    descriptorSetCount = 0x1
+    pSetLayouts = 0x177fc75a770
+     pSetLayouts[0] = 0x177fec6b000
+
+t{0} vkAllocateDescriptorSets(device = 0x177fc51f990, pAllocateInfo = 0x177fecba100, *pDescriptorSets = 0x177fec12a40) = VK_SUCCESS
+   pAllocateInfo:
+    sType = VK_STRUCTURE_TYPE_DESCRIPTOR_SET_ALLOCATE_INFO
+    pNext = 0x0
+    descriptorPool = 0x177fc769d30
+    descriptorSetCount = 0x1
+    pSetLayouts = 0x177fc75a990
+     pSetLayouts[0] = 0x177fec6b000
+
+t{0} vkAllocateDescriptorSets(device = 0x177fc51f990, pAllocateInfo = 0x177fecb9bf0, *pDescriptorSets = 0x177fec12b80) = VK_SUCCESS
+   pAllocateInfo:
+    sType = VK_STRUCTURE_TYPE_DESCRIPTOR_SET_ALLOCATE_INFO
+    pNext = 0x0
+    descriptorPool = 0x177fc769d30
+    descriptorSetCount = 0x1
+    pSetLayouts = 0x177fc75a770
+     pSetLayouts[0] = 0x177fec6b000
+
+t{0} vkAllocateDescriptorSets(device = 0x177fc51f990, pAllocateInfo = 0x177fecb9cb0, *pDescriptorSets = 0x177fec12cc0) = VK_SUCCESS
+   pAllocateInfo:
+    sType = VK_STRUCTURE_TYPE_DESCRIPTOR_SET_ALLOCATE_INFO
+    pNext = 0x0
+    descriptorPool = 0x177fc769d30
+    descriptorSetCount = 0x1
+    pSetLayouts = 0x177fc75a970
+     pSetLayouts[0] = 0x177fec6b000
+
+t{0} vkAllocateDescriptorSets(device = 0x177fc51f990, pAllocateInfo = 0x177fecba6d0, *pDescriptorSets = 0x177fec12e00) = VK_SUCCESS
+   pAllocateInfo:
+    sType = VK_STRUCTURE_TYPE_DESCRIPTOR_SET_ALLOCATE_INFO
+    pNext = 0x0
+    descriptorPool = 0x177fc769d30
+    descriptorSetCount = 0x1
+    pSetLayouts = 0x177fc75a980
+     pSetLayouts[0] = 0x177fec6b000
+
+t{0} vkAllocateDescriptorSets(device = 0x177fc51f990, pAllocateInfo = 0x177fecba640, *pDescriptorSets = 0x177fec12f40) = VK_SUCCESS
+   pAllocateInfo:
+    sType = VK_STRUCTURE_TYPE_DESCRIPTOR_SET_ALLOCATE_INFO
+    pNext = 0x0
+    descriptorPool = 0x177fc769d30
+    descriptorSetCount = 0x1
+    pSetLayouts = 0x177fc75a770
+     pSetLayouts[0] = 0x177fec6b000
+
+t{0} vkAllocateDescriptorSets(device = 0x177fc51f990, pAllocateInfo = 0x177fecba610, *pDescriptorSets = 0x177fec13080) = VK_SUCCESS
+   pAllocateInfo:
+    sType = VK_STRUCTURE_TYPE_DESCRIPTOR_SET_ALLOCATE_INFO
+    pNext = 0x0
+    descriptorPool = 0x177fc769d30
+    descriptorSetCount = 0x1
+    pSetLayouts = 0x177fc75a770
+     pSetLayouts[0] = 0x177fec6b000
+
+t{0} vkAllocateDescriptorSets(device = 0x177fc51f990, pAllocateInfo = 0x177fecba820, *pDescriptorSets = 0x177fec131c0) = VK_SUCCESS
+   pAllocateInfo:
+    sType = VK_STRUCTURE_TYPE_DESCRIPTOR_SET_ALLOCATE_INFO
+    pNext = 0x0
+    descriptorPool = 0x177fc769d30
+    descriptorSetCount = 0x1
+    pSetLayouts = 0x177fc75a880
+     pSetLayouts[0] = 0x177fec6b000
+
+t{0} vkAllocateDescriptorSets(device = 0x177fc51f990, pAllocateInfo = 0x177fecb6e30, *pDescriptorSets = 0x177fec13300) = VK_SUCCESS
+   pAllocateInfo:
+    sType = VK_STRUCTURE_TYPE_DESCRIPTOR_SET_ALLOCATE_INFO
+    pNext = 0x0
+    descriptorPool = 0x177fc769d30
+    descriptorSetCount = 0x1
+    pSetLayouts = 0x177fc75a770
+     pSetLayouts[0] = 0x177fec6b000
+
+t{0} vkAllocateDescriptorSets(device = 0x177fc51f990, pAllocateInfo = 0x177fecb6f80, *pDescriptorSets = 0x177fec13440) = VK_SUCCESS
+   pAllocateInfo:
+    sType = VK_STRUCTURE_TYPE_DESCRIPTOR_SET_ALLOCATE_INFO
+    pNext = 0x0
+    descriptorPool = 0x177fc769d30
+    descriptorSetCount = 0x1
+    pSetLayouts = 0x177fc75a7e0
+     pSetLayouts[0] = 0x177fec6b000
+
+t{0} vkAllocateDescriptorSets(device = 0x177fc51f990, pAllocateInfo = 0x177fecb6a40, *pDescriptorSets = 0x177fec13580) = VK_SUCCESS
+   pAllocateInfo:
+    sType = VK_STRUCTURE_TYPE_DESCRIPTOR_SET_ALLOCATE_INFO
+    pNext = 0x0
+    descriptorPool = 0x177fc769d30
+    descriptorSetCount = 0x1
+    pSetLayouts = 0x177fc75a870
+     pSetLayouts[0] = 0x177fec6b000
+
+t{0} vkAllocateDescriptorSets(device = 0x177fc51f990, pAllocateInfo = 0x177fecb6b90, *pDescriptorSets = 0x177fec136c0) = VK_SUCCESS
+   pAllocateInfo:
+    sType = VK_STRUCTURE_TYPE_DESCRIPTOR_SET_ALLOCATE_INFO
+    pNext = 0x0
+    descriptorPool = 0x177fc769d30
+    descriptorSetCount = 0x1
+    pSetLayouts = 0x177fc75a7e0
+     pSetLayouts[0] = 0x177fec6b000
+
+t{0} vkAllocateDescriptorSets(device = 0x177fc51f990, pAllocateInfo = 0x177fecb7340, *pDescriptorSets = 0x177fec13800) = VK_SUCCESS
+   pAllocateInfo:
+    sType = VK_STRUCTURE_TYPE_DESCRIPTOR_SET_ALLOCATE_INFO
+    pNext = 0x0
+    descriptorPool = 0x177fc769d30
+    descriptorSetCount = 0x1
+    pSetLayouts = 0x177fc75a7e0
+     pSetLayouts[0] = 0x177fec6b000
+
+t{0} vkAllocateDescriptorSets(device = 0x177fc51f990, pAllocateInfo = 0x177fecb6b30, *pDescriptorSets = 0x177fec13940) = VK_SUCCESS
+   pAllocateInfo:
+    sType = VK_STRUCTURE_TYPE_DESCRIPTOR_SET_ALLOCATE_INFO
+    pNext = 0x0
+    descriptorPool = 0x177fc769d30
+    descriptorSetCount = 0x1
+    pSetLayouts = 0x177fc75a7e0
+     pSetLayouts[0] = 0x177fec6b000
+
+t{0} vkAllocateDescriptorSets(device = 0x177fc51f990, pAllocateInfo = 0x177fecb6950, *pDescriptorSets = 0x177fec13a80) = VK_SUCCESS
+   pAllocateInfo:
+    sType = VK_STRUCTURE_TYPE_DESCRIPTOR_SET_ALLOCATE_INFO
+    pNext = 0x0
+    descriptorPool = 0x177fc769d30
+    descriptorSetCount = 0x1
+    pSetLayouts = 0x177fc75a980
+     pSetLayouts[0] = 0x177fec6b000
+
+t{0} vkAllocateDescriptorSets(device = 0x177fc51f990, pAllocateInfo = 0x177fecb6d40, *pDescriptorSets = 0x177fec13bc0) = VK_SUCCESS
+   pAllocateInfo:
+    sType = VK_STRUCTURE_TYPE_DESCRIPTOR_SET_ALLOCATE_INFO
+    pNext = 0x0
+    descriptorPool = 0x177fc769d30
+    descriptorSetCount = 0x1
+    pSetLayouts = 0x177fc75a770
+     pSetLayouts[0] = 0x177fec6b000
+
+t{0} vkAllocateDescriptorSets(device = 0x177fc51f990, pAllocateInfo = 0x177fecb7430, *pDescriptorSets = 0x177fec13d00) = VK_SUCCESS
+   pAllocateInfo:
+    sType = VK_STRUCTURE_TYPE_DESCRIPTOR_SET_ALLOCATE_INFO
+    pNext = 0x0
+    descriptorPool = 0x177fc769d30
+    descriptorSetCount = 0x1
+    pSetLayouts = 0x177fc75a970
+     pSetLayouts[0] = 0x177fec6b000
+
+t{0} vkAllocateDescriptorSets(device = 0x177fc51f990, pAllocateInfo = 0x177fecb7430, *pDescriptorSets = 0x177fec13e40) = VK_SUCCESS
+   pAllocateInfo:
+    sType = VK_STRUCTURE_TYPE_DESCRIPTOR_SET_ALLOCATE_INFO
+    pNext = 0x0
+    descriptorPool = 0x177fc769d30
+    descriptorSetCount = 0x1
+    pSetLayouts = 0x177fc75a7e0
+     pSetLayouts[0] = 0x177fec6b000
+
+t{0} vkAllocateDescriptorSets(device = 0x177fc51f990, pAllocateInfo = 0x177fecb6ad0, *pDescriptorSets = 0x177fec13f80) = VK_SUCCESS
+   pAllocateInfo:
+    sType = VK_STRUCTURE_TYPE_DESCRIPTOR_SET_ALLOCATE_INFO
+    pNext = 0x0
+    descriptorPool = 0x177fc769d30
+    descriptorSetCount = 0x1
+    pSetLayouts = 0x177fc75a770
+     pSetLayouts[0] = 0x177fec6b000
+
+t{0} vkAllocateDescriptorSets(device = 0x177fc51f990, pAllocateInfo = 0x177fecb7430, *pDescriptorSets = 0x177fec140c0) = VK_SUCCESS
+   pAllocateInfo:
+    sType = VK_STRUCTURE_TYPE_DESCRIPTOR_SET_ALLOCATE_INFO
+    pNext = 0x0
+    descriptorPool = 0x177fc769d30
+    descriptorSetCount = 0x1
+    pSetLayouts = 0x177fc75a7e0
+     pSetLayouts[0] = 0x177fec6b000
+
+t{0} vkAllocateDescriptorSets(device = 0x177fc51f990, pAllocateInfo = 0x177fecb7010, *pDescriptorSets = 0x177fec14200) = VK_SUCCESS
+   pAllocateInfo:
+    sType = VK_STRUCTURE_TYPE_DESCRIPTOR_SET_ALLOCATE_INFO
+    pNext = 0x0
+    descriptorPool = 0x177fc769d30
+    descriptorSetCount = 0x1
+    pSetLayouts = 0x177fc75a870
+     pSetLayouts[0] = 0x177fec6b000
+
+t{0} vkAllocateDescriptorSets(device = 0x177fc51f990, pAllocateInfo = 0x177fecb7430, *pDescriptorSets = 0x177fec14340) = VK_SUCCESS
+   pAllocateInfo:
+    sType = VK_STRUCTURE_TYPE_DESCRIPTOR_SET_ALLOCATE_INFO
+    pNext = 0x0
+    descriptorPool = 0x177fc769d30
+    descriptorSetCount = 0x1
+    pSetLayouts = 0x177fc75a770
+     pSetLayouts[0] = 0x177fec6b000
+
+t{0} vkAllocateDescriptorSets(device = 0x177fc51f990, pAllocateInfo = 0x177fecb6950, *pDescriptorSets = 0x177fec14480) = VK_SUCCESS
+   pAllocateInfo:
+    sType = VK_STRUCTURE_TYPE_DESCRIPTOR_SET_ALLOCATE_INFO
+    pNext = 0x0
+    descriptorPool = 0x177fc769d30
+    descriptorSetCount = 0x1
+    pSetLayouts = 0x177fc75a7e0
+     pSetLayouts[0] = 0x177fec6b000
+
+t{0} vkAllocateDescriptorSets(device = 0x177fc51f990, pAllocateInfo = 0x177fecb7010, *pDescriptorSets = 0x177fec145c0) = VK_SUCCESS
+   pAllocateInfo:
+    sType = VK_STRUCTURE_TYPE_DESCRIPTOR_SET_ALLOCATE_INFO
+    pNext = 0x0
+    descriptorPool = 0x177fc769d30
+    descriptorSetCount = 0x1
+    pSetLayouts = 0x177fc75a970
+     pSetLayouts[0] = 0x177fec6b000
+
+t{0} vkAllocateDescriptorSets(device = 0x177fc51f990, pAllocateInfo = 0x177fecb7700, *pDescriptorSets = 0x177fec14700) = VK_SUCCESS
+   pAllocateInfo:
+    sType = VK_STRUCTURE_TYPE_DESCRIPTOR_SET_ALLOCATE_INFO
+    pNext = 0x0
+    descriptorPool = 0x177fc769d30
+    descriptorSetCount = 0x1
+    pSetLayouts = 0x177fc75a7e0
+     pSetLayouts[0] = 0x177fec6b000
+
+t{0} vkAllocateDescriptorSets(device = 0x177fc51f990, pAllocateInfo = 0x177fecb75b0, *pDescriptorSets = 0x177fec14840) = VK_SUCCESS
+   pAllocateInfo:
+    sType = VK_STRUCTURE_TYPE_DESCRIPTOR_SET_ALLOCATE_INFO
+    pNext = 0x0
+    descriptorPool = 0x177fc769d30
+    descriptorSetCount = 0x1
+    pSetLayouts = 0x177fc75a7e0
+     pSetLayouts[0] = 0x177fec6b000
+
+t{0} vkAllocateDescriptorSets(device = 0x177fc51f990, pAllocateInfo = 0x177fecb7ca0, *pDescriptorSets = 0x177fec14980) = VK_SUCCESS
+   pAllocateInfo:
+    sType = VK_STRUCTURE_TYPE_DESCRIPTOR_SET_ALLOCATE_INFO
+    pNext = 0x0
+    descriptorPool = 0x177fc769d30
+    descriptorSetCount = 0x1
+    pSetLayouts = 0x177fc75a990
+     pSetLayouts[0] = 0x177fec6b000
+
+t{0} vkAllocateDescriptorSets(device = 0x177fc51f990, pAllocateInfo = 0x177fecb8090, *pDescriptorSets = 0x177fec14ac0) = VK_SUCCESS
+   pAllocateInfo:
+    sType = VK_STRUCTURE_TYPE_DESCRIPTOR_SET_ALLOCATE_INFO
+    pNext = 0x0
+    descriptorPool = 0x177fc769d30
+    descriptorSetCount = 0x1
+    pSetLayouts = 0x177fc75a970
+     pSetLayouts[0] = 0x177fec6b000
+
+t{0} vkAllocateDescriptorSets(device = 0x177fc51f990, pAllocateInfo = 0x177fecb7670, *pDescriptorSets = 0x177fec14c00) = VK_SUCCESS
+   pAllocateInfo:
+    sType = VK_STRUCTURE_TYPE_DESCRIPTOR_SET_ALLOCATE_INFO
+    pNext = 0x0
+    descriptorPool = 0x177fc769d30
+    descriptorSetCount = 0x1
+    pSetLayouts = 0x177fc75a7e0
+     pSetLayouts[0] = 0x177fec6b000
+
+t{0} vkAllocateDescriptorSets(device = 0x177fc51f990, pAllocateInfo = 0x177fecb7f40, *pDescriptorSets = 0x177fec14d40) = VK_SUCCESS
+   pAllocateInfo:
+    sType = VK_STRUCTURE_TYPE_DESCRIPTOR_SET_ALLOCATE_INFO
+    pNext = 0x0
+    descriptorPool = 0x177fc769d30
+    descriptorSetCount = 0x1
+    pSetLayouts = 0x177fc75a970
+     pSetLayouts[0] = 0x177fec6b000
+
+t{0} vkAllocateDescriptorSets(device = 0x177fc51f990, pAllocateInfo = 0x177fecb79a0, *pDescriptorSets = 0x177fec14e80) = VK_SUCCESS
+   pAllocateInfo:
+    sType = VK_STRUCTURE_TYPE_DESCRIPTOR_SET_ALLOCATE_INFO
+    pNext = 0x0
+    descriptorPool = 0x177fc769d30
+    descriptorSetCount = 0x1
+    pSetLayouts = 0x177fc75a7e0
+     pSetLayouts[0] = 0x177fec6b000
+
+t{0} vkAllocateDescriptorSets(device = 0x177fc51f990, pAllocateInfo = 0x177fecb8090, *pDescriptorSets = 0x177fec14fc0) = VK_SUCCESS
+   pAllocateInfo:
+    sType = VK_STRUCTURE_TYPE_DESCRIPTOR_SET_ALLOCATE_INFO
+    pNext = 0x0
+    descriptorPool = 0x177fc769d30
+    descriptorSetCount = 0x1
+    pSetLayouts = 0x177fc75a770
+     pSetLayouts[0] = 0x177fec6b000
+
+t{0} vkAllocateDescriptorSets(device = 0x177fc51f990, pAllocateInfo = 0x177fecb7eb0, *pDescriptorSets = 0x177fec15100) = VK_SUCCESS
+   pAllocateInfo:
+    sType = VK_STRUCTURE_TYPE_DESCRIPTOR_SET_ALLOCATE_INFO
+    pNext = 0x0
+    descriptorPool = 0x177fc769d30
+    descriptorSetCount = 0x1
+    pSetLayouts = 0x177fc75a970
+     pSetLayouts[0] = 0x177fec6b000
+
+t{0} vkAllocateDescriptorSets(device = 0x177fc51f990, pAllocateInfo = 0x177fecb7940, *pDescriptorSets = 0x177fec15240) = VK_SUCCESS
+   pAllocateInfo:
+    sType = VK_STRUCTURE_TYPE_DESCRIPTOR_SET_ALLOCATE_INFO
+    pNext = 0x0
+    descriptorPool = 0x177fc769d30
+    descriptorSetCount = 0x1
+    pSetLayouts = 0x177fc75a970
+     pSetLayouts[0] = 0x177fec6b000
+
+t{0} vkAllocateDescriptorSets(device = 0x177fc51f990, pAllocateInfo = 0x177fecb7970, *pDescriptorSets = 0x177fec15380) = VK_SUCCESS
+   pAllocateInfo:
+    sType = VK_STRUCTURE_TYPE_DESCRIPTOR_SET_ALLOCATE_INFO
+    pNext = 0x0
+    descriptorPool = 0x177fc769d30
+    descriptorSetCount = 0x1
+    pSetLayouts = 0x177fc75a970
+     pSetLayouts[0] = 0x177fec6b000
+
+t{0} vkAllocateDescriptorSets(device = 0x177fc51f990, pAllocateInfo = 0x177fecb7ac0, *pDescriptorSets = 0x177fec154c0) = VK_SUCCESS
+   pAllocateInfo:
+    sType = VK_STRUCTURE_TYPE_DESCRIPTOR_SET_ALLOCATE_INFO
+    pNext = 0x0
+    descriptorPool = 0x177fc769d30
+    descriptorSetCount = 0x1
+    pSetLayouts = 0x177fc75a880
+     pSetLayouts[0] = 0x177fec6b000
+
+t{0} vkAllocateDescriptorSets(device = 0x177fc51f990, pAllocateInfo = 0x177fecb8030, *pDescriptorSets = 0x177fec15600) = VK_SUCCESS
+   pAllocateInfo:
+    sType = VK_STRUCTURE_TYPE_DESCRIPTOR_SET_ALLOCATE_INFO
+    pNext = 0x0
+    descriptorPool = 0x177fc769d30
+    descriptorSetCount = 0x1
+    pSetLayouts = 0x177fc75a7e0
+     pSetLayouts[0] = 0x177fec6b000
+
+t{0} vkAllocateDescriptorSets(device = 0x177fc51f990, pAllocateInfo = 0x177fecb75e0, *pDescriptorSets = 0x177fec15740) = VK_SUCCESS
+   pAllocateInfo:
+    sType = VK_STRUCTURE_TYPE_DESCRIPTOR_SET_ALLOCATE_INFO
+    pNext = 0x0
+    descriptorPool = 0x177fc769d30
+    descriptorSetCount = 0x1
+    pSetLayouts = 0x177fc75a970
+     pSetLayouts[0] = 0x177fec6b000
+
+t{0} vkAllocateDescriptorSets(device = 0x177fc51f990, pAllocateInfo = 0x177fecb8060, *pDescriptorSets = 0x177fec15880) = VK_SUCCESS
+   pAllocateInfo:
+    sType = VK_STRUCTURE_TYPE_DESCRIPTOR_SET_ALLOCATE_INFO
+    pNext = 0x0
+    descriptorPool = 0x177fc769d30
+    descriptorSetCount = 0x1
+    pSetLayouts = 0x177fc75a7e0
+     pSetLayouts[0] = 0x177fec6b000
+
+t{0} vkAllocateDescriptorSets(device = 0x177fc51f990, pAllocateInfo = 0x177fecb8060, *pDescriptorSets = 0x177fec159c0) = VK_SUCCESS
+   pAllocateInfo:
+    sType = VK_STRUCTURE_TYPE_DESCRIPTOR_SET_ALLOCATE_INFO
+    pNext = 0x0
+    descriptorPool = 0x177fc769d30
+    descriptorSetCount = 0x1
+    pSetLayouts = 0x177fc75a970
+     pSetLayouts[0] = 0x177fec6b000
+
+t{0} vkAllocateDescriptorSets(device = 0x177fc51f990, pAllocateInfo = 0x177fecb86f0, *pDescriptorSets = 0x177fec15b00) = VK_SUCCESS
+   pAllocateInfo:
+    sType = VK_STRUCTURE_TYPE_DESCRIPTOR_SET_ALLOCATE_INFO
+    pNext = 0x0
+    descriptorPool = 0x177fc769d30
+    descriptorSetCount = 0x1
+    pSetLayouts = 0x177fc75a7e0
+     pSetLayouts[0] = 0x177fec6b000
+
+t{0} vkAllocateDescriptorSets(device = 0x177fc51f990, pAllocateInfo = 0x177fecb8960, *pDescriptorSets = 0x177fec15c40) = VK_SUCCESS
+   pAllocateInfo:
+    sType = VK_STRUCTURE_TYPE_DESCRIPTOR_SET_ALLOCATE_INFO
+    pNext = 0x0
+    descriptorPool = 0x177fc769d30
+    descriptorSetCount = 0x1
+    pSetLayouts = 0x177fc75a970
+     pSetLayouts[0] = 0x177fec6b000
+
+t{0} vkAllocateDescriptorSets(device = 0x177fc51f990, pAllocateInfo = 0x177fecb8840, *pDescriptorSets = 0x177fec15d80) = VK_SUCCESS
+   pAllocateInfo:
+    sType = VK_STRUCTURE_TYPE_DESCRIPTOR_SET_ALLOCATE_INFO
+    pNext = 0x0
+    descriptorPool = 0x177fc769d30
+    descriptorSetCount = 0x1
+    pSetLayouts = 0x177fc75a7e0
+     pSetLayouts[0] = 0x177fec6b000
+
+t{0} vkAllocateDescriptorSets(device = 0x177fc51f990, pAllocateInfo = 0x177fecb88d0, *pDescriptorSets = 0x177fec15ec0) = VK_SUCCESS
+   pAllocateInfo:
+    sType = VK_STRUCTURE_TYPE_DESCRIPTOR_SET_ALLOCATE_INFO
+    pNext = 0x0
+    descriptorPool = 0x177fc769d30
+    descriptorSetCount = 0x1
+    pSetLayouts = 0x177fc75a7e0
+     pSetLayouts[0] = 0x177fec6b000
+
+t{0} vkAllocateDescriptorSets(device = 0x177fc51f990, pAllocateInfo = 0x177fecb8180, *pDescriptorSets = 0x177fec16000) = VK_SUCCESS
+   pAllocateInfo:
+    sType = VK_STRUCTURE_TYPE_DESCRIPTOR_SET_ALLOCATE_INFO
+    pNext = 0x0
+    descriptorPool = 0x177fc769d30
+    descriptorSetCount = 0x1
+    pSetLayouts = 0x177fc75a770
+     pSetLayouts[0] = 0x177fec6b000
+
+t{0} vkAllocateDescriptorSets(device = 0x177fc51f990, pAllocateInfo = 0x177fecb8720, *pDescriptorSets = 0x177fec16140) = VK_SUCCESS
+   pAllocateInfo:
+    sType = VK_STRUCTURE_TYPE_DESCRIPTOR_SET_ALLOCATE_INFO
+    pNext = 0x0
+    descriptorPool = 0x177fc769d30
+    descriptorSetCount = 0x1
+    pSetLayouts = 0x177fc75a770
+     pSetLayouts[0] = 0x177fec6b100
+
+t{0} vkAllocateDescriptorSets(device = 0x177fc51f990, pAllocateInfo = 0x177fecb8a50, *pDescriptorSets = 0x177fec16280) = VK_SUCCESS
+   pAllocateInfo:
+    sType = VK_STRUCTURE_TYPE_DESCRIPTOR_SET_ALLOCATE_INFO
+    pNext = 0x0
+    descriptorPool = 0x177fc769d30
+    descriptorSetCount = 0x1
+    pSetLayouts = 0x177fc75a980
+     pSetLayouts[0] = 0x177fec6b100
+
+t{0} vkAllocateDescriptorSets(device = 0x177fc51f990, pAllocateInfo = 0x177fecb82a0, *pDescriptorSets = 0x177fec163c0) = VK_SUCCESS
+   pAllocateInfo:
+    sType = VK_STRUCTURE_TYPE_DESCRIPTOR_SET_ALLOCATE_INFO
+    pNext = 0x0
+    descriptorPool = 0x177fc769d30
+    descriptorSetCount = 0x1
+    pSetLayouts = 0x177fc75a970
+     pSetLayouts[0] = 0x177fec6b100
+
+t{0} vkAllocateDescriptorSets(device = 0x177fc51f990, pAllocateInfo = 0x177fecb8c90, *pDescriptorSets = 0x177fec16500) = VK_SUCCESS
+   pAllocateInfo:
+    sType = VK_STRUCTURE_TYPE_DESCRIPTOR_SET_ALLOCATE_INFO
+    pNext = 0x0
+    descriptorPool = 0x177fc769d30
+    descriptorSetCount = 0x1
+    pSetLayouts = 0x177fc75a970
+     pSetLayouts[0] = 0x177fec6b100
+
+t{0} vkAllocateDescriptorSets(device = 0x177fc51f990, pAllocateInfo = 0x177fecb8ab0, *pDescriptorSets = 0x177fec16640) = VK_SUCCESS
+   pAllocateInfo:
+    sType = VK_STRUCTURE_TYPE_DESCRIPTOR_SET_ALLOCATE_INFO
+    pNext = 0x0
+    descriptorPool = 0x177fc769d30
+    descriptorSetCount = 0x1
+    pSetLayouts = 0x177fc75a990
+     pSetLayouts[0] = 0x177fec6b100
+
+t{0} vkAllocateDescriptorSets(device = 0x177fc51f990, pAllocateInfo = 0x177fecb8330, *pDescriptorSets = 0x177fec16780) = VK_SUCCESS
+   pAllocateInfo:
+    sType = VK_STRUCTURE_TYPE_DESCRIPTOR_SET_ALLOCATE_INFO
+    pNext = 0x0
+    descriptorPool = 0x177fc769d30
+    descriptorSetCount = 0x1
+    pSetLayouts = 0x177fc75a990
+     pSetLayouts[0] = 0x177fec6b100
+
+t{0} vkAllocateDescriptorSets(device = 0x177fc51f990, pAllocateInfo = 0x177fecb8ab0, *pDescriptorSets = 0x177fec168c0) = VK_SUCCESS
+   pAllocateInfo:
+    sType = VK_STRUCTURE_TYPE_DESCRIPTOR_SET_ALLOCATE_INFO
+    pNext = 0x0
+    descriptorPool = 0x177fc769d30
+    descriptorSetCount = 0x1
+    pSetLayouts = 0x177fec76bc0
+     pSetLayouts[0] = 0x177fec6b100
+
+t{0} vkAllocateDescriptorSets(device = 0x177fc51f990, pAllocateInfo = 0x177fecb8bd0, *pDescriptorSets = 0x177fec16a00) = VK_SUCCESS
+   pAllocateInfo:
+    sType = VK_STRUCTURE_TYPE_DESCRIPTOR_SET_ALLOCATE_INFO
+    pNext = 0x0
+    descriptorPool = 0x177fc769d30
+    descriptorSetCount = 0x1
+    pSetLayouts = 0x177fec76bc0
+     pSetLayouts[0] = 0x177fec6b100
+
+t{0} vkAllocateDescriptorSets(device = 0x177fc51f990, pAllocateInfo = 0x177fecb8540, *pDescriptorSets = 0x177fec16b40) = VK_SUCCESS
+   pAllocateInfo:
+    sType = VK_STRUCTURE_TYPE_DESCRIPTOR_SET_ALLOCATE_INFO
+    pNext = 0x0
+    descriptorPool = 0x177fc769d30
+    descriptorSetCount = 0x1
+    pSetLayouts = 0x177fec76b60
+     pSetLayouts[0] = 0x177fec6b100
+
+t{0} vkAllocateDescriptorSets(device = 0x177fc51f990, pAllocateInfo = 0x177fecb8ae0, *pDescriptorSets = 0x177fec16c80) = VK_SUCCESS
+   pAllocateInfo:
+    sType = VK_STRUCTURE_TYPE_DESCRIPTOR_SET_ALLOCATE_INFO
+    pNext = 0x0
+    descriptorPool = 0x177fc769d30
+    descriptorSetCount = 0x1
+    pSetLayouts = 0x177fec769f0
+     pSetLayouts[0] = 0x177fec6b100
+
+t{0} vkAllocateDescriptorSets(device = 0x177fc51f990, pAllocateInfo = 0x177fecb8c00, *pDescriptorSets = 0x177fec16dc0) = VK_SUCCESS
+   pAllocateInfo:
+    sType = VK_STRUCTURE_TYPE_DESCRIPTOR_SET_ALLOCATE_INFO
+    pNext = 0x0
+    descriptorPool = 0x177fc769d30
+    descriptorSetCount = 0x1
+    pSetLayouts = 0x177fec76b70
+     pSetLayouts[0] = 0x177fec6b100
+
+t{0} vkAllocateDescriptorSets(device = 0x177fc51f990, pAllocateInfo = 0x177fecb8540, *pDescriptorSets = 0x177fec16f00) = VK_SUCCESS
+   pAllocateInfo:
+    sType = VK_STRUCTURE_TYPE_DESCRIPTOR_SET_ALLOCATE_INFO
+    pNext = 0x0
+    descriptorPool = 0x177fc769d30
+    descriptorSetCount = 0x1
+    pSetLayouts = 0x177fec76b40
+     pSetLayouts[0] = 0x177fec6b100
+
+t{0} vkAllocateDescriptorSets(device = 0x177fc51f990, pAllocateInfo = 0x177feccc7b0, *pDescriptorSets = 0x177fec17040) = VK_SUCCESS
+   pAllocateInfo:
+    sType = VK_STRUCTURE_TYPE_DESCRIPTOR_SET_ALLOCATE_INFO
+    pNext = 0x0
+    descriptorPool = 0x177fc769d30
+    descriptorSetCount = 0x1
+    pSetLayouts = 0x177fec769b0
+     pSetLayouts[0] = 0x177fec6b100
+
+t{0} vkAllocateDescriptorSets(device = 0x177fc51f990, pAllocateInfo = 0x177feccc300, *pDescriptorSets = 0x177fec17180) = VK_SUCCESS
+   pAllocateInfo:
+    sType = VK_STRUCTURE_TYPE_DESCRIPTOR_SET_ALLOCATE_INFO
+    pNext = 0x0
+    descriptorPool = 0x177fc769d30
+    descriptorSetCount = 0x1
+    pSetLayouts = 0x177fec76850
+     pSetLayouts[0] = 0x177fec6b100
+
+t{0} vkAllocateDescriptorSets(device = 0x177fc51f990, pAllocateInfo = 0x177feccc0f0, *pDescriptorSets = 0x177fec172c0) = VK_SUCCESS
+   pAllocateInfo:
+    sType = VK_STRUCTURE_TYPE_DESCRIPTOR_SET_ALLOCATE_INFO
+    pNext = 0x0
+    descriptorPool = 0x177fc769d30
+    descriptorSetCount = 0x1
+    pSetLayouts = 0x177fec76880
+     pSetLayouts[0] = 0x177fec6b100
+
+t{0} vkAllocateDescriptorSets(device = 0x177fc51f990, pAllocateInfo = 0x177fecccb40, *pDescriptorSets = 0x177fec17400) = VK_SUCCESS
+   pAllocateInfo:
+    sType = VK_STRUCTURE_TYPE_DESCRIPTOR_SET_ALLOCATE_INFO
+    pNext = 0x0
+    descriptorPool = 0x177fc769d30
+    descriptorSetCount = 0x1
+    pSetLayouts = 0x177fec76860
+     pSetLayouts[0] = 0x177fec6b100
+
+t{0} vkAllocateDescriptorSets(device = 0x177fc51f990, pAllocateInfo = 0x177feccc450, *pDescriptorSets = 0x177fec17540) = VK_SUCCESS
+   pAllocateInfo:
+    sType = VK_STRUCTURE_TYPE_DESCRIPTOR_SET_ALLOCATE_INFO
+    pNext = 0x0
+    descriptorPool = 0x177fc769d30
+    descriptorSetCount = 0x1
+    pSetLayouts = 0x177fec769d0
+     pSetLayouts[0] = 0x177fec6b100
+
+t{0} vkAllocateDescriptorSets(device = 0x177fc51f990, pAllocateInfo = 0x177feccc570, *pDescriptorSets = 0x177fec17680) = VK_SUCCESS
+   pAllocateInfo:
+    sType = VK_STRUCTURE_TYPE_DESCRIPTOR_SET_ALLOCATE_INFO
+    pNext = 0x0
+    descriptorPool = 0x177fc769d30
+    descriptorSetCount = 0x1
+    pSetLayouts = 0x177fec76bb0
+     pSetLayouts[0] = 0x177fec6b100
+
+t{0} vkAllocateDescriptorSets(device = 0x177fc51f990, pAllocateInfo = 0x177feccc780, *pDescriptorSets = 0x177fec177c0) = VK_SUCCESS
+   pAllocateInfo:
+    sType = VK_STRUCTURE_TYPE_DESCRIPTOR_SET_ALLOCATE_INFO
+    pNext = 0x0
+    descriptorPool = 0x177fc769d30
+    descriptorSetCount = 0x1
+    pSetLayouts = 0x177fec76b50
+     pSetLayouts[0] = 0x177fec6b100
+
+t{0} vkAllocateDescriptorSets(device = 0x177fc51f990, pAllocateInfo = 0x177feccc8d0, *pDescriptorSets = 0x177fec17900) = VK_SUCCESS
+   pAllocateInfo:
+    sType = VK_STRUCTURE_TYPE_DESCRIPTOR_SET_ALLOCATE_INFO
+    pNext = 0x0
+    descriptorPool = 0x177fc769d30
+    descriptorSetCount = 0x1
+    pSetLayouts = 0x177fec76a80
+     pSetLayouts[0] = 0x177fec6b100
+
+t{0} vkAllocateDescriptorSets(device = 0x177fc51f990, pAllocateInfo = 0x177feccc510, *pDescriptorSets = 0x177fec17a40) = VK_SUCCESS
+   pAllocateInfo:
+    sType = VK_STRUCTURE_TYPE_DESCRIPTOR_SET_ALLOCATE_INFO
+    pNext = 0x0
+    descriptorPool = 0x177fc769d30
+    descriptorSetCount = 0x1
+    pSetLayouts = 0x177fec76910
+     pSetLayouts[0] = 0x177fec6b100
+
+t{0} vkAllocateDescriptorSets(device = 0x177fc51f990, pAllocateInfo = 0x177feccc090, *pDescriptorSets = 0x177fec17b80) = VK_SUCCESS
+   pAllocateInfo:
+    sType = VK_STRUCTURE_TYPE_DESCRIPTOR_SET_ALLOCATE_INFO
+    pNext = 0x0
+    descriptorPool = 0x177fc769d30
+    descriptorSetCount = 0x1
+    pSetLayouts = 0x177fec76870
+     pSetLayouts[0] = 0x177fec6b100
+
+t{0} vkAllocateDescriptorSets(device = 0x177fc51f990, pAllocateInfo = 0x177fecccab0, *pDescriptorSets = 0x177fec17cc0) = VK_SUCCESS
+   pAllocateInfo:
+    sType = VK_STRUCTURE_TYPE_DESCRIPTOR_SET_ALLOCATE_INFO
+    pNext = 0x0
+    descriptorPool = 0x177fc769d30
+    descriptorSetCount = 0x1
+    pSetLayouts = 0x177fec76960
+     pSetLayouts[0] = 0x177fec6b100
+
+t{0} vkAllocateDescriptorSets(device = 0x177fc51f990, pAllocateInfo = 0x177feccc5d0, *pDescriptorSets = 0x177fec17e00) = VK_SUCCESS
+   pAllocateInfo:
+    sType = VK_STRUCTURE_TYPE_DESCRIPTOR_SET_ALLOCATE_INFO
+    pNext = 0x0
+    descriptorPool = 0x177fc769d30
+    descriptorSetCount = 0x1
+    pSetLayouts = 0x177fec76910
+     pSetLayouts[0] = 0x177fec6b100
+
+t{0} vkAllocateDescriptorSets(device = 0x177fc51f990, pAllocateInfo = 0x177feccc0f0, *pDescriptorSets = 0x177fec17f40) = VK_SUCCESS
+   pAllocateInfo:
+    sType = VK_STRUCTURE_TYPE_DESCRIPTOR_SET_ALLOCATE_INFO
+    pNext = 0x0
+    descriptorPool = 0x177fc769d30
+    descriptorSetCount = 0x1
+    pSetLayouts = 0x177fec768e0
+     pSetLayouts[0] = 0x177fec6b100
+
+t{0} vkAllocateDescriptorSets(device = 0x177fc51f990, pAllocateInfo = 0x177feccc240, *pDescriptorSets = 0x177fec18080) = VK_SUCCESS
+   pAllocateInfo:
+    sType = VK_STRUCTURE_TYPE_DESCRIPTOR_SET_ALLOCATE_INFO
+    pNext = 0x0
+    descriptorPool = 0x177fc769d30
+    descriptorSetCount = 0x1
+    pSetLayouts = 0x177fec76860
+     pSetLayouts[0] = 0x177fec6b100
+
+t{0} vkAllocateDescriptorSets(device = 0x177fc51f990, pAllocateInfo = 0x177feccc750, *pDescriptorSets = 0x177fec181c0) = VK_SUCCESS
+   pAllocateInfo:
+    sType = VK_STRUCTURE_TYPE_DESCRIPTOR_SET_ALLOCATE_INFO
+    pNext = 0x0
+    descriptorPool = 0x177fc769d30
+    descriptorSetCount = 0x1
+    pSetLayouts = 0x177fec769c0
+     pSetLayouts[0] = 0x177fec6b100
+
+t{0} vkAllocateDescriptorSets(device = 0x177fc51f990, pAllocateInfo = 0x177feccc7b0, *pDescriptorSets = 0x177fec18300) = VK_SUCCESS
+   pAllocateInfo:
+    sType = VK_STRUCTURE_TYPE_DESCRIPTOR_SET_ALLOCATE_INFO
+    pNext = 0x0
+    descriptorPool = 0x177fc769d30
+    descriptorSetCount = 0x1
+    pSetLayouts = 0x177fec76af0
+     pSetLayouts[0] = 0x177fec6b100
+
+t{0} vkAllocateDescriptorSets(device = 0x177fc51f990, pAllocateInfo = 0x177fecccc90, *pDescriptorSets = 0x177fec18440) = VK_SUCCESS
+   pAllocateInfo:
+    sType = VK_STRUCTURE_TYPE_DESCRIPTOR_SET_ALLOCATE_INFO
+    pNext = 0x0
+    descriptorPool = 0x177fc769d30
+    descriptorSetCount = 0x1
+    pSetLayouts = 0x177fec76860
+     pSetLayouts[0] = 0x177fec6b100
+
+t{0} vkAllocateDescriptorSets(device = 0x177fc51f990, pAllocateInfo = 0x177fecccd80, *pDescriptorSets = 0x177fec18580) = VK_SUCCESS
+   pAllocateInfo:
+    sType = VK_STRUCTURE_TYPE_DESCRIPTOR_SET_ALLOCATE_INFO
+    pNext = 0x0
+    descriptorPool = 0x177fc769d30
+    descriptorSetCount = 0x1
+    pSetLayouts = 0x177fec76860
+     pSetLayouts[0] = 0x177fec6b100
+
+t{0} vkAllocateDescriptorSets(device = 0x177fc51f990, pAllocateInfo = 0x177feccd4d0, *pDescriptorSets = 0x177fec186c0) = VK_SUCCESS
+   pAllocateInfo:
+    sType = VK_STRUCTURE_TYPE_DESCRIPTOR_SET_ALLOCATE_INFO
+    pNext = 0x0
+    descriptorPool = 0x177fc769d30
+    descriptorSetCount = 0x1
+    pSetLayouts = 0x177fec76a80
+     pSetLayouts[0] = 0x177fec6b100
+
+t{0} vkAllocateDescriptorSets(device = 0x177fc51f990, pAllocateInfo = 0x177fecccea0, *pDescriptorSets = 0x177fec18800) = VK_SUCCESS
+   pAllocateInfo:
+    sType = VK_STRUCTURE_TYPE_DESCRIPTOR_SET_ALLOCATE_INFO
+    pNext = 0x0
+    descriptorPool = 0x177fc769d30
+    descriptorSetCount = 0x1
+    pSetLayouts = 0x177fec76860
+     pSetLayouts[0] = 0x177fec6b100
+
+t{0} vkAllocateDescriptorSets(device = 0x177fc51f990, pAllocateInfo = 0x177feccce70, *pDescriptorSets = 0x177fec18940) = VK_SUCCESS
+   pAllocateInfo:
+    sType = VK_STRUCTURE_TYPE_DESCRIPTOR_SET_ALLOCATE_INFO
+    pNext = 0x0
+    descriptorPool = 0x177fc769d30
+    descriptorSetCount = 0x1
+    pSetLayouts = 0x177fec76a60
+     pSetLayouts[0] = 0x177fec6b100
+
+t{0} vkAllocateDescriptorSets(device = 0x177fc51f990, pAllocateInfo = 0x177fecccc90, *pDescriptorSets = 0x177fec18a80) = VK_SUCCESS
+   pAllocateInfo:
+    sType = VK_STRUCTURE_TYPE_DESCRIPTOR_SET_ALLOCATE_INFO
+    pNext = 0x0
+    descriptorPool = 0x177fc769d30
+    descriptorSetCount = 0x1
+    pSetLayouts = 0x177fec76860
+     pSetLayouts[0] = 0x177fec6b100
+
+t{0} vkAllocateDescriptorSets(device = 0x177fc51f990, pAllocateInfo = 0x177feccce40, *pDescriptorSets = 0x177fec18bc0) = VK_SUCCESS
+   pAllocateInfo:
+    sType = VK_STRUCTURE_TYPE_DESCRIPTOR_SET_ALLOCATE_INFO
+    pNext = 0x0
+    descriptorPool = 0x177fc769d30
+    descriptorSetCount = 0x1
+    pSetLayouts = 0x177fec76b40
+     pSetLayouts[0] = 0x177fec6b100
+
+t{0} vkAllocateDescriptorSets(device = 0x177fc51f990, pAllocateInfo = 0x177feccd080, *pDescriptorSets = 0x177fec18d00) = VK_SUCCESS
+   pAllocateInfo:
+    sType = VK_STRUCTURE_TYPE_DESCRIPTOR_SET_ALLOCATE_INFO
+    pNext = 0x0
+    descriptorPool = 0x177fc769d30
+    descriptorSetCount = 0x1
+    pSetLayouts = 0x177fec768a0
+     pSetLayouts[0] = 0x177fec6b100
+
+t{0} vkAllocateDescriptorSets(device = 0x177fc51f990, pAllocateInfo = 0x177feccd6b0, *pDescriptorSets = 0x177fec18e40) = VK_SUCCESS
+   pAllocateInfo:
+    sType = VK_STRUCTURE_TYPE_DESCRIPTOR_SET_ALLOCATE_INFO
+    pNext = 0x0
+    descriptorPool = 0x177fc769d30
+    descriptorSetCount = 0x1
+    pSetLayouts = 0x177fec76910
+     pSetLayouts[0] = 0x177fec6b100
+
+t{0} vkAllocateDescriptorSets(device = 0x177fc51f990, pAllocateInfo = 0x177feccd080, *pDescriptorSets = 0x177fec18f80) = VK_SUCCESS
+   pAllocateInfo:
+    sType = VK_STRUCTURE_TYPE_DESCRIPTOR_SET_ALLOCATE_INFO
+    pNext = 0x0
+    descriptorPool = 0x177fc769d30
+    descriptorSetCount = 0x1
+    pSetLayouts = 0x177fec76ba0
+     pSetLayouts[0] = 0x177fec6b100
+
+t{0} vkAllocateDescriptorSets(device = 0x177fc51f990, pAllocateInfo = 0x177fecccc30, *pDescriptorSets = 0x177fec190c0) = VK_SUCCESS
+   pAllocateInfo:
+    sType = VK_STRUCTURE_TYPE_DESCRIPTOR_SET_ALLOCATE_INFO
+    pNext = 0x0
+    descriptorPool = 0x177fc769d30
+    descriptorSetCount = 0x1
+    pSetLayouts = 0x177fec76860
+     pSetLayouts[0] = 0x177fec6b100
+
+t{0} vkAllocateDescriptorSets(device = 0x177fc51f990, pAllocateInfo = 0x177feccd5f0, *pDescriptorSets = 0x177fec19200) = VK_SUCCESS
+   pAllocateInfo:
+    sType = VK_STRUCTURE_TYPE_DESCRIPTOR_SET_ALLOCATE_INFO
+    pNext = 0x0
+    descriptorPool = 0x177fc769d30
+    descriptorSetCount = 0x1
+    pSetLayouts = 0x177fec769b0
+     pSetLayouts[0] = 0x177fec6b100
+
+t{0} vkAllocateDescriptorSets(device = 0x177fc51f990, pAllocateInfo = 0x177feccd290, *pDescriptorSets = 0x177fec19340) = VK_SUCCESS
+   pAllocateInfo:
+    sType = VK_STRUCTURE_TYPE_DESCRIPTOR_SET_ALLOCATE_INFO
+    pNext = 0x0
+    descriptorPool = 0x177fc769d30
+    descriptorSetCount = 0x1
+    pSetLayouts = 0x177fec76b70
+     pSetLayouts[0] = 0x177fec6b100
+
+t{0} vkAllocateDescriptorSets(device = 0x177fc51f990, pAllocateInfo = 0x177feccd290, *pDescriptorSets = 0x177fec19480) = VK_SUCCESS
+   pAllocateInfo:
+    sType = VK_STRUCTURE_TYPE_DESCRIPTOR_SET_ALLOCATE_INFO
+    pNext = 0x0
+    descriptorPool = 0x177fc769d30
+    descriptorSetCount = 0x1
+    pSetLayouts = 0x177fec76960
+     pSetLayouts[0] = 0x177fec6b100
+
+t{0} vkAllocateDescriptorSets(device = 0x177fc51f990, pAllocateInfo = 0x177feccd290, *pDescriptorSets = 0x177fec195c0) = VK_SUCCESS
+   pAllocateInfo:
+    sType = VK_STRUCTURE_TYPE_DESCRIPTOR_SET_ALLOCATE_INFO
+    pNext = 0x0
+    descriptorPool = 0x177fc769d30
+    descriptorSetCount = 0x1
+    pSetLayouts = 0x177fec76920
+     pSetLayouts[0] = 0x177fec6b100
+
+t{0} vkAllocateDescriptorSets(device = 0x177fc51f990, pAllocateInfo = 0x177feccd410, *pDescriptorSets = 0x177fec19700) = VK_SUCCESS
+   pAllocateInfo:
+    sType = VK_STRUCTURE_TYPE_DESCRIPTOR_SET_ALLOCATE_INFO
+    pNext = 0x0
+    descriptorPool = 0x177fc769d30
+    descriptorSetCount = 0x1
+    pSetLayouts = 0x177fec769b0
+     pSetLayouts[0] = 0x177fec6b100
+
+t{0} vkAllocateDescriptorSets(device = 0x177fc51f990, pAllocateInfo = 0x177feccd950, *pDescriptorSets = 0x177fec19840) = VK_SUCCESS
+   pAllocateInfo:
+    sType = VK_STRUCTURE_TYPE_DESCRIPTOR_SET_ALLOCATE_INFO
+    pNext = 0x0
+    descriptorPool = 0x177fc769d30
+    descriptorSetCount = 0x1
+    pSetLayouts = 0x177fec768e0
+     pSetLayouts[0] = 0x177fec6b100
+
+t{0} vkAllocateDescriptorSets(device = 0x177fc51f990, pAllocateInfo = 0x177feccdd10, *pDescriptorSets = 0x177fec19980) = VK_SUCCESS
+   pAllocateInfo:
+    sType = VK_STRUCTURE_TYPE_DESCRIPTOR_SET_ALLOCATE_INFO
+    pNext = 0x0
+    descriptorPool = 0x177fc769d30
+    descriptorSetCount = 0x1
+    pSetLayouts = 0x177fec76aa0
+     pSetLayouts[0] = 0x177fec6b100
+
+t{0} vkAllocateDescriptorSets(device = 0x177fc51f990, pAllocateInfo = 0x177fecce160, *pDescriptorSets = 0x177fec19ac0) = VK_SUCCESS
+   pAllocateInfo:
+    sType = VK_STRUCTURE_TYPE_DESCRIPTOR_SET_ALLOCATE_INFO
+    pNext = 0x0
+    descriptorPool = 0x177fc769d30
+    descriptorSetCount = 0x1
+    pSetLayouts = 0x177fec76b70
+     pSetLayouts[0] = 0x177fec6b100
+
+t{0} vkAllocateDescriptorSets(device = 0x177fc51f990, pAllocateInfo = 0x177feccdaa0, *pDescriptorSets = 0x177fec19c00) = VK_SUCCESS
+   pAllocateInfo:
+    sType = VK_STRUCTURE_TYPE_DESCRIPTOR_SET_ALLOCATE_INFO
+    pNext = 0x0
+    descriptorPool = 0x177fc769d30
+    descriptorSetCount = 0x1
+    pSetLayouts = 0x177fec769b0
+     pSetLayouts[0] = 0x177fec6b100
+
+t{0} vkAllocateDescriptorSets(device = 0x177fc51f990, pAllocateInfo = 0x177fecce0a0, *pDescriptorSets = 0x177fec19d40) = VK_SUCCESS
+   pAllocateInfo:
+    sType = VK_STRUCTURE_TYPE_DESCRIPTOR_SET_ALLOCATE_INFO
+    pNext = 0x0
+    descriptorPool = 0x177fc769d30
+    descriptorSetCount = 0x1
+    pSetLayouts = 0x177fec76ba0
+     pSetLayouts[0] = 0x177fec6b100
+
+t{0} vkAllocateDescriptorSets(device = 0x177fc51f990, pAllocateInfo = 0x177fecce040, *pDescriptorSets = 0x177fec19e80) = VK_SUCCESS
+   pAllocateInfo:
+    sType = VK_STRUCTURE_TYPE_DESCRIPTOR_SET_ALLOCATE_INFO
+    pNext = 0x0
+    descriptorPool = 0x177fc769d30
+    descriptorSetCount = 0x1
+    pSetLayouts = 0x177fec76b70
+     pSetLayouts[0] = 0x177fec6b100
+
+t{0} vkAllocateDescriptorSets(device = 0x177fc51f990, pAllocateInfo = 0x177fecce1f0, *pDescriptorSets = 0x177fec19fc0) = VK_SUCCESS
+   pAllocateInfo:
+    sType = VK_STRUCTURE_TYPE_DESCRIPTOR_SET_ALLOCATE_INFO
+    pNext = 0x0
+    descriptorPool = 0x177fc769d30
+    descriptorSetCount = 0x1
+    pSetLayouts = 0x177fec76a70
+     pSetLayouts[0] = 0x177fec6b100
+
+t{0} vkAllocateDescriptorSets(device = 0x177fc51f990, pAllocateInfo = 0x177feccdcb0, *pDescriptorSets = 0x177fec1a100) = VK_SUCCESS
+   pAllocateInfo:
+    sType = VK_STRUCTURE_TYPE_DESCRIPTOR_SET_ALLOCATE_INFO
+    pNext = 0x0
+    descriptorPool = 0x177fc769d30
+    descriptorSetCount = 0x1
+    pSetLayouts = 0x177fec769c0
+     pSetLayouts[0] = 0x177fec6ae80
+
+t{0} vkAllocateDescriptorSets(device = 0x177fc51f990, pAllocateInfo = 0x177feccdcb0, *pDescriptorSets = 0x177fec1a240) = VK_SUCCESS
+   pAllocateInfo:
+    sType = VK_STRUCTURE_TYPE_DESCRIPTOR_SET_ALLOCATE_INFO
+    pNext = 0x0
+    descriptorPool = 0x177fc769d30
+    descriptorSetCount = 0x1
+    pSetLayouts = 0x177fec769c0
+     pSetLayouts[0] = 0x177fec6ae80
+
+t{0} vkAllocateDescriptorSets(device = 0x177fc51f990, pAllocateInfo = 0x177feccd8f0, *pDescriptorSets = 0x177fec1a380) = VK_SUCCESS
+   pAllocateInfo:
+    sType = VK_STRUCTURE_TYPE_DESCRIPTOR_SET_ALLOCATE_INFO
+    pNext = 0x0
+    descriptorPool = 0x177fc769d30
+    descriptorSetCount = 0x1
+    pSetLayouts = 0x177fec769c0
+     pSetLayouts[0] = 0x177fec6ae80
+
+t{0} vkAllocateDescriptorSets(device = 0x177fc51f990, pAllocateInfo = 0x177feccdd70, *pDescriptorSets = 0x177fec1a4c0) = VK_SUCCESS
+   pAllocateInfo:
+    sType = VK_STRUCTURE_TYPE_DESCRIPTOR_SET_ALLOCATE_INFO
+    pNext = 0x0
+    descriptorPool = 0x177fc769d30
+    descriptorSetCount = 0x1
+    pSetLayouts = 0x177fec76b70
+     pSetLayouts[0] = 0x177fec6ae80
+
+t{0} vkAllocateDescriptorSets(device = 0x177fc51f990, pAllocateInfo = 0x177feccdd70, *pDescriptorSets = 0x177fec1a600) = VK_SUCCESS
+   pAllocateInfo:
+    sType = VK_STRUCTURE_TYPE_DESCRIPTOR_SET_ALLOCATE_INFO
+    pNext = 0x0
+    descriptorPool = 0x177fc769d30
+    descriptorSetCount = 0x1
+    pSetLayouts = 0x177fec769e0
+     pSetLayouts[0] = 0x177fec6ae80
+
+t{0} vkAllocateDescriptorSets(device = 0x177fc51f990, pAllocateInfo = 0x177fecce370, *pDescriptorSets = 0x177fec1a740) = VK_SUCCESS
+   pAllocateInfo:
+    sType = VK_STRUCTURE_TYPE_DESCRIPTOR_SET_ALLOCATE_INFO
+    pNext = 0x0
+    descriptorPool = 0x177fc769d30
+    descriptorSetCount = 0x1
+    pSetLayouts = 0x177fec76870
+     pSetLayouts[0] = 0x177fec6ae80
+
+t{0} vkAllocateDescriptorSets(device = 0x177fc51f990, pAllocateInfo = 0x177fecce370, *pDescriptorSets = 0x177fec1a880) = VK_SUCCESS
+   pAllocateInfo:
+    sType = VK_STRUCTURE_TYPE_DESCRIPTOR_SET_ALLOCATE_INFO
+    pNext = 0x0
+    descriptorPool = 0x177fc769d30
+    descriptorSetCount = 0x1
+    pSetLayouts = 0x177fec769e0
+     pSetLayouts[0] = 0x177fec6ae80
+
+t{0} vkAllocateDescriptorSets(device = 0x177fc51f990, pAllocateInfo = 0x177fecce010, *pDescriptorSets = 0x177fec1a9c0) = VK_SUCCESS
+   pAllocateInfo:
+    sType = VK_STRUCTURE_TYPE_DESCRIPTOR_SET_ALLOCATE_INFO
+    pNext = 0x0
+    descriptorPool = 0x177fc769d30
+    descriptorSetCount = 0x1
+    pSetLayouts = 0x177fec76ac0
+     pSetLayouts[0] = 0x177fec6ae80
+
+t{0} vkAllocateDescriptorSets(device = 0x177fc51f990, pAllocateInfo = 0x177fecce0a0, *pDescriptorSets = 0x177fec1ab00) = VK_SUCCESS
+   pAllocateInfo:
+    sType = VK_STRUCTURE_TYPE_DESCRIPTOR_SET_ALLOCATE_INFO
+    pNext = 0x0
+    descriptorPool = 0x177fc769d30
+    descriptorSetCount = 0x1
+    pSetLayouts = 0x177fec76ba0
+     pSetLayouts[0] = 0x177fec6ae80
+
+t{0} vkAllocateDescriptorSets(device = 0x177fc51f990, pAllocateInfo = 0x177fecce8b0, *pDescriptorSets = 0x177fec1ac40) = VK_SUCCESS
+   pAllocateInfo:
+    sType = VK_STRUCTURE_TYPE_DESCRIPTOR_SET_ALLOCATE_INFO
+    pNext = 0x0
+    descriptorPool = 0x177fc769d30
+    descriptorSetCount = 0x1
+    pSetLayouts = 0x177fec769c0
+     pSetLayouts[0] = 0x177fec6ae80
+
+t{0} vkAllocateDescriptorSets(device = 0x177fc51f990, pAllocateInfo = 0x177fecce9a0, *pDescriptorSets = 0x177fec1ad80) = VK_SUCCESS
+   pAllocateInfo:
+    sType = VK_STRUCTURE_TYPE_DESCRIPTOR_SET_ALLOCATE_INFO
+    pNext = 0x0
+    descriptorPool = 0x177fc769d30
+    descriptorSetCount = 0x1
+    pSetLayouts = 0x177fec76b70
+     pSetLayouts[0] = 0x177fec6ae80
+
+t{0} vkAllocateDescriptorSets(device = 0x177fc51f990, pAllocateInfo = 0x177fecce9a0, *pDescriptorSets = 0x177fec1aec0) = VK_SUCCESS
+   pAllocateInfo:
+    sType = VK_STRUCTURE_TYPE_DESCRIPTOR_SET_ALLOCATE_INFO
+    pNext = 0x0
+    descriptorPool = 0x177fc769d30
+    descriptorSetCount = 0x1
+    pSetLayouts = 0x177fec769c0
+     pSetLayouts[0] = 0x177fec6ae80
+
+t{0} vkAllocateDescriptorSets(device = 0x177fc51f990, pAllocateInfo = 0x177fecce430, *pDescriptorSets = 0x177fec1b000) = VK_SUCCESS
+   pAllocateInfo:
+    sType = VK_STRUCTURE_TYPE_DESCRIPTOR_SET_ALLOCATE_INFO
+    pNext = 0x0
+    descriptorPool = 0x177fc769d30
+    descriptorSetCount = 0x1
+    pSetLayouts = 0x177fec769e0
+     pSetLayouts[0] = 0x177fec6ae80
+
+t{0} vkAllocateDescriptorSets(device = 0x177fc51f990, pAllocateInfo = 0x177fecceeb0, *pDescriptorSets = 0x177fec1b140) = VK_SUCCESS
+   pAllocateInfo:
+    sType = VK_STRUCTURE_TYPE_DESCRIPTOR_SET_ALLOCATE_INFO
+    pNext = 0x0
+    descriptorPool = 0x177fc769d30
+    descriptorSetCount = 0x1
+    pSetLayouts = 0x177fec769e0
+     pSetLayouts[0] = 0x177fec6ae80
+
+t{0} vkAllocateDescriptorSets(device = 0x177fc51f990, pAllocateInfo = 0x177fecce6d0, *pDescriptorSets = 0x177fec1b280) = VK_SUCCESS
+   pAllocateInfo:
+    sType = VK_STRUCTURE_TYPE_DESCRIPTOR_SET_ALLOCATE_INFO
+    pNext = 0x0
+    descriptorPool = 0x177fc769d30
+    descriptorSetCount = 0x1
+    pSetLayouts = 0x177fec769c0
+     pSetLayouts[0] = 0x177fec6ae80
+
+t{0} vkAllocateDescriptorSets(device = 0x177fc51f990, pAllocateInfo = 0x177fecce700, *pDescriptorSets = 0x177fec1b3c0) = VK_SUCCESS
+   pAllocateInfo:
+    sType = VK_STRUCTURE_TYPE_DESCRIPTOR_SET_ALLOCATE_INFO
+    pNext = 0x0
+    descriptorPool = 0x177fc769d30
+    descriptorSetCount = 0x1
+    pSetLayouts = 0x177fec769c0
+     pSetLayouts[0] = 0x177fec6ae80
+
+t{0} vkAllocateDescriptorSets(device = 0x177fc51f990, pAllocateInfo = 0x177fecced30, *pDescriptorSets = 0x177fec1b500) = VK_SUCCESS
+   pAllocateInfo:
+    sType = VK_STRUCTURE_TYPE_DESCRIPTOR_SET_ALLOCATE_INFO
+    pNext = 0x0
+    descriptorPool = 0x177fc769d30
+    descriptorSetCount = 0x1
+    pSetLayouts = 0x177fec76b70
+     pSetLayouts[0] = 0x177fec6ae80
+
+t{0} vkAllocateDescriptorSets(device = 0x177fc51f990, pAllocateInfo = 0x177fecce490, *pDescriptorSets = 0x177fec1b640) = VK_SUCCESS
+   pAllocateInfo:
+    sType = VK_STRUCTURE_TYPE_DESCRIPTOR_SET_ALLOCATE_INFO
+    pNext = 0x0
+    descriptorPool = 0x177fc769d30
+    descriptorSetCount = 0x1
+    pSetLayouts = 0x177fec76b70
+     pSetLayouts[0] = 0x177fec6ae80
+
+t{0} vkAllocateDescriptorSets(device = 0x177fc51f990, pAllocateInfo = 0x177feccec70, *pDescriptorSets = 0x177fec1b780) = VK_SUCCESS
+   pAllocateInfo:
+    sType = VK_STRUCTURE_TYPE_DESCRIPTOR_SET_ALLOCATE_INFO
+    pNext = 0x0
+    descriptorPool = 0x177fc769d30
+    descriptorSetCount = 0x1
+    pSetLayouts = 0x177fec76b70
+     pSetLayouts[0] = 0x177fec6ae80
+
+t{0} vkAllocateDescriptorSets(device = 0x177fc51f990, pAllocateInfo = 0x177feccea30, *pDescriptorSets = 0x177fec1b8c0) = VK_SUCCESS
+   pAllocateInfo:
+    sType = VK_STRUCTURE_TYPE_DESCRIPTOR_SET_ALLOCATE_INFO
+    pNext = 0x0
+    descriptorPool = 0x177fc769d30
+    descriptorSetCount = 0x1
+    pSetLayouts = 0x177fec76ba0
+     pSetLayouts[0] = 0x177fec6ae80
+
+t{0} vkAllocateDescriptorSets(device = 0x177fc51f990, pAllocateInfo = 0x177fecce910, *pDescriptorSets = 0x177fec1ba00) = VK_SUCCESS
+   pAllocateInfo:
+    sType = VK_STRUCTURE_TYPE_DESCRIPTOR_SET_ALLOCATE_INFO
+    pNext = 0x0
+    descriptorPool = 0x177fc769d30
+    descriptorSetCount = 0x1
+    pSetLayouts = 0x177fec76a70
+     pSetLayouts[0] = 0x177fec6ae80
+
+t{0} vkAllocateDescriptorSets(device = 0x177fc51f990, pAllocateInfo = 0x177fecce430, *pDescriptorSets = 0x177fec1bb40) = VK_SUCCESS
+   pAllocateInfo:
+    sType = VK_STRUCTURE_TYPE_DESCRIPTOR_SET_ALLOCATE_INFO
+    pNext = 0x0
+    descriptorPool = 0x177fc769d30
+    descriptorSetCount = 0x1
+    pSetLayouts = 0x177fec76a00
+     pSetLayouts[0] = 0x177fec6ae80
+
+t{0} vkAllocateDescriptorSets(device = 0x177fc51f990, pAllocateInfo = 0x177feccebb0, *pDescriptorSets = 0x177fec1bc80) = VK_SUCCESS
+   pAllocateInfo:
+    sType = VK_STRUCTURE_TYPE_DESCRIPTOR_SET_ALLOCATE_INFO
+    pNext = 0x0
+    descriptorPool = 0x177fc769d30
+    descriptorSetCount = 0x1
+    pSetLayouts = 0x177fec76a70
+     pSetLayouts[0] = 0x177fec6ae80
+
+t{0} vkAllocateDescriptorSets(device = 0x177fc51f990, pAllocateInfo = 0x177fecce4f0, *pDescriptorSets = 0x177fec1bdc0) = VK_SUCCESS
+   pAllocateInfo:
+    sType = VK_STRUCTURE_TYPE_DESCRIPTOR_SET_ALLOCATE_INFO
+    pNext = 0x0
+    descriptorPool = 0x177fc769d30
+    descriptorSetCount = 0x1
+    pSetLayouts = 0x177fec769c0
+     pSetLayouts[0] = 0x177fec6ae80
+
+t{0} vkAllocateDescriptorSets(device = 0x177fc51f990, pAllocateInfo = 0x177fecce520, *pDescriptorSets = 0x177fec1bf00) = VK_SUCCESS
+   pAllocateInfo:
+    sType = VK_STRUCTURE_TYPE_DESCRIPTOR_SET_ALLOCATE_INFO
+    pNext = 0x0
+    descriptorPool = 0x177fc769d30
+    descriptorSetCount = 0x1
+    pSetLayouts = 0x177fec76ba0
+     pSetLayouts[0] = 0x177fec6ae80
+
+t{0} vkAllocateDescriptorSets(device = 0x177fc51f990, pAllocateInfo = 0x177feccf1e0, *pDescriptorSets = 0x177fec1c040) = VK_SUCCESS
+   pAllocateInfo:
+    sType = VK_STRUCTURE_TYPE_DESCRIPTOR_SET_ALLOCATE_INFO
+    pNext = 0x0
+    descriptorPool = 0x177fc769d30
+    descriptorSetCount = 0x1
+    pSetLayouts = 0x177fec76880
+     pSetLayouts[0] = 0x177fec6ae80
+
+t{0} vkAllocateDescriptorSets(device = 0x177fc51f990, pAllocateInfo = 0x177feccf330, *pDescriptorSets = 0x177fec1c180) = VK_SUCCESS
+   pAllocateInfo:
+    sType = VK_STRUCTURE_TYPE_DESCRIPTOR_SET_ALLOCATE_INFO
+    pNext = 0x0
+    descriptorPool = 0x177fc769d30
+    descriptorSetCount = 0x1
+    pSetLayouts = 0x177fec769e0
+     pSetLayouts[0] = 0x177fec6ae80
+
+t{0} vkAllocateDescriptorSets(device = 0x177fc51f990, pAllocateInfo = 0x177feccf180, *pDescriptorSets = 0x177fec1c2c0) = VK_SUCCESS
+   pAllocateInfo:
+    sType = VK_STRUCTURE_TYPE_DESCRIPTOR_SET_ALLOCATE_INFO
+    pNext = 0x0
+    descriptorPool = 0x177fc769d30
+    descriptorSetCount = 0x1
+    pSetLayouts = 0x177fec769e0
+     pSetLayouts[0] = 0x177fec6ae80
+
+t{0} vkAllocateDescriptorSets(device = 0x177fc51f990, pAllocateInfo = 0x177feccf120, *pDescriptorSets = 0x177fec1c400) = VK_SUCCESS
+   pAllocateInfo:
+    sType = VK_STRUCTURE_TYPE_DESCRIPTOR_SET_ALLOCATE_INFO
+    pNext = 0x0
+    descriptorPool = 0x177fc769d30
+    descriptorSetCount = 0x1
+    pSetLayouts = 0x177fec769c0
+     pSetLayouts[0] = 0x177fec6ae80
+
+t{0} vkAllocateDescriptorSets(device = 0x177fc51f990, pAllocateInfo = 0x177feccf300, *pDescriptorSets = 0x177fec1c540) = VK_SUCCESS
+   pAllocateInfo:
+    sType = VK_STRUCTURE_TYPE_DESCRIPTOR_SET_ALLOCATE_INFO
+    pNext = 0x0
+    descriptorPool = 0x177fc769d30
+    descriptorSetCount = 0x1
+    pSetLayouts = 0x177fec76870
+     pSetLayouts[0] = 0x177fec6ae80
+
+t{0} vkAllocateDescriptorSets(device = 0x177fc51f990, pAllocateInfo = 0x177feccbca0, *pDescriptorSets = 0x177fec1c680) = VK_SUCCESS
+   pAllocateInfo:
+    sType = VK_STRUCTURE_TYPE_DESCRIPTOR_SET_ALLOCATE_INFO
+    pNext = 0x0
+    descriptorPool = 0x177fc769d30
+    descriptorSetCount = 0x1
+    pSetLayouts = 0x177fec76ac0
+     pSetLayouts[0] = 0x177fec6ae80
+
+t{0} vkAllocateDescriptorSets(device = 0x177fc51f990, pAllocateInfo = 0x177feccb7f0, *pDescriptorSets = 0x177fec1c7c0) = VK_SUCCESS
+   pAllocateInfo:
+    sType = VK_STRUCTURE_TYPE_DESCRIPTOR_SET_ALLOCATE_INFO
+    pNext = 0x0
+    descriptorPool = 0x177fc769d30
+    descriptorSetCount = 0x1
+    pSetLayouts = 0x177fec76b70
+     pSetLayouts[0] = 0x177fec6ae80
+
+t{0} vkAllocateDescriptorSets(device = 0x177fc51f990, pAllocateInfo = 0x177feccb730, *pDescriptorSets = 0x177fec1c900) = VK_SUCCESS
+   pAllocateInfo:
+    sType = VK_STRUCTURE_TYPE_DESCRIPTOR_SET_ALLOCATE_INFO
+    pNext = 0x0
+    descriptorPool = 0x177fc769d30
+    descriptorSetCount = 0x1
+    pSetLayouts = 0x177fec769c0
+     pSetLayouts[0] = 0x177fec6ae80
+
+t{0} vkAllocateDescriptorSets(device = 0x177fc51f990, pAllocateInfo = 0x177feccb850, *pDescriptorSets = 0x177fec1ca40) = VK_SUCCESS
+   pAllocateInfo:
+    sType = VK_STRUCTURE_TYPE_DESCRIPTOR_SET_ALLOCATE_INFO
+    pNext = 0x0
+    descriptorPool = 0x177fc769d30
+    descriptorSetCount = 0x1
+    pSetLayouts = 0x177fec76a70
+     pSetLayouts[0] = 0x177fec6ae80
+
+t{0} vkAllocateDescriptorSets(device = 0x177fc51f990, pAllocateInfo = 0x177feccb5b0, *pDescriptorSets = 0x177fec1cb80) = VK_SUCCESS
+   pAllocateInfo:
+    sType = VK_STRUCTURE_TYPE_DESCRIPTOR_SET_ALLOCATE_INFO
+    pNext = 0x0
+    descriptorPool = 0x177fc769d30
+    descriptorSetCount = 0x1
+    pSetLayouts = 0x177fec769c0
+     pSetLayouts[0] = 0x177fec6ae80
+
+t{0} vkAllocateDescriptorSets(device = 0x177fc51f990, pAllocateInfo = 0x177feccb6d0, *pDescriptorSets = 0x177fec1ccc0) = VK_SUCCESS
+   pAllocateInfo:
+    sType = VK_STRUCTURE_TYPE_DESCRIPTOR_SET_ALLOCATE_INFO
+    pNext = 0x0
+    descriptorPool = 0x177fc769d30
+    descriptorSetCount = 0x1
+    pSetLayouts = 0x177fec769c0
+     pSetLayouts[0] = 0x177fec6ae80
+
+t{0} vkAllocateDescriptorSets(device = 0x177fc51f990, pAllocateInfo = 0x177feccbd60, *pDescriptorSets = 0x177fec1ce00) = VK_SUCCESS
+   pAllocateInfo:
+    sType = VK_STRUCTURE_TYPE_DESCRIPTOR_SET_ALLOCATE_INFO
+    pNext = 0x0
+    descriptorPool = 0x177fc769d30
+    descriptorSetCount = 0x1
+    pSetLayouts = 0x177fec76b70
+     pSetLayouts[0] = 0x177fec6ae80
+
+t{0} vkAllocateDescriptorSets(device = 0x177fc51f990, pAllocateInfo = 0x177feccb8b0, *pDescriptorSets = 0x177fec1cf40) = VK_SUCCESS
+   pAllocateInfo:
+    sType = VK_STRUCTURE_TYPE_DESCRIPTOR_SET_ALLOCATE_INFO
+    pNext = 0x0
+    descriptorPool = 0x177fc769d30
+    descriptorSetCount = 0x1
+    pSetLayouts = 0x177fec769e0
+     pSetLayouts[0] = 0x177fec6ae80
+
+t{0} vkAllocateDescriptorSets(device = 0x177fc51f990, pAllocateInfo = 0x177feccbc70, *pDescriptorSets = 0x177fec1d080) = VK_SUCCESS
+   pAllocateInfo:
+    sType = VK_STRUCTURE_TYPE_DESCRIPTOR_SET_ALLOCATE_INFO
+    pNext = 0x0
+    descriptorPool = 0x177fc769d30
+    descriptorSetCount = 0x1
+    pSetLayouts = 0x177fec76b70
+     pSetLayouts[0] = 0x177fec6ae80
+
+t{0} vkAllocateDescriptorSets(device = 0x177fc51f990, pAllocateInfo = 0x177feccbd60, *pDescriptorSets = 0x177fec1d1c0) = VK_SUCCESS
+   pAllocateInfo:
+    sType = VK_STRUCTURE_TYPE_DESCRIPTOR_SET_ALLOCATE_INFO
+    pNext = 0x0
+    descriptorPool = 0x177fc769d30
+    descriptorSetCount = 0x1
+    pSetLayouts = 0x177fec76a70
+     pSetLayouts[0] = 0x177fec6ae80
+
+t{0} vkAllocateDescriptorSets(device = 0x177fc51f990, pAllocateInfo = 0x177feccb580, *pDescriptorSets = 0x177fec1d300) = VK_SUCCESS
+   pAllocateInfo:
+    sType = VK_STRUCTURE_TYPE_DESCRIPTOR_SET_ALLOCATE_INFO
+    pNext = 0x0
+    descriptorPool = 0x177fc769d30
+    descriptorSetCount = 0x1
+    pSetLayouts = 0x177fec769e0
+     pSetLayouts[0] = 0x177fec6ae80
+
+t{0} vkAllocateDescriptorSets(device = 0x177fc51f990, pAllocateInfo = 0x177feccb700, *pDescriptorSets = 0x177fec1d440) = VK_SUCCESS
+   pAllocateInfo:
+    sType = VK_STRUCTURE_TYPE_DESCRIPTOR_SET_ALLOCATE_INFO
+    pNext = 0x0
+    descriptorPool = 0x177fc769d30
+    descriptorSetCount = 0x1
+    pSetLayouts = 0x177fec76a70
+     pSetLayouts[0] = 0x177fec6ae80
+
+t{0} vkAllocateDescriptorSets(device = 0x177fc51f990, pAllocateInfo = 0x177feccbd90, *pDescriptorSets = 0x177fec1d580) = VK_SUCCESS
+   pAllocateInfo:
+    sType = VK_STRUCTURE_TYPE_DESCRIPTOR_SET_ALLOCATE_INFO
+    pNext = 0x0
+    descriptorPool = 0x177fc769d30
+    descriptorSetCount = 0x1
+    pSetLayouts = 0x177fec769e0
+     pSetLayouts[0] = 0x177fec6ae80
+
+t{0} vkAllocateDescriptorSets(device = 0x177fc51f990, pAllocateInfo = 0x177feccbe50, *pDescriptorSets = 0x177fec1d6c0) = VK_SUCCESS
+   pAllocateInfo:
+    sType = VK_STRUCTURE_TYPE_DESCRIPTOR_SET_ALLOCATE_INFO
+    pNext = 0x0
+    descriptorPool = 0x177fc769d30
+    descriptorSetCount = 0x1
+    pSetLayouts = 0x177fec769c0
+     pSetLayouts[0] = 0x177fec6ae80
+
+t{0} vkAllocateDescriptorSets(device = 0x177fc51f990, pAllocateInfo = 0x177feccbf70, *pDescriptorSets = 0x177fec1d800) = VK_SUCCESS
+   pAllocateInfo:
+    sType = VK_STRUCTURE_TYPE_DESCRIPTOR_SET_ALLOCATE_INFO
+    pNext = 0x0
+    descriptorPool = 0x177fc769d30
+    descriptorSetCount = 0x1
+    pSetLayouts = 0x177fec769e0
+     pSetLayouts[0] = 0x177fec6ae80
+
+t{0} vkAllocateDescriptorSets(device = 0x177fc51f990, pAllocateInfo = 0x177feccb610, *pDescriptorSets = 0x177fec1d940) = VK_SUCCESS
+   pAllocateInfo:
+    sType = VK_STRUCTURE_TYPE_DESCRIPTOR_SET_ALLOCATE_INFO
+    pNext = 0x0
+    descriptorPool = 0x177fc769d30
+    descriptorSetCount = 0x1
+    pSetLayouts = 0x177fec769e0
+     pSetLayouts[0] = 0x177fec6ae80
+
+t{0} vkAllocateDescriptorSets(device = 0x177fc51f990, pAllocateInfo = 0x177fece3f50, *pDescriptorSets = 0x177fec1da80) = VK_SUCCESS
+   pAllocateInfo:
+    sType = VK_STRUCTURE_TYPE_DESCRIPTOR_SET_ALLOCATE_INFO
+    pNext = 0x0
+    descriptorPool = 0x177fc769d30
+    descriptorSetCount = 0x1
+    pSetLayouts = 0x177fec769e0
+     pSetLayouts[0] = 0x177fec6ae80
+
+t{0} vkAllocateDescriptorSets(device = 0x177fc51f990, pAllocateInfo = 0x177fece4190, *pDescriptorSets = 0x177fec1dbc0) = VK_SUCCESS
+   pAllocateInfo:
+    sType = VK_STRUCTURE_TYPE_DESCRIPTOR_SET_ALLOCATE_INFO
+    pNext = 0x0
+    descriptorPool = 0x177fc769d30
+    descriptorSetCount = 0x1
+    pSetLayouts = 0x177fec76ac0
+     pSetLayouts[0] = 0x177fec6ae80
+
+t{0} vkAllocateDescriptorSets(device = 0x177fc51f990, pAllocateInfo = 0x177fece4430, *pDescriptorSets = 0x177fec1dd00) = VK_SUCCESS
+   pAllocateInfo:
+    sType = VK_STRUCTURE_TYPE_DESCRIPTOR_SET_ALLOCATE_INFO
+    pNext = 0x0
+    descriptorPool = 0x177fc769d30
+    descriptorSetCount = 0x1
+    pSetLayouts = 0x177fec76ba0
+     pSetLayouts[0] = 0x177fec6ae80
+
+t{0} vkAllocateDescriptorSets(device = 0x177fc51f990, pAllocateInfo = 0x177fece4160, *pDescriptorSets = 0x177fec1de40) = VK_SUCCESS
+   pAllocateInfo:
+    sType = VK_STRUCTURE_TYPE_DESCRIPTOR_SET_ALLOCATE_INFO
+    pNext = 0x0
+    descriptorPool = 0x177fc769d30
+    descriptorSetCount = 0x1
+    pSetLayouts = 0x177fec769c0
+     pSetLayouts[0] = 0x177fec6ae80
+
+t{0} vkAllocateDescriptorSets(device = 0x177fc51f990, pAllocateInfo = 0x177fece4220, *pDescriptorSets = 0x177fec1df80) = VK_SUCCESS
+   pAllocateInfo:
+    sType = VK_STRUCTURE_TYPE_DESCRIPTOR_SET_ALLOCATE_INFO
+    pNext = 0x0
+    descriptorPool = 0x177fc769d30
+    descriptorSetCount = 0x1
+    pSetLayouts = 0x177fec76b70
+     pSetLayouts[0] = 0x177fec6ae80
+
+t{1} vkCreateCommandPool(device = 0x177fc51f990, pCreateInfo = 0x7542eff858, pAllocator = 0x0, *pCommandPool = 0x177fc7676a0) = VK_SUCCESS
+   pCreateInfo:
+    sType = VK_STRUCTURE_TYPE_COMMAND_POOL_CREATE_INFO
+    pNext = 0x0
+    flags = 0x2
+    queueFamilyIndex = 0x0
+
+t{2} vkCreateCommandPool(device = 0x177fc51f990, pCreateInfo = 0x7542fff828, pAllocator = 0x0, *pCommandPool = 0x177fc7684e0) = VK_SUCCESS
+   pCreateInfo:
+    sType = VK_STRUCTURE_TYPE_COMMAND_POOL_CREATE_INFO
+    pNext = 0x0
+    flags = 0x2
+    queueFamilyIndex = 0x0
+
+t{3} vkCreateCommandPool(device = 0x177fc51f990, pCreateInfo = 0x75430ffa38, pAllocator = 0x0, *pCommandPool = 0x177fc7679a0) = VK_SUCCESS
+   pCreateInfo:
+    sType = VK_STRUCTURE_TYPE_COMMAND_POOL_CREATE_INFO
+    pNext = 0x0
+    flags = 0x2
+    queueFamilyIndex = 0x0
+
+t{4} vkCreateCommandPool(device = 0x177fc51f990, pCreateInfo = 0x75431ff7f8, pAllocator = 0x0, *pCommandPool = 0x177fc768ba0) = VK_SUCCESS
+   pCreateInfo:
+    sType = VK_STRUCTURE_TYPE_COMMAND_POOL_CREATE_INFO
+    pNext = 0x0
+    flags = 0x2
+    queueFamilyIndex = 0x0
+
+t{0} vkAcquireNextImageKHR(device = 0x177fc51f990, swapchain = 0x177fec7bca0, timeout = 0xffffffffffffffff, semaphore = 0x177fec67ea0, fence = 0x0, *pImageIndex = 0x0) = VK_SUCCESS
+t{1} vkCreateDescriptorPool(device = 0x177fc51f990, pCreateInfo = 0x7542eff818, pAllocator = 0x0, *pDescriptorPool = 0x177fc769150) = VK_SUCCESS
+   pCreateInfo:
+    sType = VK_STRUCTURE_TYPE_DESCRIPTOR_POOL_CREATE_INFO
+    pNext = 0x0
+    flags = 0x0
+    maxSets = 1024
+    poolSizeCount = 0x2
+    pPoolSizes = 0x177fecf0de0
+     pPoolSizes[0]:
+      type = VK_DESCRIPTOR_TYPE_UNIFORM_BUFFER
+      descriptorCount = 0x400
+     pPoolSizes[1]:
+      type = VK_DESCRIPTOR_TYPE_SAMPLER
+      descriptorCount = 0x400
+
+t{2} vkCreateDescriptorPool(device = 0x177fc51f990, pCreateInfo = 0x7542fff7e8, pAllocator = 0x0, *pDescriptorPool = 0x177fc769330) = VK_SUCCESS
+   pCreateInfo:
+    sType = VK_STRUCTURE_TYPE_DESCRIPTOR_POOL_CREATE_INFO
+    pNext = 0x0
+    flags = 0x0
+    maxSets = 1024
+    poolSizeCount = 0x2
+    pPoolSizes = 0x177fa068400
+     pPoolSizes[0]:
+      type = VK_DESCRIPTOR_TYPE_UNIFORM_BUFFER
+      descriptorCount = 0x400
+     pPoolSizes[1]:
+      type = VK_DESCRIPTOR_TYPE_SAMPLER
+      descriptorCount = 0x400
+
+t{3} vkCreateDescriptorPool(device = 0x177fc51f990, pCreateInfo = 0x75430ff9f8, pAllocator = 0x0, *pDescriptorPool = 0x177fc769470) = VK_SUCCESS
+   pCreateInfo:
+    sType = VK_STRUCTURE_TYPE_DESCRIPTOR_POOL_CREATE_INFO
+    pNext = 0x0
+    flags = 0x0
+    maxSets = 1024
+    poolSizeCount = 0x2
+    pPoolSizes = 0x177fa068090
+     pPoolSizes[0]:
+      type = VK_DESCRIPTOR_TYPE_UNIFORM_BUFFER
+      descriptorCount = 0x400
+     pPoolSizes[1]:
+      type = VK_DESCRIPTOR_TYPE_SAMPLER
+      descriptorCount = 0x400
+
+t{4} vkCreateDescriptorPool(device = 0x177fc51f990, pCreateInfo = 0x75431ff7b8, pAllocator = 0x0, *pDescriptorPool = 0x177fc769510) = VK_SUCCESS
+   pCreateInfo:
+    sType = VK_STRUCTURE_TYPE_DESCRIPTOR_POOL_CREATE_INFO
+    pNext = 0x0
+    flags = 0x0
+    maxSets = 1024
+    poolSizeCount = 0x2
+    pPoolSizes = 0x177fa067140
+     pPoolSizes[0]:
+      type = VK_DESCRIPTOR_TYPE_UNIFORM_BUFFER
+      descriptorCount = 0x400
+     pPoolSizes[1]:
+      type = VK_DESCRIPTOR_TYPE_SAMPLER
+      descriptorCount = 0x400
+
+t{0} vkResetCommandBuffer(commandBuffer = 0x177feca46a0, flags = 0x1) = VK_SUCCESS
+t{0} vkBeginCommandBuffer(commandBuffer = 0x177feca46a0, pBeginInfo = 0x177fece4790) = VK_SUCCESS
+   pBeginInfo:
+    sType = VK_STRUCTURE_TYPE_COMMAND_BUFFER_BEGIN_INFO
+    pNext = 0x0
+    flags = 0x4
+    pInheritanceInfo = 0x0
+
+t{0} vkCmdPipelineBarrier(commandBuffer = 0x177feca46a0, srcStageMask = 0x1, dstStageMask = 0x1, dependencyFlags = 0x0, memoryBarrierCount = 0x0, pMemoryBarriers = 0x0, bufferMemoryBarrierCount = 0x0, pBufferMemoryBarriers = 0x0, imageMemoryBarrierCount = 0x1, pImageMemoryBarriers = 0x177fecbfb38)
+   pImageMemoryBarriers[0]:
+    sType = VK_STRUCTURE_TYPE_IMAGE_MEMORY_BARRIER
+    pNext = 0x0
+    srcAccessMask = 0x0
+    dstAccessMask = 0x100
+    oldLayout = VK_IMAGE_LAYOUT_UNDEFINED
+    newLayout = VK_IMAGE_LAYOUT_COLOR_ATTACHMENT_OPTIMAL
+    srcQueueFamilyIndex = 0x0
+    dstQueueFamilyIndex = 0x0
+    image = 0x177fc784150
+    subresourceRange = 0x177fecbfb68
+     subresourceRange:
+      aspectMask = 0x1
+      baseMipLevel = 0
+      levelCount = 0x1
+      baseArrayLayer = 0
+      layerCount = 0x1
+
+t{0} vkEndCommandBuffer(commandBuffer = 0x177feca46a0) = VK_SUCCESS
+t{0} vkResetCommandBuffer(commandBuffer = 0x177feca5c20, flags = 0x1) = VK_SUCCESS
+t{0} vkBeginCommandBuffer(commandBuffer = 0x177feca5c20, pBeginInfo = 0x177fece5360) = VK_SUCCESS
+   pBeginInfo:
+    sType = VK_STRUCTURE_TYPE_COMMAND_BUFFER_BEGIN_INFO
+    pNext = 0x0
+    flags = 0x4
+    pInheritanceInfo = 0x0
+
+t{0} vkResetCommandBuffer(commandBuffer = 0x177feca5c20, flags = 0x1) = VK_SUCCESS
+t{1} vkAllocateCommandBuffers(device = 0x177fc51f990, pAllocateInfo = 0x177fece4d90, *pCommandBuffers = 0x177fee45140) = VK_SUCCESS
+   pAllocateInfo:
+    sType = VK_STRUCTURE_TYPE_COMMAND_BUFFER_ALLOCATE_INFO
+    pNext = 0x0
+    commandPool = 0x177fc7676a0
+    level = VK_COMMAND_BUFFER_LEVEL_PRIMARY
+    commandBufferCount = 0x1
+
+t{0} vkBeginCommandBuffer(commandBuffer = 0x177feca5c20, pBeginInfo = 0x177fece5000) = VK_SUCCESS
+   pBeginInfo:
+    sType = VK_STRUCTURE_TYPE_COMMAND_BUFFER_BEGIN_INFO
+    pNext = 0x0
+    flags = 0x4
+    pInheritanceInfo = 0x0
+
+t{1} vkResetCommandBuffer(commandBuffer = 0x177fee45140, flags = 0x1) = VK_SUCCESS
+t{0} vkCmdPipelineBarrier(commandBuffer = 0x177feca5c20, srcStageMask = 0x1, dstStageMask = 0x1, dependencyFlags = 0x0, memoryBarrierCount = 0x0, pMemoryBarriers = 0x0, bufferMemoryBarrierCount = 0x0, pBufferMemoryBarriers = 0x0, imageMemoryBarrierCount = 0x1, pImageMemoryBarriers = 0x177fecbf838)
+   pImageMemoryBarriers[0]:
+    sType = VK_STRUCTURE_TYPE_IMAGE_MEMORY_BARRIER
+    pNext = 0x0
+    srcAccessMask = 0x0
+    dstAccessMask = 0x400
+    oldLayout = VK_IMAGE_LAYOUT_UNDEFINED
+    newLayout = VK_IMAGE_LAYOUT_DEPTH_STENCIL_ATTACHMENT_OPTIMAL
+    srcQueueFamilyIndex = 0x0
+    dstQueueFamilyIndex = 0x0
+    image = 0x177fc782bc0
+    subresourceRange = 0x177fecbf868
+     subresourceRange:
+      aspectMask = 0x2
+      baseMipLevel = 0
+      levelCount = 0x1
+      baseArrayLayer = 0
+      layerCount = 0x1
+
+t{1} vkBeginCommandBuffer(commandBuffer = 0x177fee45140, pBeginInfo = 0x177fece4940) = VK_SUCCESS
+   pBeginInfo:
+    sType = VK_STRUCTURE_TYPE_COMMAND_BUFFER_BEGIN_INFO
+    pNext = 0x0
+    flags = 0x4
+    pInheritanceInfo = 0x0
+
+t{0} vkCreateRenderPass(device = 0x177fc51f990, pCreateInfo = 0x75420fea40, pAllocator = 0x0, *pRenderPass = 0x177fecdebe0) = VK_SUCCESS
+   pCreateInfo:
+    sType = VK_STRUCTURE_TYPE_RENDER_PASS_CREATE_INFO
+    pNext = 0x0
+    flags = 0x0
+    attachmentCount = 0x2
+    pAttachments = 0x177fecddf20
+    subpassCount = 0x1
+    pSubpasses = 0x75420fe9d0
+    dependencyCount = 0x0
+    pDependencies = 0x0
+     pSubpasses[0]:
+      flags = 0x0
+      pipelineBindPoint = VK_PIPELINE_BIND_POINT_GRAPHICS
+      inputAttachmentCount = 0x0
+      pInputAttachments = 0x0
+      colorAttachmentCount = 0x1
+      pColorAttachments = 0x177fecf0ed0
+      pResolveAttachments = 0x0
+      pDepthStencilAttachment = 0x177fecf0ed8
+      preserveAttachmentCount = 0x0
+      pPreserveAttachments = 0x0
+       pDepthStencilAttachment:
+        attachment = 1
+        layout = VK_IMAGE_LAYOUT_DEPTH_STENCIL_ATTACHMENT_OPTIMAL
+       pColorAttachments[0]:
+        attachment = 0
+        layout = VK_IMAGE_LAYOUT_COLOR_ATTACHMENT_OPTIMAL
+     pAttachments[0]:
+      flags = 0x0
+      format = VK_FORMAT_B8G8R8A8_UNORM
+      samples = VK_SAMPLE_COUNT_1_BIT
+      loadOp = VK_ATTACHMENT_LOAD_OP_DONT_CARE
+      storeOp = VK_ATTACHMENT_STORE_OP_STORE
+      stencilLoadOp = VK_ATTACHMENT_LOAD_OP_DONT_CARE
+      stencilStoreOp = VK_ATTACHMENT_STORE_OP_DONT_CARE
+      initialLayout = VK_IMAGE_LAYOUT_COLOR_ATTACHMENT_OPTIMAL
+      finalLayout = VK_IMAGE_LAYOUT_COLOR_ATTACHMENT_OPTIMAL
+     pAttachments[1]:
+      flags = 0x0
+      format = VK_FORMAT_D32_SFLOAT
+      samples = VK_SAMPLE_COUNT_1_BIT
+      loadOp = VK_ATTACHMENT_LOAD_OP_DONT_CARE
+      storeOp = VK_ATTACHMENT_STORE_OP_STORE
+      stencilLoadOp = VK_ATTACHMENT_LOAD_OP_DONT_CARE
+      stencilStoreOp = VK_ATTACHMENT_STORE_OP_STORE
+      initialLayout = VK_IMAGE_LAYOUT_DEPTH_STENCIL_ATTACHMENT_OPTIMAL
+      finalLayout = VK_IMAGE_LAYOUT_DEPTH_STENCIL_ATTACHMENT_OPTIMAL
+
+t{0} vkCreateFramebuffer(device = 0x177fc51f990, pCreateInfo = 0x177fa067070, pAllocator = 0x0, *pFramebuffer = 0x177fec6af00) = VK_SUCCESS
+   pCreateInfo:
+    sType = VK_STRUCTURE_TYPE_FRAMEBUFFER_CREATE_INFO
+    pNext = 0x0
+    flags = 0x0
+    renderPass = 0x177fecdebe0
+    attachmentCount = 0x2
+    pAttachments = 0x177fecd9b40
+    width = 720
+    height = 1028
+    layers = 1
+     pAttachments[0] = 0x177fc769e70
+     pAttachments[1] = 0x177fc769fb0
+
+t{1} vkCreateRenderPass(device = 0x177fc51f990, pCreateInfo = 0x7542eff450, pAllocator = 0x0, *pRenderPass = 0x177fecde640) = VK_SUCCESS
+   pCreateInfo:
+    sType = VK_STRUCTURE_TYPE_RENDER_PASS_CREATE_INFO
+    pNext = 0x0
+    flags = 0x0
+    attachmentCount = 0x2
+    pAttachments = 0x177fecde550
+    subpassCount = 0x1
+    pSubpasses = 0x7542eff3e0
+    dependencyCount = 0x0
+    pDependencies = 0x0
+     pSubpasses[0]:
+      flags = 0x0
+      pipelineBindPoint = VK_PIPELINE_BIND_POINT_GRAPHICS
+      inputAttachmentCount = 0x0
+      pInputAttachments = 0x0
+      colorAttachmentCount = 0x1
+      pColorAttachments = 0x177fecf0ac0
+      pResolveAttachments = 0x0
+      pDepthStencilAttachment = 0x177fecf0ac8
+      preserveAttachmentCount = 0x0
+      pPreserveAttachments = 0x0
+       pDepthStencilAttachment:
+        attachment = 1
+        layout = VK_IMAGE_LAYOUT_DEPTH_STENCIL_ATTACHMENT_OPTIMAL
+       pColorAttachments[0]:
+        attachment = 0
+        layout = VK_IMAGE_LAYOUT_COLOR_ATTACHMENT_OPTIMAL
+     pAttachments[0]:
+      flags = 0x0
+      format = VK_FORMAT_B8G8R8A8_UNORM
+      samples = VK_SAMPLE_COUNT_1_BIT
+      loadOp = VK_ATTACHMENT_LOAD_OP_DONT_CARE
+      storeOp = VK_ATTACHMENT_STORE_OP_STORE
+      stencilLoadOp = VK_ATTACHMENT_LOAD_OP_DONT_CARE
+      stencilStoreOp = VK_ATTACHMENT_STORE_OP_DONT_CARE
+      initialLayout = VK_IMAGE_LAYOUT_COLOR_ATTACHMENT_OPTIMAL
+      finalLayout = VK_IMAGE_LAYOUT_COLOR_ATTACHMENT_OPTIMAL
+     pAttachments[1]:
+      flags = 0x0
+      format = VK_FORMAT_D32_SFLOAT
+      samples = VK_SAMPLE_COUNT_1_BIT
+      loadOp = VK_ATTACHMENT_LOAD_OP_DONT_CARE
+      storeOp = VK_ATTACHMENT_STORE_OP_STORE
+      stencilLoadOp = VK_ATTACHMENT_LOAD_OP_DONT_CARE
+      stencilStoreOp = VK_ATTACHMENT_STORE_OP_STORE
+      initialLayout = VK_IMAGE_LAYOUT_DEPTH_STENCIL_ATTACHMENT_OPTIMAL
+      finalLayout = VK_IMAGE_LAYOUT_DEPTH_STENCIL_ATTACHMENT_OPTIMAL
+
+t{0} vkCmdBeginRenderPass(commandBuffer = 0x177feca5c20, pRenderPassBegin = 0x177fecf0320, contents = VK_SUBPASS_CONTENTS_INLINE)
+   pRenderPassBegin:
+    sType = VK_STRUCTURE_TYPE_RENDER_PASS_BEGIN_INFO
+    pNext = 0x0
+    renderPass = 0x177fecdebe0
+    framebuffer = 0x177fec6af00
+    renderArea = 0x177fecf0340
+    clearValueCount = 0x0
+    pClearValues = 0x0
+     renderArea:
+      offset = 0x177fecf0340
+      extent = 0x177fecf0348
+       extent:
+        width = 720
+        height = 1028
+       offset:
+        x = 0
+        y = 0
+
+t{1} vkCmdBeginRenderPass(commandBuffer = 0x177fee45140, pRenderPassBegin = 0x177fecf05a0, contents = VK_SUBPASS_CONTENTS_INLINE)
+   pRenderPassBegin:
+    sType = VK_STRUCTURE_TYPE_RENDER_PASS_BEGIN_INFO
+    pNext = 0x0
+    renderPass = 0x177fecde640
+    framebuffer = 0x177fec6af00
+    renderArea = 0x177fecf05c0
+    clearValueCount = 0x0
+    pClearValues = 0x0
+     renderArea:
+      offset = 0x177fecf05c0
+      extent = 0x177fecf05c8
+       extent:
+        width = 720
+        height = 1028
+       offset:
+        x = 0
+        y = 0
+
+t{0} vkCreatePipelineCache(device = 0x177fc51f990, pCreateInfo = 0x75420fe448, pAllocator = 0x0, *pPipelineCache = 0x177fe943100) = VK_SUCCESS
+   pCreateInfo:
+    sType = VK_STRUCTURE_TYPE_PIPELINE_CACHE_CREATE_INFO
+    pNext = 0x0
+    flags = 0x0
+    initialDataSize = 0x0
+    pInitialData = 0x0
+
+t{0} vkCreatePipelineLayout(device = 0x177fc51f990, pCreateInfo = 0x177fece0bf0, pAllocator = 0x0, *pPipelineLayout = 0x177fee749d0) = VK_SUCCESS
+   pCreateInfo:
+    sType = VK_STRUCTURE_TYPE_PIPELINE_LAYOUT_CREATE_INFO
+    pNext = 0x0
+    flags = 0x0
+    setLayoutCount = 0x3
+    pSetLayouts = 0x177fecda680
+    pushConstantRangeCount = 0x0
+    pPushConstantRanges = 0x0
+     pSetLayouts[0] = 0x177fec6b000
+     pSetLayouts[1] = 0x177fec6b100
+     pSetLayouts[2] = 0x177fec6b000
+
+t{0} vkCreateGraphicsPipelines(device = 0x177fc51f990, pipelineCache = 0x177fe943100, createInfoCount = 0x1, pCreateInfos = 0x177feeb51d8, pAllocator = 0x0, *pPipelines = 0x177fee7b060) = VK_SUCCESS
+   pCreateInfos[0]:
+    sType = VK_STRUCTURE_TYPE_GRAPHICS_PIPELINE_CREATE_INFO
+    pNext = 0x0
+    flags = 0x0
+    stageCount = 0x2
+    pStages = 0x177feeeed18
+    pVertexInputState = 0x177fee8b2a0
+    pInputAssemblyState = 0x177feeaef80
+    pTessellationState = 0x0
+    pViewportState = 0x177fee8aaa0
+    pRasterizationState = 0x177fee94950
+    pMultisampleState = 0x177fee8a860
+    pDepthStencilState = 0x177feeedff0
+    pColorBlendState = 0x177fee8b460
+    pDynamicState = 0x0
+    layout = 0x177fee749d0
+    renderPass = 0x177fecdebe0
+    subpass = 0
+    basePipelineHandle = 0x0
+    basePipelineIndex = 0x0
+     pColorBlendState:
+      sType = VK_STRUCTURE_TYPE_PIPELINE_COLOR_BLEND_STATE_CREATE_INFO
+      pNext = 0x0
+      flags = 0x0
+      logicOpEnable = FALSE
+      logicOp = VK_LOGIC_OP_CLEAR
+      attachmentCount = 0x1
+      pAttachments = 0x177feeaee30
+      blendConstants = 0x177fee8b488
+       blendConstants[0] = 0
+       blendConstants[1] = 0
+       blendConstants[2] = 0
+       blendConstants[3] = 0
+       pAttachments[0]:
+        blendEnable = FALSE
+        srcColorBlendFactor = VK_BLEND_FACTOR_ZERO
+        dstColorBlendFactor = VK_BLEND_FACTOR_ZERO
+        colorBlendOp = VK_BLEND_OP_ADD
+        srcAlphaBlendFactor = VK_BLEND_FACTOR_ZERO
+        dstAlphaBlendFactor = VK_BLEND_FACTOR_ZERO
+        alphaBlendOp = VK_BLEND_OP_ADD
+        colorWriteMask = 0xf
+     pDepthStencilState:
+      sType = VK_STRUCTURE_TYPE_PIPELINE_DEPTH_STENCIL_STATE_CREATE_INFO
+      pNext = 0x0
+      flags = 0x0
+      depthTestEnable = TRUE
+      depthWriteEnable = TRUE
+      depthCompareOp = VK_COMPARE_OP_ALWAYS
+      depthBoundsTestEnable = FALSE
+      stencilTestEnable = FALSE
+      front = 0x177feeee018
+      back = 0x177feeee034
+      minDepthBounds = 0
+      maxDepthBounds = 0
+       back:
+        failOp = VK_STENCIL_OP_KEEP
+        passOp = VK_STENCIL_OP_KEEP
+        depthFailOp = VK_STENCIL_OP_KEEP
+        compareOp = VK_COMPARE_OP_NEVER
+        compareMask = 0x0
+        writeMask = 0x0
+        reference = 0
+       front:
+        failOp = VK_STENCIL_OP_KEEP
+        passOp = VK_STENCIL_OP_KEEP
+        depthFailOp = VK_STENCIL_OP_KEEP
+        compareOp = VK_COMPARE_OP_NEVER
+        compareMask = 0x0
+        writeMask = 0x0
+        reference = 0
+     pMultisampleState:
+      sType = VK_STRUCTURE_TYPE_PIPELINE_MULTISAMPLE_STATE_CREATE_INFO
+      pNext = 0x0
+      flags = 0x0
+      rasterizationSamples = VK_SAMPLE_COUNT_1_BIT
+      sampleShadingEnable = FALSE
+      minSampleShading = 1
+      pSampleMask = 0x0
+      alphaToCoverageEnable = FALSE
+      alphaToOneEnable = FALSE
+     pRasterizationState:
+      sType = VK_STRUCTURE_TYPE_PIPELINE_RASTERIZATION_STATE_CREATE_INFO
+      pNext = 0x0
+      flags = 0x0
+      depthClampEnable = FALSE
+      rasterizerDiscardEnable = FALSE
+      polygonMode = VK_POLYGON_MODE_FILL
+      cullMode = 0x0
+      frontFace = VK_FRONT_FACE_CLOCKWISE
+      depthBiasEnable = FALSE
+      depthBiasConstantFactor = 0
+      depthBiasClamp = 0
+      depthBiasSlopeFactor = 0
+      lineWidth = 1
+     pViewportState:
+      sType = VK_STRUCTURE_TYPE_PIPELINE_VIEWPORT_STATE_CREATE_INFO
+      pNext = 0x0
+      flags = 0x0
+      viewportCount = 0x1
+      pViewports = 0x177fee7bdf0
+      scissorCount = 0x1
+      pScissors = 0x177fee7be50
+       pScissors[0]:
+        offset = 0x177fee7be50
+        extent = 0x177fee7be58
+         extent:
+          width = 720
+          height = 1028
+         offset:
+          x = 0
+          y = 0
+       pViewports[0]:
+        x = 0
+        y = 0
+        width = 720
+        height = 1028
+        minDepth = 0
+        maxDepth = 1
+     pInputAssemblyState:
+      sType = VK_STRUCTURE_TYPE_PIPELINE_INPUT_ASSEMBLY_STATE_CREATE_INFO
+      pNext = 0x0
+      flags = 0x0
+      topology = VK_PRIMITIVE_TOPOLOGY_TRIANGLE_STRIP
+      primitiveRestartEnable = FALSE
+     pVertexInputState:
+      sType = VK_STRUCTURE_TYPE_PIPELINE_VERTEX_INPUT_STATE_CREATE_INFO
+      pNext = 0x0
+      flags = 0x0
+      vertexBindingDescriptionCount = 0x0
+      pVertexBindingDescriptions = 0x0
+      vertexAttributeDescriptionCount = 0x0
+      pVertexAttributeDescriptions = 0x0
+     pStages[0]:
+      sType = VK_STRUCTURE_TYPE_PIPELINE_SHADER_STAGE_CREATE_INFO
+      pNext = 0x0
+      flags = 0x0
+      stage = VK_SHADER_STAGE_VERTEX_BIT
+      module = 0x177fbe8b720
+      pName = main
+      pSpecializationInfo = 0x0
+     pStages[1]:
+      sType = VK_STRUCTURE_TYPE_PIPELINE_SHADER_STAGE_CREATE_INFO
+      pNext = 0x0
+      flags = 0x0
+      stage = VK_SHADER_STAGE_FRAGMENT_BIT
+      module = 0x177fbe8baa0
+      pName = main
+      pSpecializationInfo = 0x0
+
+t{0} vkCmdBindPipeline(commandBuffer = 0x177feca5c20, pipelineBindPoint = VK_PIPELINE_BIND_POINT_GRAPHICS, pipeline = 0x177fee7b060)
+t{1} vkCreatePipelineCache(device = 0x177fc51f990, pCreateInfo = 0x7542efee58, pAllocator = 0x0, *pPipelineCache = 0x177fef6b720) = VK_SUCCESS
+   pCreateInfo:
+    sType = VK_STRUCTURE_TYPE_PIPELINE_CACHE_CREATE_INFO
+    pNext = 0x0
+    flags = 0x0
+    initialDataSize = 0x0
+    pInitialData = 0x0
+
+t{0} vkUpdateDescriptorSets(device = 0x177fc51f990, descriptorWriteCount = 0x1, pDescriptorWrites = 0x177fee946d8, descriptorCopyCount = 0x0, pDescriptorCopies = 0x0)
+   pDescriptorWrites[0]:
+    sType = VK_STRUCTURE_TYPE_WRITE_DESCRIPTOR_SET
+    pNext = 0x0
+    dstSet = 0x177fec16640
+    dstBinding = 0
+    dstArrayElement = 0
+    descriptorCount = 0x1
+    descriptorType = VK_DESCRIPTOR_TYPE_UNIFORM_BUFFER
+    pImageInfo = 0x0
+    pBufferInfo = 0x177fee7c110
+    pTexelBufferView = 0x0
+     pBufferInfo[0]:
+      buffer = 0x177fea5fc10
+      offset = 0x0
+      range = 0x4
+
+t{1} vkCreatePipelineLayout(device = 0x177fc51f990, pCreateInfo = 0x177fee8b2a0, pAllocator = 0x0, *pPipelineLayout = 0x177feeac1a0) = VK_SUCCESS
+   pCreateInfo:
+    sType = VK_STRUCTURE_TYPE_PIPELINE_LAYOUT_CREATE_INFO
+    pNext = 0x0
+    flags = 0x0
+    setLayoutCount = 0x3
+    pSetLayouts = 0x177fee7bdf0
+    pushConstantRangeCount = 0x0
+    pPushConstantRanges = 0x0
+     pSetLayouts[0] = 0x177fec6b000
+     pSetLayouts[1] = 0x177fec6b100
+     pSetLayouts[2] = 0x177fec6b000
+
+t{0} vkCmdBindDescriptorSets(commandBuffer = 0x177feca5c20, pipelineBindPoint = VK_PIPELINE_BIND_POINT_GRAPHICS, layout = 0x177fee749d0, firstSet = 0x1, descriptorSetCount = 0x1, *pDescriptorSets = 0x177fec16640, dynamicOffsetCount = 0x0, pDynamicOffsets = 0x0)
+   pDescriptorSets[0] = 0x177fec16640
+t{1} vkCreateGraphicsPipelines(device = 0x177fc51f990, pipelineCache = 0x177fef6b720, createInfoCount = 0x1, pCreateInfos = 0x177feeb5638, pAllocator = 0x0, *pPipelines = 0x177fee78850) = VK_SUCCESS
+   pCreateInfos[0]:
+    sType = VK_STRUCTURE_TYPE_GRAPHICS_PIPELINE_CREATE_INFO
+    pNext = 0x0
+    flags = 0x0
+    stageCount = 0x2
+    pStages = 0x177feea2688
+    pVertexInputState = 0x177fee89d20
+    pInputAssemblyState = 0x177feeaf790
+    pTessellationState = 0x0
+    pViewportState = 0x177fee89a60
+    pRasterizationState = 0x177fa067200
+    pMultisampleState = 0x177fee8a120
+    pDepthStencilState = 0x177feea3090
+    pColorBlendState = 0x177fee89ea0
+    pDynamicState = 0x0
+    layout = 0x177feeac1a0
+    renderPass = 0x177fecde640
+    subpass = 0
+    basePipelineHandle = 0x0
+    basePipelineIndex = 0x0
+     pColorBlendState:
+      sType = VK_STRUCTURE_TYPE_PIPELINE_COLOR_BLEND_STATE_CREATE_INFO
+      pNext = 0x0
+      flags = 0x0
+      logicOpEnable = FALSE
+      logicOp = VK_LOGIC_OP_CLEAR
+      attachmentCount = 0x1
+      pAttachments = 0x177feeaf430
+      blendConstants = 0x177fee89ec8
+       blendConstants[0] = 0
+       blendConstants[1] = 0
+       blendConstants[2] = 0
+       blendConstants[3] = 0
+       pAttachments[0]:
+        blendEnable = TRUE
+        srcColorBlendFactor = VK_BLEND_FACTOR_SRC_ALPHA
+        dstColorBlendFactor = VK_BLEND_FACTOR_ONE_MINUS_SRC_ALPHA
+        colorBlendOp = VK_BLEND_OP_ADD
+        srcAlphaBlendFactor = VK_BLEND_FACTOR_ONE
+        dstAlphaBlendFactor = VK_BLEND_FACTOR_ZERO
+        alphaBlendOp = VK_BLEND_OP_ADD
+        colorWriteMask = 0xf
+     pDepthStencilState:
+      sType = VK_STRUCTURE_TYPE_PIPELINE_DEPTH_STENCIL_STATE_CREATE_INFO
+      pNext = 0x0
+      flags = 0x0
+      depthTestEnable = TRUE
+      depthWriteEnable = FALSE
+      depthCompareOp = VK_COMPARE_OP_LESS_OR_EQUAL
+      depthBoundsTestEnable = FALSE
+      stencilTestEnable = FALSE
+      front = 0x177feea30b8
+      back = 0x177feea30d4
+      minDepthBounds = 0
+      maxDepthBounds = 0
+       back:
+        failOp = VK_STENCIL_OP_KEEP
+        passOp = VK_STENCIL_OP_KEEP
+        depthFailOp = VK_STENCIL_OP_KEEP
+        compareOp = VK_COMPARE_OP_NEVER
+        compareMask = 0x0
+        writeMask = 0x0
+        reference = 0
+       front:
+        failOp = VK_STENCIL_OP_KEEP
+        passOp = VK_STENCIL_OP_KEEP
+        depthFailOp = VK_STENCIL_OP_KEEP
+        compareOp = VK_COMPARE_OP_NEVER
+        compareMask = 0x0
+        writeMask = 0x0
+        reference = 0
+     pMultisampleState:
+      sType = VK_STRUCTURE_TYPE_PIPELINE_MULTISAMPLE_STATE_CREATE_INFO
+      pNext = 0x0
+      flags = 0x0
+      rasterizationSamples = VK_SAMPLE_COUNT_1_BIT
+      sampleShadingEnable = FALSE
+      minSampleShading = 1
+      pSampleMask = 0x0
+      alphaToCoverageEnable = FALSE
+      alphaToOneEnable = FALSE
+     pRasterizationState:
+      sType = VK_STRUCTURE_TYPE_PIPELINE_RASTERIZATION_STATE_CREATE_INFO
+      pNext = 0x0
+      flags = 0x0
+      depthClampEnable = FALSE
+      rasterizerDiscardEnable = FALSE
+      polygonMode = VK_POLYGON_MODE_FILL
+      cullMode = 0x0
+      frontFace = VK_FRONT_FACE_CLOCKWISE
+      depthBiasEnable = FALSE
+      depthBiasConstantFactor = 0
+      depthBiasClamp = 0
+      depthBiasSlopeFactor = 0
+      lineWidth = 1
+     pViewportState:
+      sType = VK_STRUCTURE_TYPE_PIPELINE_VIEWPORT_STATE_CREATE_INFO
+      pNext = 0x0
+      flags = 0x0
+      viewportCount = 0x1
+      pViewports = 0x177fee7ca30
+      scissorCount = 0x1
+      pScissors = 0x177fee7c770
+       pScissors[0]:
+        offset = 0x177fee7c770
+        extent = 0x177fee7c778
+         extent:
+          width = 720
+          height = 1028
+         offset:
+          x = 0
+          y = 0
+       pViewports[0]:
+        x = 0
+        y = 0
+        width = 720
+        height = 1028
+        minDepth = 0
+        maxDepth = 1
+     pInputAssemblyState:
+      sType = VK_STRUCTURE_TYPE_PIPELINE_INPUT_ASSEMBLY_STATE_CREATE_INFO
+      pNext = 0x0
+      flags = 0x0
+      topology = VK_PRIMITIVE_TOPOLOGY_TRIANGLE_STRIP
+      primitiveRestartEnable = FALSE
+     pVertexInputState:
+      sType = VK_STRUCTURE_TYPE_PIPELINE_VERTEX_INPUT_STATE_CREATE_INFO
+      pNext = 0x0
+      flags = 0x0
+      vertexBindingDescriptionCount = 0x1
+      pVertexBindingDescriptions = 0x177fee7c710
+      vertexAttributeDescriptionCount = 0x2
+      pVertexAttributeDescriptions = 0x177feeaf490
+       pVertexAttributeDescriptions[0]:
+        location = 0
+        binding = 0
+        format = VK_FORMAT_R32G32B32_SFLOAT
+        offset = 0x0
+       pVertexAttributeDescriptions[1]:
+        location = 1
+        binding = 0
+        format = VK_FORMAT_R32G32B32A32_SFLOAT
+        offset = 0xc
+       pVertexBindingDescriptions[0]:
+        binding = 0
+        stride = 28
+        inputRate = VK_VERTEX_INPUT_RATE_VERTEX
+     pStages[0]:
+      sType = VK_STRUCTURE_TYPE_PIPELINE_SHADER_STAGE_CREATE_INFO
+      pNext = 0x0
+      flags = 0x0
+      stage = VK_SHADER_STAGE_VERTEX_BIT
+      module = 0x177fec67930
+      pName = main
+      pSpecializationInfo = 0x0
+     pStages[1]:
+      sType = VK_STRUCTURE_TYPE_PIPELINE_SHADER_STAGE_CREATE_INFO
+      pNext = 0x0
+      flags = 0x0
+      stage = VK_SHADER_STAGE_FRAGMENT_BIT
+      module = 0x177fec66f90
+      pName = main
+      pSpecializationInfo = 0x0
+
+t{0} vkCmdDraw(commandBuffer = 0x177feca5c20, vertexCount = 0x4, instanceCount = 0x1, firstVertex = 0x0, firstInstance = 0x0)
+t{1} vkCmdBindPipeline(commandBuffer = 0x177fee45140, pipelineBindPoint = VK_PIPELINE_BIND_POINT_GRAPHICS, pipeline = 0x177fee78850)
+t{0} vkCmdEndRenderPass(commandBuffer = 0x177feca5c20)
+t{1} vkUpdateDescriptorSets(device = 0x177fc51f990, descriptorWriteCount = 0x1, pDescriptorWrites = 0x177fa066948, descriptorCopyCount = 0x0, pDescriptorCopies = 0x0)
+   pDescriptorWrites[0]:
+    sType = VK_STRUCTURE_TYPE_WRITE_DESCRIPTOR_SET
+    pNext = 0x0
+    dstSet = 0x177fec16c80
+    dstBinding = 0
+    dstArrayElement = 0
+    descriptorCount = 0x1
+    descriptorType = VK_DESCRIPTOR_TYPE_UNIFORM_BUFFER
+    pImageInfo = 0x0
+    pBufferInfo = 0x177fee7c4b0
+    pTexelBufferView = 0x0
+     pBufferInfo[0]:
+      buffer = 0x177fea5fc10
+      offset = 0x0
+      range = 0xc0
+
+t{0} vkCreateRenderPass(device = 0x177fc51f990, pCreateInfo = 0x75420fea40, pAllocator = 0x0, *pRenderPass = 0x177feea5c40) = VK_SUCCESS
+   pCreateInfo:
+    sType = VK_STRUCTURE_TYPE_RENDER_PASS_CREATE_INFO
+    pNext = 0x0
+    flags = 0x0
+    attachmentCount = 0x2
+    pAttachments = 0x177feea4b00
+    subpassCount = 0x1
+    pSubpasses = 0x75420fe9d0
+    dependencyCount = 0x0
+    pDependencies = 0x0
+     pSubpasses[0]:
+      flags = 0x0
+      pipelineBindPoint = VK_PIPELINE_BIND_POINT_GRAPHICS
+      inputAttachmentCount = 0x0
+      pInputAttachments = 0x0
+      colorAttachmentCount = 0x1
+      pColorAttachments = 0x177fa067780
+      pResolveAttachments = 0x0
+      pDepthStencilAttachment = 0x177fa067788
+      preserveAttachmentCount = 0x0
+      pPreserveAttachments = 0x0
+       pDepthStencilAttachment:
+        attachment = 1
+        layout = VK_IMAGE_LAYOUT_DEPTH_STENCIL_ATTACHMENT_OPTIMAL
+       pColorAttachments[0]:
+        attachment = 0
+        layout = VK_IMAGE_LAYOUT_COLOR_ATTACHMENT_OPTIMAL
+     pAttachments[0]:
+      flags = 0x0
+      format = VK_FORMAT_B8G8R8A8_UNORM
+      samples = VK_SAMPLE_COUNT_1_BIT
+      loadOp = VK_ATTACHMENT_LOAD_OP_DONT_CARE
+      storeOp = VK_ATTACHMENT_STORE_OP_STORE
+      stencilLoadOp = VK_ATTACHMENT_LOAD_OP_DONT_CARE
+      stencilStoreOp = VK_ATTACHMENT_STORE_OP_DONT_CARE
+      initialLayout = VK_IMAGE_LAYOUT_COLOR_ATTACHMENT_OPTIMAL
+      finalLayout = VK_IMAGE_LAYOUT_COLOR_ATTACHMENT_OPTIMAL
+     pAttachments[1]:
+      flags = 0x0
+      format = VK_FORMAT_D32_SFLOAT
+      samples = VK_SAMPLE_COUNT_1_BIT
+      loadOp = VK_ATTACHMENT_LOAD_OP_DONT_CARE
+      storeOp = VK_ATTACHMENT_STORE_OP_STORE
+      stencilLoadOp = VK_ATTACHMENT_LOAD_OP_DONT_CARE
+      stencilStoreOp = VK_ATTACHMENT_STORE_OP_STORE
+      initialLayout = VK_IMAGE_LAYOUT_DEPTH_STENCIL_ATTACHMENT_OPTIMAL
+      finalLayout = VK_IMAGE_LAYOUT_DEPTH_STENCIL_ATTACHMENT_OPTIMAL
+
+t{1} vkCmdBindDescriptorSets(commandBuffer = 0x177fee45140, pipelineBindPoint = VK_PIPELINE_BIND_POINT_GRAPHICS, layout = 0x177feeac1a0, firstSet = 0x1, descriptorSetCount = 0x1, *pDescriptorSets = 0x177fec16c80, dynamicOffsetCount = 0x0, pDynamicOffsets = 0x0)
+   pDescriptorSets[0] = 0x177fec16c80
+t{0} vkCmdBeginRenderPass(commandBuffer = 0x177feca5c20, pRenderPassBegin = 0x177fa0678e0, contents = VK_SUBPASS_CONTENTS_INLINE)
+   pRenderPassBegin:
+    sType = VK_STRUCTURE_TYPE_RENDER_PASS_BEGIN_INFO
+    pNext = 0x0
+    renderPass = 0x177feea5c40
+    framebuffer = 0x177fec6af00
+    renderArea = 0x177fa067900
+    clearValueCount = 0x0
+    pClearValues = 0x0
+     renderArea:
+      offset = 0x177fa067900
+      extent = 0x177fa067908
+       extent:
+        width = 720
+        height = 1028
+       offset:
+        x = 0
+        y = 0
+
+t{1} vkCmdBindIndexBuffer(commandBuffer = 0x177fee45140, buffer = 0x177fea5f8d0, offset = 0x100, indexType = VK_INDEX_TYPE_UINT16)
+t{0} vkCreatePipelineCache(device = 0x177fc51f990, pCreateInfo = 0x75420fe448, pAllocator = 0x0, *pPipelineCache = 0x177fef6bb40) = VK_SUCCESS
+   pCreateInfo:
+    sType = VK_STRUCTURE_TYPE_PIPELINE_CACHE_CREATE_INFO
+    pNext = 0x0
+    flags = 0x0
+    initialDataSize = 0x0
+    pInitialData = 0x0
+
+t{1} vkCmdBindVertexBuffers(commandBuffer = 0x177fee45140, firstBinding = 0x0, bindingCount = 0x1, *pBuffers = 0x177fea5f8d0, *pOffsets = 0x0)
+t{0} vkCreatePipelineLayout(device = 0x177fc51f990, pCreateInfo = 0x177fee8a220, pAllocator = 0x0, *pPipelineLayout = 0x177fee88cd0) = VK_SUCCESS
+   pCreateInfo:
+    sType = VK_STRUCTURE_TYPE_PIPELINE_LAYOUT_CREATE_INFO
+    pNext = 0x0
+    flags = 0x0
+    setLayoutCount = 0x3
+    pSetLayouts = 0x177fee7c3d0
+    pushConstantRangeCount = 0x0
+    pPushConstantRanges = 0x0
+     pSetLayouts[0] = 0x177fec6b000
+     pSetLayouts[1] = 0x177fec6b000
+     pSetLayouts[2] = 0x177fec6b000
+
+t{1} vkCmdDrawIndexed(commandBuffer = 0x177fee45140, indexCount = 0x4, instanceCount = 0x1, firstIndex = 0x0, vertexOffset = 0x0, firstInstance = 0x0)
+t{0} vkCreateGraphicsPipelines(device = 0x177fc51f990, pipelineCache = 0x177fef6bb40, createInfoCount = 0x1, pCreateInfos = 0x177feeb4698, pAllocator = 0x0, *pPipelines = 0x177fef503b0) = VK_SUCCESS
+   pCreateInfos[0]:
+    sType = VK_STRUCTURE_TYPE_GRAPHICS_PIPELINE_CREATE_INFO
+    pNext = 0x0
+    flags = 0x0
+    stageCount = 0x2
+    pStages = 0x177feeee768
+    pVertexInputState = 0x177fee899a0
+    pInputAssemblyState = 0x177fece2540
+    pTessellationState = 0x0
+    pViewportState = 0x177fee8a220
+    pRasterizationState = 0x177fee9ea70
+    pMultisampleState = 0x177fee89f60
+    pDepthStencilState = 0x177feeeeca0
+    pColorBlendState = 0x177fee89fa0
+    pDynamicState = 0x0
+    layout = 0x177fee88cd0
+    renderPass = 0x177feea5c40
+    subpass = 0
+    basePipelineHandle = 0x0
+    basePipelineIndex = 0x0
+     pColorBlendState:
+      sType = VK_STRUCTURE_TYPE_PIPELINE_COLOR_BLEND_STATE_CREATE_INFO
+      pNext = 0x0
+      flags = 0x0
+      logicOpEnable = FALSE
+      logicOp = VK_LOGIC_OP_CLEAR
+      attachmentCount = 0x1
+      pAttachments = 0x177fece2d80
+      blendConstants = 0x177fee89fc8
+       blendConstants[0] = 0
+       blendConstants[1] = 0
+       blendConstants[2] = 0
+       blendConstants[3] = 0
+       pAttachments[0]:
+        blendEnable = TRUE
+        srcColorBlendFactor = VK_BLEND_FACTOR_SRC_ALPHA
+        dstColorBlendFactor = VK_BLEND_FACTOR_ONE_MINUS_SRC_ALPHA
+        colorBlendOp = VK_BLEND_OP_ADD
+        srcAlphaBlendFactor = VK_BLEND_FACTOR_ONE
+        dstAlphaBlendFactor = VK_BLEND_FACTOR_ZERO
+        alphaBlendOp = VK_BLEND_OP_ADD
+        colorWriteMask = 0xf
+     pDepthStencilState:
+      sType = VK_STRUCTURE_TYPE_PIPELINE_DEPTH_STENCIL_STATE_CREATE_INFO
+      pNext = 0x0
+      flags = 0x0
+      depthTestEnable = TRUE
+      depthWriteEnable = TRUE
+      depthCompareOp = VK_COMPARE_OP_LESS_OR_EQUAL
+      depthBoundsTestEnable = FALSE
+      stencilTestEnable = FALSE
+      front = 0x177feeeecc8
+      back = 0x177feeeece4
+      minDepthBounds = 0
+      maxDepthBounds = 0
+       back:
+        failOp = VK_STENCIL_OP_KEEP
+        passOp = VK_STENCIL_OP_KEEP
+        depthFailOp = VK_STENCIL_OP_KEEP
+        compareOp = VK_COMPARE_OP_NEVER
+        compareMask = 0x0
+        writeMask = 0x0
+        reference = 0
+       front:
+        failOp = VK_STENCIL_OP_KEEP
+        passOp = VK_STENCIL_OP_KEEP
+        depthFailOp = VK_STENCIL_OP_KEEP
+        compareOp = VK_COMPARE_OP_NEVER
+        compareMask = 0x0
+        writeMask = 0x0
+        reference = 0
+     pMultisampleState:
+      sType = VK_STRUCTURE_TYPE_PIPELINE_MULTISAMPLE_STATE_CREATE_INFO
+      pNext = 0x0
+      flags = 0x0
+      rasterizationSamples = VK_SAMPLE_COUNT_1_BIT
+      sampleShadingEnable = FALSE
+      minSampleShading = 1
+      pSampleMask = 0x0
+      alphaToCoverageEnable = FALSE
+      alphaToOneEnable = FALSE
+     pRasterizationState:
+      sType = VK_STRUCTURE_TYPE_PIPELINE_RASTERIZATION_STATE_CREATE_INFO
+      pNext = 0x0
+      flags = 0x0
+      depthClampEnable = FALSE
+      rasterizerDiscardEnable = FALSE
+      polygonMode = VK_POLYGON_MODE_FILL
+      cullMode = 0x0
+      frontFace = VK_FRONT_FACE_CLOCKWISE
+      depthBiasEnable = FALSE
+      depthBiasConstantFactor = 0
+      depthBiasClamp = 0
+      depthBiasSlopeFactor = 0
+      lineWidth = 1
+     pViewportState:
+      sType = VK_STRUCTURE_TYPE_PIPELINE_VIEWPORT_STATE_CREATE_INFO
+      pNext = 0x0
+      flags = 0x0
+      viewportCount = 0x1
+      pViewports = 0x177fee7c910
+      scissorCount = 0x1
+      pScissors = 0x177fee7c9f0
+       pScissors[0]:
+        offset = 0x177fee7c9f0
+        extent = 0x177fee7c9f8
+         extent:
+          width = 720
+          height = 1028
+         offset:
+          x = 0
+          y = 0
+       pViewports[0]:
+        x = 0
+        y = 0
+        width = 720
+        height = 1028
+        minDepth = 0
+        maxDepth = 1
+     pInputAssemblyState:
+      sType = VK_STRUCTURE_TYPE_PIPELINE_INPUT_ASSEMBLY_STATE_CREATE_INFO
+      pNext = 0x0
+      flags = 0x0
+      topology = VK_PRIMITIVE_TOPOLOGY_TRIANGLE_LIST
+      primitiveRestartEnable = FALSE
+     pVertexInputState:
+      sType = VK_STRUCTURE_TYPE_PIPELINE_VERTEX_INPUT_STATE_CREATE_INFO
+      pNext = 0x0
+      flags = 0x0
+      vertexBindingDescriptionCount = 0x1
+      pVertexBindingDescriptions = 0x177fee7c5f0
+      vertexAttributeDescriptionCount = 0x2
+      pVertexAttributeDescriptions = 0x177fece2f00
+       pVertexAttributeDescriptions[0]:
+        location = 0
+        binding = 0
+        format = VK_FORMAT_R32G32B32_SFLOAT
+        offset = 0x0
+       pVertexAttributeDescriptions[1]:
+        location = 1
+        binding = 0
+        format = VK_FORMAT_R32G32B32A32_SFLOAT
+        offset = 0xc
+       pVertexBindingDescriptions[0]:
+        binding = 0
+        stride = 28
+        inputRate = VK_VERTEX_INPUT_RATE_VERTEX
+     pStages[0]:
+      sType = VK_STRUCTURE_TYPE_PIPELINE_SHADER_STAGE_CREATE_INFO
+      pNext = 0x0
+      flags = 0x0
+      stage = VK_SHADER_STAGE_VERTEX_BIT
+      module = 0x177fbe8b410
+      pName = main
+      pSpecializationInfo = 0x0
+     pStages[1]:
+      sType = VK_STRUCTURE_TYPE_PIPELINE_SHADER_STAGE_CREATE_INFO
+      pNext = 0x0
+      flags = 0x0
+      stage = VK_SHADER_STAGE_FRAGMENT_BIT
+      module = 0x177fbe8b4f0
+      pName = main
+      pSpecializationInfo = 0x0
+
+t{1} vkCmdEndRenderPass(commandBuffer = 0x177fee45140)
+t{0} vkCmdBindPipeline(commandBuffer = 0x177feca5c20, pipelineBindPoint = VK_PIPELINE_BIND_POINT_GRAPHICS, pipeline = 0x177fef503b0)
+t{0} vkCmdBindIndexBuffer(commandBuffer = 0x177feca5c20, buffer = 0x177fea5fc10, offset = 0x200, indexType = VK_INDEX_TYPE_UINT16)
+t{0} vkCmdBindVertexBuffers(commandBuffer = 0x177feca5c20, firstBinding = 0x0, bindingCount = 0x1, *pBuffers = 0x177fea5fc10, *pOffsets = 0x100)
+t{0} vkCmdDrawIndexed(commandBuffer = 0x177feca5c20, indexCount = 0x3, instanceCount = 0x1, firstIndex = 0x0, vertexOffset = 0x0, firstInstance = 0x0)
+t{0} vkCmdEndRenderPass(commandBuffer = 0x177feca5c20)
+t{0} vkCreateRenderPass(device = 0x177fc51f990, pCreateInfo = 0x75420fea40, pAllocator = 0x0, *pRenderPass = 0x177feea5730) = VK_SUCCESS
+   pCreateInfo:
+    sType = VK_STRUCTURE_TYPE_RENDER_PASS_CREATE_INFO
+    pNext = 0x0
+    flags = 0x0
+    attachmentCount = 0x2
+    pAttachments = 0x177feea6450
+    subpassCount = 0x1
+    pSubpasses = 0x75420fe9d0
+    dependencyCount = 0x0
+    pDependencies = 0x0
+     pSubpasses[0]:
+      flags = 0x0
+      pipelineBindPoint = VK_PIPELINE_BIND_POINT_GRAPHICS
+      inputAttachmentCount = 0x0
+      pInputAttachments = 0x0
+      colorAttachmentCount = 0x1
+      pColorAttachments = 0x177fa066830
+      pResolveAttachments = 0x0
+      pDepthStencilAttachment = 0x177fa066838
+      preserveAttachmentCount = 0x0
+      pPreserveAttachments = 0x0
+       pDepthStencilAttachment:
+        attachment = 1
+        layout = VK_IMAGE_LAYOUT_DEPTH_STENCIL_ATTACHMENT_OPTIMAL
+       pColorAttachments[0]:
+        attachment = 0
+        layout = VK_IMAGE_LAYOUT_COLOR_ATTACHMENT_OPTIMAL
+     pAttachments[0]:
+      flags = 0x0
+      format = VK_FORMAT_B8G8R8A8_UNORM
+      samples = VK_SAMPLE_COUNT_1_BIT
+      loadOp = VK_ATTACHMENT_LOAD_OP_DONT_CARE
+      storeOp = VK_ATTACHMENT_STORE_OP_STORE
+      stencilLoadOp = VK_ATTACHMENT_LOAD_OP_DONT_CARE
+      stencilStoreOp = VK_ATTACHMENT_STORE_OP_DONT_CARE
+      initialLayout = VK_IMAGE_LAYOUT_COLOR_ATTACHMENT_OPTIMAL
+      finalLayout = VK_IMAGE_LAYOUT_COLOR_ATTACHMENT_OPTIMAL
+     pAttachments[1]:
+      flags = 0x0
+      format = VK_FORMAT_D32_SFLOAT
+      samples = VK_SAMPLE_COUNT_1_BIT
+      loadOp = VK_ATTACHMENT_LOAD_OP_DONT_CARE
+      storeOp = VK_ATTACHMENT_STORE_OP_STORE
+      stencilLoadOp = VK_ATTACHMENT_LOAD_OP_DONT_CARE
+      stencilStoreOp = VK_ATTACHMENT_STORE_OP_STORE
+      initialLayout = VK_IMAGE_LAYOUT_DEPTH_STENCIL_ATTACHMENT_OPTIMAL
+      finalLayout = VK_IMAGE_LAYOUT_DEPTH_STENCIL_ATTACHMENT_OPTIMAL
+
+t{0} vkCmdBeginRenderPass(commandBuffer = 0x177feca5c20, pRenderPassBegin = 0x177fef4a680, contents = VK_SUBPASS_CONTENTS_INLINE)
+   pRenderPassBegin:
+    sType = VK_STRUCTURE_TYPE_RENDER_PASS_BEGIN_INFO
+    pNext = 0x0
+    renderPass = 0x177feea5730
+    framebuffer = 0x177fec6af00
+    renderArea = 0x177fef4a6a0
+    clearValueCount = 0x0
+    pClearValues = 0x0
+     renderArea:
+      offset = 0x177fef4a6a0
+      extent = 0x177fef4a6a8
+       extent:
+        width = 720
+        height = 1028
+       offset:
+        x = 0
+        y = 0
+
+t{0} vkCreatePipelineCache(device = 0x177fc51f990, pCreateInfo = 0x75420fe448, pAllocator = 0x0, *pPipelineCache = 0x177fef6a070) = VK_SUCCESS
+   pCreateInfo:
+    sType = VK_STRUCTURE_TYPE_PIPELINE_CACHE_CREATE_INFO
+    pNext = 0x0
+    flags = 0x0
+    initialDataSize = 0x0
+    pInitialData = 0x0
+
+t{0} vkCreatePipelineLayout(device = 0x177fc51f990, pCreateInfo = 0x177fef61af0, pAllocator = 0x0, *pPipelineLayout = 0x177fef63370) = VK_SUCCESS
+   pCreateInfo:
+    sType = VK_STRUCTURE_TYPE_PIPELINE_LAYOUT_CREATE_INFO
+    pNext = 0x0
+    flags = 0x0
+    setLayoutCount = 0x3
+    pSetLayouts = 0x177fee7c690
+    pushConstantRangeCount = 0x0
+    pPushConstantRanges = 0x0
+     pSetLayouts[0] = 0x177fec6b000
+     pSetLayouts[1] = 0x177fec6ae80
+     pSetLayouts[2] = 0x177fec6b000
+
+t{0} vkCreateGraphicsPipelines(device = 0x177fc51f990, pipelineCache = 0x177fef6a070, createInfoCount = 0x1, pCreateInfos = 0x177feeb3c98, pAllocator = 0x0, *pPipelines = 0x177fefe3690) = VK_SUCCESS
+   pCreateInfos[0]:
+    sType = VK_STRUCTURE_TYPE_GRAPHICS_PIPELINE_CREATE_INFO
+    pNext = 0x0
+    flags = 0x0
+    stageCount = 0x2
+    pStages = 0x177fefd2228
+    pVertexInputState = 0x177fef49470
+    pInputAssemblyState = 0x177feeb02d0
+    pTessellationState = 0x0
+    pViewportState = 0x177fef497b0
+    pRasterizationState = 0x177fef48f10
+    pMultisampleState = 0x177fef49270
+    pDepthStencilState = 0x177fefd2370
+    pColorBlendState = 0x177fef49570
+    pDynamicState = 0x0
+    layout = 0x177fef63370
+    renderPass = 0x177feea5730
+    subpass = 0
+    basePipelineHandle = 0x0
+    basePipelineIndex = 0x0
+     pColorBlendState:
+      sType = VK_STRUCTURE_TYPE_PIPELINE_COLOR_BLEND_STATE_CREATE_INFO
+      pNext = 0x0
+      flags = 0x0
+      logicOpEnable = FALSE
+      logicOp = VK_LOGIC_OP_CLEAR
+      attachmentCount = 0x1
+      pAttachments = 0x177feeb00f0
+      blendConstants = 0x177fef49598
+       blendConstants[0] = 0
+       blendConstants[1] = 0
+       blendConstants[2] = 0
+       blendConstants[3] = 0
+       pAttachments[0]:
+        blendEnable = TRUE
+        srcColorBlendFactor = VK_BLEND_FACTOR_SRC_ALPHA
+        dstColorBlendFactor = VK_BLEND_FACTOR_ONE_MINUS_SRC_ALPHA
+        colorBlendOp = VK_BLEND_OP_ADD
+        srcAlphaBlendFactor = VK_BLEND_FACTOR_ONE
+        dstAlphaBlendFactor = VK_BLEND_FACTOR_ZERO
+        alphaBlendOp = VK_BLEND_OP_ADD
+        colorWriteMask = 0xf
+     pDepthStencilState:
+      sType = VK_STRUCTURE_TYPE_PIPELINE_DEPTH_STENCIL_STATE_CREATE_INFO
+      pNext = 0x0
+      flags = 0x0
+      depthTestEnable = TRUE
+      depthWriteEnable = TRUE
+      depthCompareOp = VK_COMPARE_OP_LESS_OR_EQUAL
+      depthBoundsTestEnable = FALSE
+      stencilTestEnable = FALSE
+      front = 0x177fefd2398
+      back = 0x177fefd23b4
+      minDepthBounds = 0
+      maxDepthBounds = 0
+       back:
+        failOp = VK_STENCIL_OP_KEEP
+        passOp = VK_STENCIL_OP_KEEP
+        depthFailOp = VK_STENCIL_OP_KEEP
+        compareOp = VK_COMPARE_OP_NEVER
+        compareMask = 0x0
+        writeMask = 0x0
+        reference = 0
+       front:
+        failOp = VK_STENCIL_OP_KEEP
+        passOp = VK_STENCIL_OP_KEEP
+        depthFailOp = VK_STENCIL_OP_KEEP
+        compareOp = VK_COMPARE_OP_NEVER
+        compareMask = 0x0
+        writeMask = 0x0
+        reference = 0
+     pMultisampleState:
+      sType = VK_STRUCTURE_TYPE_PIPELINE_MULTISAMPLE_STATE_CREATE_INFO
+      pNext = 0x0
+      flags = 0x0
+      rasterizationSamples = VK_SAMPLE_COUNT_1_BIT
+      sampleShadingEnable = FALSE
+      minSampleShading = 1
+      pSampleMask = 0x0
+      alphaToCoverageEnable = FALSE
+      alphaToOneEnable = FALSE
+     pRasterizationState:
+      sType = VK_STRUCTURE_TYPE_PIPELINE_RASTERIZATION_STATE_CREATE_INFO
+      pNext = 0x0
+      flags = 0x0
+      depthClampEnable = FALSE
+      rasterizerDiscardEnable = FALSE
+      polygonMode = VK_POLYGON_MODE_FILL
+      cullMode = 0x0
+      frontFace = VK_FRONT_FACE_CLOCKWISE
+      depthBiasEnable = FALSE
+      depthBiasConstantFactor = 0
+      depthBiasClamp = 0
+      depthBiasSlopeFactor = 0
+      lineWidth = 1
+     pViewportState:
+      sType = VK_STRUCTURE_TYPE_PIPELINE_VIEWPORT_STATE_CREATE_INFO
+      pNext = 0x0
+      flags = 0x0
+      viewportCount = 0x1
+      pViewports = 0x177fee7d050
+      scissorCount = 0x1
+      pScissors = 0x177fee7cfb0
+       pScissors[0]:
+        offset = 0x177fee7cfb0
+        extent = 0x177fee7cfb8
+         extent:
+          width = 720
+          height = 1028
+         offset:
+          x = 0
+          y = 0
+       pViewports[0]:
+        x = 0
+        y = 0
+        width = 720
+        height = 1028
+        minDepth = 0
+        maxDepth = 1
+     pInputAssemblyState:
+      sType = VK_STRUCTURE_TYPE_PIPELINE_INPUT_ASSEMBLY_STATE_CREATE_INFO
+      pNext = 0x0
+      flags = 0x0
+      topology = VK_PRIMITIVE_TOPOLOGY_TRIANGLE_LIST
+      primitiveRestartEnable = FALSE
+     pVertexInputState:
+      sType = VK_STRUCTURE_TYPE_PIPELINE_VERTEX_INPUT_STATE_CREATE_INFO
+      pNext = 0x0
+      flags = 0x0
+      vertexBindingDescriptionCount = 0x0
+      pVertexBindingDescriptions = 0x0
+      vertexAttributeDescriptionCount = 0x0
+      pVertexAttributeDescriptions = 0x0
+     pStages[0]:
+      sType = VK_STRUCTURE_TYPE_PIPELINE_SHADER_STAGE_CREATE_INFO
+      pNext = 0x0
+      flags = 0x0
+      stage = VK_SHADER_STAGE_VERTEX_BIT
+      module = 0x177fbe8b790
+      pName = main
+      pSpecializationInfo = 0x0
+     pStages[1]:
+      sType = VK_STRUCTURE_TYPE_PIPELINE_SHADER_STAGE_CREATE_INFO
+      pNext = 0x0
+      flags = 0x0
+      stage = VK_SHADER_STAGE_FRAGMENT_BIT
+      module = 0x177fbe88de0
+      pName = main
+      pSpecializationInfo = 0x0
+
+t{0} vkCmdBindPipeline(commandBuffer = 0x177feca5c20, pipelineBindPoint = VK_PIPELINE_BIND_POINT_GRAPHICS, pipeline = 0x177fefe3690)
+t{0} vkUpdateDescriptorSets(device = 0x177fc51f990, descriptorWriteCount = 0x1, pDescriptorWrites = 0x177fef49148, descriptorCopyCount = 0x0, pDescriptorCopies = 0x0)
+   pDescriptorWrites[0]:
+    sType = VK_STRUCTURE_TYPE_WRITE_DESCRIPTOR_SET
+    pNext = 0x0
+    dstSet = 0x177fec1a4c0
+    dstBinding = 0
+    dstArrayElement = 0
+    descriptorCount = 0x1
+    descriptorType = VK_DESCRIPTOR_TYPE_UNIFORM_BUFFER
+    pImageInfo = 0x0
+    pBufferInfo = 0x177fee7d070
+    pTexelBufferView = 0x0
+     pBufferInfo[0]:
+      buffer = 0x177fea5fc10
+      offset = 0x300
+      range = 0x4
+
+t{0} vkUpdateDescriptorSets(device = 0x177fc51f990, descriptorWriteCount = 0x1, pDescriptorWrites = 0x177fef48f18, descriptorCopyCount = 0x0, pDescriptorCopies = 0x0)
+   pDescriptorWrites[0]:
+    sType = VK_STRUCTURE_TYPE_WRITE_DESCRIPTOR_SET
+    pNext = 0x0
+    dstSet = 0x177fec1a4c0
+    dstBinding = 1
+    dstArrayElement = 0
+    descriptorCount = 0x1
+    descriptorType = VK_DESCRIPTOR_TYPE_UNIFORM_BUFFER
+    pImageInfo = 0x0
+    pBufferInfo = 0x177fee7ccb0
+    pTexelBufferView = 0x0
+     pBufferInfo[0]:
+      buffer = 0x177fea5fc10
+      offset = 0x400
+      range = 0x10
+
+t{0} vkCmdBindDescriptorSets(commandBuffer = 0x177feca5c20, pipelineBindPoint = VK_PIPELINE_BIND_POINT_GRAPHICS, layout = 0x177fef63370, firstSet = 0x1, descriptorSetCount = 0x1, *pDescriptorSets = 0x177fec1a4c0, dynamicOffsetCount = 0x0, pDynamicOffsets = 0x0)
+   pDescriptorSets[0] = 0x177fec1a4c0
+t{0} vkCmdDraw(commandBuffer = 0x177feca5c20, vertexCount = 0x3, instanceCount = 0x1, firstVertex = 0x0, firstInstance = 0x0)
+t{0} vkCmdEndRenderPass(commandBuffer = 0x177feca5c20)
+t{0} vkCreateRenderPass(device = 0x177fc51f990, pCreateInfo = 0x75420fea40, pAllocator = 0x0, *pRenderPass = 0x177feea41d0) = VK_SUCCESS
+   pCreateInfo:
+    sType = VK_STRUCTURE_TYPE_RENDER_PASS_CREATE_INFO
+    pNext = 0x0
+    flags = 0x0
+    attachmentCount = 0x2
+    pAttachments = 0x177feea5520
+    subpassCount = 0x1
+    pSubpasses = 0x75420fe9d0
+    dependencyCount = 0x0
+    pDependencies = 0x0
+     pSubpasses[0]:
+      flags = 0x0
+      pipelineBindPoint = VK_PIPELINE_BIND_POINT_GRAPHICS
+      inputAttachmentCount = 0x0
+      pInputAttachments = 0x0
+      colorAttachmentCount = 0x1
+      pColorAttachments = 0x177fef4a980
+      pResolveAttachments = 0x0
+      pDepthStencilAttachment = 0x177fef4a988
+      preserveAttachmentCount = 0x0
+      pPreserveAttachments = 0x0
+       pDepthStencilAttachment:
+        attachment = 1
+        layout = VK_IMAGE_LAYOUT_DEPTH_STENCIL_ATTACHMENT_OPTIMAL
+       pColorAttachments[0]:
+        attachment = 0
+        layout = VK_IMAGE_LAYOUT_COLOR_ATTACHMENT_OPTIMAL
+     pAttachments[0]:
+      flags = 0x0
+      format = VK_FORMAT_B8G8R8A8_UNORM
+      samples = VK_SAMPLE_COUNT_1_BIT
+      loadOp = VK_ATTACHMENT_LOAD_OP_DONT_CARE
+      storeOp = VK_ATTACHMENT_STORE_OP_STORE
+      stencilLoadOp = VK_ATTACHMENT_LOAD_OP_DONT_CARE
+      stencilStoreOp = VK_ATTACHMENT_STORE_OP_DONT_CARE
+      initialLayout = VK_IMAGE_LAYOUT_COLOR_ATTACHMENT_OPTIMAL
+      finalLayout = VK_IMAGE_LAYOUT_COLOR_ATTACHMENT_OPTIMAL
+     pAttachments[1]:
+      flags = 0x0
+      format = VK_FORMAT_D32_SFLOAT
+      samples = VK_SAMPLE_COUNT_1_BIT
+      loadOp = VK_ATTACHMENT_LOAD_OP_DONT_CARE
+      storeOp = VK_ATTACHMENT_STORE_OP_STORE
+      stencilLoadOp = VK_ATTACHMENT_LOAD_OP_DONT_CARE
+      stencilStoreOp = VK_ATTACHMENT_STORE_OP_STORE
+      initialLayout = VK_IMAGE_LAYOUT_DEPTH_STENCIL_ATTACHMENT_OPTIMAL
+      finalLayout = VK_IMAGE_LAYOUT_DEPTH_STENCIL_ATTACHMENT_OPTIMAL
+
+t{0} vkCmdBeginRenderPass(commandBuffer = 0x177feca5c20, pRenderPassBegin = 0x177fef5b4a0, contents = VK_SUBPASS_CONTENTS_INLINE)
+   pRenderPassBegin:
+    sType = VK_STRUCTURE_TYPE_RENDER_PASS_BEGIN_INFO
+    pNext = 0x0
+    renderPass = 0x177feea41d0
+    framebuffer = 0x177fec6af00
+    renderArea = 0x177fef5b4c0
+    clearValueCount = 0x0
+    pClearValues = 0x0
+     renderArea:
+      offset = 0x177fef5b4c0
+      extent = 0x177fef5b4c8
+       extent:
+        width = 720
+        height = 1028
+       offset:
+        x = 0
+        y = 0
+
+t{0} vkCreatePipelineCache(device = 0x177fc51f990, pCreateInfo = 0x75420fe448, pAllocator = 0x0, *pPipelineCache = 0x177fef6a750) = VK_SUCCESS
+   pCreateInfo:
+    sType = VK_STRUCTURE_TYPE_PIPELINE_CACHE_CREATE_INFO
+    pNext = 0x0
+    flags = 0x0
+    initialDataSize = 0x0
+    pInitialData = 0x0
+
+t{0} vkCreatePipelineLayout(device = 0x177fc51f990, pCreateInfo = 0x177fef49430, pAllocator = 0x0, *pPipelineLayout = 0x177fef58e40) = VK_SUCCESS
+   pCreateInfo:
+    sType = VK_STRUCTURE_TYPE_PIPELINE_LAYOUT_CREATE_INFO
+    pNext = 0x0
+    flags = 0x0
+    setLayoutCount = 0x3
+    pSetLayouts = 0x177fee7ccd0
+    pushConstantRangeCount = 0x0
+    pPushConstantRanges = 0x0
+     pSetLayouts[0] = 0x177fec6b000
+     pSetLayouts[1] = 0x177fec6b100
+     pSetLayouts[2] = 0x177fec6b100
+
+t{0} vkCreateGraphicsPipelines(device = 0x177fc51f990, pipelineCache = 0x177fef6a750, createInfoCount = 0x1, pCreateInfos = 0x177feeb4418, pAllocator = 0x0, *pPipelines = 0x177feff4e70) = VK_SUCCESS
+   pCreateInfos[0]:
+    sType = VK_STRUCTURE_TYPE_GRAPHICS_PIPELINE_CREATE_INFO
+    pNext = 0x0
+    flags = 0x0
+    stageCount = 0x2
+    pStages = 0x177feeef028
+    pVertexInputState = 0x177fef496f0
+    pInputAssemblyState = 0x177fef9b210
+    pTessellationState = 0x0
+    pViewportState = 0x177fef49430
+    pRasterizationState = 0x177fef5e140
+    pMultisampleState = 0x177fef497f0
+    pDepthStencilState = 0x177feeef100
+    pColorBlendState = 0x177fef49630
+    pDynamicState = 0x0
+    layout = 0x177fef58e40
+    renderPass = 0x177feea41d0
+    subpass = 0
+    basePipelineHandle = 0x0
+    basePipelineIndex = 0x0
+     pColorBlendState:
+      sType = VK_STRUCTURE_TYPE_PIPELINE_COLOR_BLEND_STATE_CREATE_INFO
+      pNext = 0x0
+      flags = 0x0
+      logicOpEnable = FALSE
+      logicOp = VK_LOGIC_OP_CLEAR
+      attachmentCount = 0x1
+      pAttachments = 0x177fef9ad30
+      blendConstants = 0x177fef49658
+       blendConstants[0] = 0
+       blendConstants[1] = 0
+       blendConstants[2] = 0
+       blendConstants[3] = 0
+       pAttachments[0]:
+        blendEnable = FALSE
+        srcColorBlendFactor = VK_BLEND_FACTOR_ZERO
+        dstColorBlendFactor = VK_BLEND_FACTOR_ZERO
+        colorBlendOp = VK_BLEND_OP_ADD
+        srcAlphaBlendFactor = VK_BLEND_FACTOR_ZERO
+        dstAlphaBlendFactor = VK_BLEND_FACTOR_ZERO
+        alphaBlendOp = VK_BLEND_OP_ADD
+        colorWriteMask = 0xf
+     pDepthStencilState:
+      sType = VK_STRUCTURE_TYPE_PIPELINE_DEPTH_STENCIL_STATE_CREATE_INFO
+      pNext = 0x0
+      flags = 0x0
+      depthTestEnable = TRUE
+      depthWriteEnable = TRUE
+      depthCompareOp = VK_COMPARE_OP_LESS_OR_EQUAL
+      depthBoundsTestEnable = FALSE
+      stencilTestEnable = FALSE
+      front = 0x177feeef128
+      back = 0x177feeef144
+      minDepthBounds = 0
+      maxDepthBounds = 0
+       back:
+        failOp = VK_STENCIL_OP_KEEP
+        passOp = VK_STENCIL_OP_KEEP
+        depthFailOp = VK_STENCIL_OP_KEEP
+        compareOp = VK_COMPARE_OP_NEVER
+        compareMask = 0x0
+        writeMask = 0x0
+        reference = 0
+       front:
+        failOp = VK_STENCIL_OP_KEEP
+        passOp = VK_STENCIL_OP_KEEP
+        depthFailOp = VK_STENCIL_OP_KEEP
+        compareOp = VK_COMPARE_OP_NEVER
+        compareMask = 0x0
+        writeMask = 0x0
+        reference = 0
+     pMultisampleState:
+      sType = VK_STRUCTURE_TYPE_PIPELINE_MULTISAMPLE_STATE_CREATE_INFO
+      pNext = 0x0
+      flags = 0x0
+      rasterizationSamples = VK_SAMPLE_COUNT_1_BIT
+      sampleShadingEnable = FALSE
+      minSampleShading = 1
+      pSampleMask = 0x0
+      alphaToCoverageEnable = FALSE
+      alphaToOneEnable = FALSE
+     pRasterizationState:
+      sType = VK_STRUCTURE_TYPE_PIPELINE_RASTERIZATION_STATE_CREATE_INFO
+      pNext = 0x0
+      flags = 0x0
+      depthClampEnable = FALSE
+      rasterizerDiscardEnable = FALSE
+      polygonMode = VK_POLYGON_MODE_FILL
+      cullMode = 0x0
+      frontFace = VK_FRONT_FACE_CLOCKWISE
+      depthBiasEnable = FALSE
+      depthBiasConstantFactor = 0
+      depthBiasClamp = 0
+      depthBiasSlopeFactor = 0
+      lineWidth = 1
+     pViewportState:
+      sType = VK_STRUCTURE_TYPE_PIPELINE_VIEWPORT_STATE_CREATE_INFO
+      pNext = 0x0
+      flags = 0x0
+      viewportCount = 0x1
+      pViewports = 0x177fee7cff0
+      scissorCount = 0x1
+      pScissors = 0x177fee7d0f0
+       pScissors[0]:
+        offset = 0x177fee7d0f0
+        extent = 0x177fee7d0f8
+         extent:
+          width = 720
+          height = 1028
+         offset:
+          x = 0
+          y = 0
+       pViewports[0]:
+        x = 0
+        y = 0
+        width = 720
+        height = 1028
+        minDepth = 0
+        maxDepth = 1
+     pInputAssemblyState:
+      sType = VK_STRUCTURE_TYPE_PIPELINE_INPUT_ASSEMBLY_STATE_CREATE_INFO
+      pNext = 0x0
+      flags = 0x0
+      topology = VK_PRIMITIVE_TOPOLOGY_TRIANGLE_STRIP
+      primitiveRestartEnable = FALSE
+     pVertexInputState:
+      sType = VK_STRUCTURE_TYPE_PIPELINE_VERTEX_INPUT_STATE_CREATE_INFO
+      pNext = 0x0
+      flags = 0x0
+      vertexBindingDescriptionCount = 0x1
+      pVertexBindingDescriptions = 0x177fee7ced0
+      vertexAttributeDescriptionCount = 0x2
+      pVertexAttributeDescriptions = 0x177fef9b6c0
+       pVertexAttributeDescriptions[0]:
+        location = 0
+        binding = 0
+        format = VK_FORMAT_R32G32B32_SFLOAT
+        offset = 0x0
+       pVertexAttributeDescriptions[1]:
+        location = 1
+        binding = 0
+        format = VK_FORMAT_R32G32B32A32_SFLOAT
+        offset = 0xc
+       pVertexBindingDescriptions[0]:
+        binding = 0
+        stride = 28
+        inputRate = VK_VERTEX_INPUT_RATE_VERTEX
+     pStages[0]:
+      sType = VK_STRUCTURE_TYPE_PIPELINE_SHADER_STAGE_CREATE_INFO
+      pNext = 0x0
+      flags = 0x0
+      stage = VK_SHADER_STAGE_VERTEX_BIT
+      module = 0x177fbe8ad80
+      pName = main
+      pSpecializationInfo = 0x0
+     pStages[1]:
+      sType = VK_STRUCTURE_TYPE_PIPELINE_SHADER_STAGE_CREATE_INFO
+      pNext = 0x0
+      flags = 0x0
+      stage = VK_SHADER_STAGE_FRAGMENT_BIT
+      module = 0x177fec67380
+      pName = main
+      pSpecializationInfo = 0x0
+
+t{0} vkCmdBindPipeline(commandBuffer = 0x177feca5c20, pipelineBindPoint = VK_PIPELINE_BIND_POINT_GRAPHICS, pipeline = 0x177feff4e70)
+t{0} vkAllocateDescriptorSets(device = 0x177fc51f990, pAllocateInfo = 0x177fef9b060, *pDescriptorSets = 0x177fec1e0c0) = VK_SUCCESS
+   pAllocateInfo:
+    sType = VK_STRUCTURE_TYPE_DESCRIPTOR_SET_ALLOCATE_INFO
+    pNext = 0x0
+    descriptorPool = 0x177fc769d30
+    descriptorSetCount = 0x1
+    pSetLayouts = 0x177fef60880
+     pSetLayouts[0] = 0x177fec6b100
+
+t{0} vkUpdateDescriptorSets(device = 0x177fc51f990, descriptorWriteCount = 0x1, pDescriptorWrites = 0x177fef5e738, descriptorCopyCount = 0x0, pDescriptorCopies = 0x0)
+   pDescriptorWrites[0]:
+    sType = VK_STRUCTURE_TYPE_WRITE_DESCRIPTOR_SET
+    pNext = 0x0
+    dstSet = 0x177fec168c0
+    dstBinding = 0
+    dstArrayElement = 0
+    descriptorCount = 0x1
+    descriptorType = VK_DESCRIPTOR_TYPE_UNIFORM_BUFFER
+    pImageInfo = 0x0
+    pBufferInfo = 0x177fee7cd10
+    pTexelBufferView = 0x0
+     pBufferInfo[0]:
+      buffer = 0x177fea5fc10
+      offset = 0x500
+      range = 0xc0
+
+t{0} vkUpdateDescriptorSets(device = 0x177fc51f990, descriptorWriteCount = 0x1, pDescriptorWrites = 0x177fef5e238, descriptorCopyCount = 0x0, pDescriptorCopies = 0x0)
+   pDescriptorWrites[0]:
+    sType = VK_STRUCTURE_TYPE_WRITE_DESCRIPTOR_SET
+    pNext = 0x0
+    dstSet = 0x177fec1e0c0
+    dstBinding = 0
+    dstArrayElement = 0
+    descriptorCount = 0x1
+    descriptorType = VK_DESCRIPTOR_TYPE_UNIFORM_BUFFER
+    pImageInfo = 0x0
+    pBufferInfo = 0x177fee7d1f0
+    pTexelBufferView = 0x0
+     pBufferInfo[0]:
+      buffer = 0x177fea5fc10
+      offset = 0x500
+      range = 0xc0
+
+t{0} vkCmdBindDescriptorSets(commandBuffer = 0x177feca5c20, pipelineBindPoint = VK_PIPELINE_BIND_POINT_GRAPHICS, layout = 0x177fef58e40, firstSet = 0x1, descriptorSetCount = 0x1, *pDescriptorSets = 0x177fec168c0, dynamicOffsetCount = 0x0, pDynamicOffsets = 0x0)
+   pDescriptorSets[0] = 0x177fec168c0
+t{0} vkCmdBindIndexBuffer(commandBuffer = 0x177feca5c20, buffer = 0x177fea5fc10, offset = 0x700, indexType = VK_INDEX_TYPE_UINT16)
+t{0} vkCmdBindVertexBuffers(commandBuffer = 0x177feca5c20, firstBinding = 0x0, bindingCount = 0x1, *pBuffers = 0x177fea5fc10, *pOffsets = 0x600)
+t{0} vkCmdDrawIndexed(commandBuffer = 0x177feca5c20, indexCount = 0x3, instanceCount = 0x1, firstIndex = 0x0, vertexOffset = 0x0, firstInstance = 0x0)
+t{0} vkCmdEndRenderPass(commandBuffer = 0x177feca5c20)
+t{0} vkCmdBeginRenderPass(commandBuffer = 0x177feca5c20, pRenderPassBegin = 0x177fef48f10, contents = VK_SUBPASS_CONTENTS_INLINE)
+   pRenderPassBegin:
+    sType = VK_STRUCTURE_TYPE_RENDER_PASS_BEGIN_INFO
+    pNext = 0x0
+    renderPass = 0x177fecde640
+    framebuffer = 0x177fec6af00
+    renderArea = 0x177fef48f30
+    clearValueCount = 0x0
+    pClearValues = 0x0
+     renderArea:
+      offset = 0x177fef48f30
+      extent = 0x177fef48f38
+       extent:
+        width = 720
+        height = 1028
+       offset:
+        x = 0
+        y = 0
+
+t{0} vkCmdBindPipeline(commandBuffer = 0x177feca5c20, pipelineBindPoint = VK_PIPELINE_BIND_POINT_GRAPHICS, pipeline = 0x177fee78850)
+t{0} vkUpdateDescriptorSets(device = 0x177fc51f990, descriptorWriteCount = 0x1, pDescriptorWrites = 0x177fef49058, descriptorCopyCount = 0x0, pDescriptorCopies = 0x0)
+   pDescriptorWrites[0]:
+    sType = VK_STRUCTURE_TYPE_WRITE_DESCRIPTOR_SET
+    pNext = 0x0
+    dstSet = 0x177fec16c80
+    dstBinding = 0
+    dstArrayElement = 0
+    descriptorCount = 0x1
+    descriptorType = VK_DESCRIPTOR_TYPE_UNIFORM_BUFFER
+    pImageInfo = 0x0
+    pBufferInfo = 0x177fee7caf0
+    pTexelBufferView = 0x0
+     pBufferInfo[0]:
+      buffer = 0x177fea5fc10
+      offset = 0x500
+      range = 0xc0
+
+t{0} vkCmdBindDescriptorSets(commandBuffer = 0x177feca5c20, pipelineBindPoint = VK_PIPELINE_BIND_POINT_GRAPHICS, layout = 0x177feeac1a0, firstSet = 0x1, descriptorSetCount = 0x1, *pDescriptorSets = 0x177fec16c80, dynamicOffsetCount = 0x0, pDynamicOffsets = 0x0)
+   pDescriptorSets[0] = 0x177fec16c80
+t{0} vkCmdBindIndexBuffer(commandBuffer = 0x177feca5c20, buffer = 0x177fea5fc10, offset = 0xa00, indexType = VK_INDEX_TYPE_UINT16)
+t{0} vkCmdBindVertexBuffers(commandBuffer = 0x177feca5c20, firstBinding = 0x0, bindingCount = 0x1, *pBuffers = 0x177fea5fc10, *pOffsets = 0x900)
+t{0} vkCmdDrawIndexed(commandBuffer = 0x177feca5c20, indexCount = 0x4, instanceCount = 0x1, firstIndex = 0x0, vertexOffset = 0x0, firstInstance = 0x0)
+t{0} vkCmdEndRenderPass(commandBuffer = 0x177feca5c20)
+t{0} vkEndCommandBuffer(commandBuffer = 0x177feca5c20) = VK_SUCCESS
+ERROR: [DS] Code 32 : You must call vkBeginCommandBuffer() before this call to vkEndCommandBuffer()
